@@ -1,0 +1,15 @@
+{
+  "source_name": "phamkhoa18/tiki-data-analysis",
+  "source_url": "https://github.com/phamkhoa18/tiki-data-analysis",
+  "upstream_commit": "b95f3a667c5ff6c3e2e54143bb2980d2cdea0de2",
+  "retrieved_at": "2026-10-11",
+  "intended_use": "Academic product recommendation demo; no live crawling at runtime",
+  "files": {
+    "tiki_products_clean_full.csv": "903498b676440274f1fdc3baa8494c892dd49dfd86dd8ade1745cbb1dd8bdbc8",
+    "tiki_products.csv": "f5a4abfba0ced5415f124320c89706cdc208216b82742bf8aabcfc0791bc67da",
+    "tiki_product_details.csv": "56249c68b18c92fd2bf1b8bceb47df4ecfc4175c351dd9b1ec790ecf59916148",
+    "tiki_reviews.csv": "c3fc077f5105d214880e64befdfc2763f3dbfc9259b9a3368b464cc73ec02107",
+    "tiki_categories.csv": "e11e07aeeacc8e9b553e728f588fa6d622d168e52702fea8fbc34441dcb2d574"
+  }
+}
+

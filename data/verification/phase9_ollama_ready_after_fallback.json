@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-10-11T18:41:14.476602+00:00",
+  "check": "real configured Ollama endpoint after controlled fallback test",
+  "base_url": "http://127.0.0.1:11434",
+  "model": "qwen2.5:3b-instruct",
+  "status": {
+    "ready": true,
+    "mode": "ollama",
+    "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+  }
+}

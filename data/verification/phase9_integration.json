@@ -1,0 +1,723 @@
+{
+  "generated_by": "scripts/verify_phase7_integration.py",
+  "verification_phase": "phase9",
+  "generated_at": "2026-10-11T18:40:37.510727+00:00",
+  "ollama_status": {
+    "ready": true,
+    "mode": "ollama",
+    "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+    "model": "qwen2.5:3b-instruct"
+  },
+  "settings": {
+    "fusion_alpha": 0.8
+  },
+  "image_query_product": {
+    "product_id": "3304875",
+    "product_name": "Sách Điều Kỳ Diệu Của Tiệm Tạp Hóa NAMIYA (Tái Bản)",
+    "price_vnd": 107030,
+    "image_path": "data/images/3304875.jpg"
+  },
+  "text_only": {
+    "query": "tai nghe bluetooth chống ồn",
+    "latency_ms": 11026.101,
+    "results": [
+      {
+        "product_id": "271312499",
+        "product_name": "Tai nghe Bluetooth True Wireless Sony WF-1000XM5 - Hàng Chính Hãng",
+        "category": "Điện tử & Phụ kiện",
+        "price_vnd": 6700000,
+        "rating": 4.8,
+        "image_path": "data/images/271312499.jpg",
+        "text_score": 0.8978340029716492,
+        "image_score": null,
+        "final_score": 0.8978340029716492,
+        "reason": "Điểm gợi ý 0.8978; giá 6700000 VND; rating 4.8/5; review thật: \"Đóng gói cẩn thận, giao\".",
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+        "parsed_query": "{\"intent\": \"search_product\", \"category\": \"Điện tử & Phụ kiện\", \"category_candidates\": [\"Điện tử & Phụ kiện\"], \"category_confidence\": \"high\", \"category_alias\": \"tai nghe/headphone\", \"colors\": [], \"attributes\": [\"tai nghe bluetooth\", \"chống ồn\", \"bluetooth\"], \"price_min\": null, \"price_max\": null, \"gender\": null, \"keywords\": [\"tai nghe bluetooth\", \"chống ồn\"], \"parser_mode\": \"ollama\", \"parser_detail\": \"Ollama sẵn sàng với qwen2.5:3b-instruct\"}"
+      },
+      {
+        "product_id": "272030678",
+        "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+        "category": "Điện tử & Phụ kiện",
+        "price_vnd": 359000,
+        "rating": 4.7,
+        "image_path": "data/images/272030678.jpg",
+        "text_score": 0.8970881104469299,
+        "image_score": null,
+        "final_score": 0.8970881104469299,
+        "reason": "Điểm gợi ý 0.8971; giá 359000 VND; rating 4.7/5; review thật: \"Hàng đúng mô tả. Bass\".",
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+        "parsed_query": "{\"intent\": \"search_product\", \"category\": \"Điện tử & Phụ kiện\", \"category_candidates\": [\"Điện tử & Phụ kiện\"], \"category_confidence\": \"high\", \"category_alias\": \"tai nghe/headphone\", \"colors\": [], \"attributes\": [\"tai nghe bluetooth\", \"chống ồn\", \"bluetooth\"], \"price_min\": null, \"price_max\": null, \"gender\": null, \"keywords\": [\"tai nghe bluetooth\", \"chống ồn\"], \"parser_mode\": \"ollama\", \"parser_detail\": \"Ollama sẵn sàng với qwen2.5:3b-instruct\"}"
+      },
+      {
+        "product_id": "276117054",
+        "product_name": "Tai nghe Bluetooth Apple AirPods 4",
+        "category": "Điện tử & Phụ kiện",
+        "price_vnd": 4289000,
+        "rating": 4.8,
+        "image_path": "data/images/276117054.jpg",
+        "text_score": 0.8965563178062439,
+        "image_score": null,
+        "final_score": 0.8965563178062439,
+        "reason": "Điểm gợi ý 0.8966; giá 4289000 VND; rating 4.8/5; review thật: \"Hàng còn nguyên seal. Luôn\".",
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+        "parsed_query": "{\"intent\": \"search_product\", \"category\": \"Điện tử & Phụ kiện\", \"category_candidates\": [\"Điện tử & Phụ kiện\"], \"category_confidence\": \"high\", \"category_alias\": \"tai nghe/headphone\", \"colors\": [], \"attributes\": [\"tai nghe bluetooth\", \"chống ồn\", \"bluetooth\"], \"price_min\": null, \"price_max\": null, \"gender\": null, \"keywords\": [\"tai nghe bluetooth\", \"chống ồn\"], \"parser_mode\": \"ollama\", \"parser_detail\": \"Ollama sẵn sàng với qwen2.5:3b-instruct\"}"
+      },
+      {
+        "product_id": "278748263",
+        "product_name": "Tai nghe Bluetooth Samsung Galaxy Buds Core (ANC) - Hàng chính hãng",
+        "category": "Điện tử & Phụ kiện",
+        "price_vnd": 1190000,
+        "rating": 4.7,
+        "image_path": "data/images/278748263.jpg",
+        "text_score": 0.8963892459869385,
+        "image_score": null,
+        "final_score": 0.8963892459869385,
+        "reason": "Điểm gợi ý 0.8964; giá 1190000 VND; rating 4.7/5; review thật: \"Âm nghe tốt, tuy nhiên\".",
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+        "parsed_query": "{\"intent\": \"search_product\", \"category\": \"Điện tử & Phụ kiện\", \"category_candidates\": [\"Điện tử & Phụ kiện\"], \"category_confidence\": \"high\", \"category_alias\": \"tai nghe/headphone\", \"colors\": [], \"attributes\": [\"tai nghe bluetooth\", \"chống ồn\", \"bluetooth\"], \"price_min\": null, \"price_max\": null, \"gender\": null, \"keywords\": [\"tai nghe bluetooth\", \"chống ồn\"], \"parser_mode\": \"ollama\", \"parser_detail\": \"Ollama sẵn sàng với qwen2.5:3b-instruct\"}"
+      },
+      {
+        "product_id": "248761700",
+        "product_name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+        "category": "Điện tử & Phụ kiện",
+        "price_vnd": 745000,
+        "rating": 4.5,
+        "image_path": "data/images/248761700.jpg",
+        "text_score": 0.89426589012146,
+        "image_score": null,
+        "final_score": 0.89426589012146,
+        "reason": "Điểm gợi ý 0.8943; giá 745000 VND; rating 4.5/5; review thật: \"Hàng đẹp y hình luôn\".",
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+        "parsed_query": "{\"intent\": \"search_product\", \"category\": \"Điện tử & Phụ kiện\", \"category_candidates\": [\"Điện tử & Phụ kiện\"], \"category_confidence\": \"high\", \"category_alias\": \"tai nghe/headphone\", \"colors\": [], \"attributes\": [\"tai nghe bluetooth\", \"chống ồn\", \"bluetooth\"], \"price_min\": null, \"price_max\": null, \"gender\": null, \"keywords\": [\"tai nghe bluetooth\", \"chống ồn\"], \"parser_mode\": \"ollama\", \"parser_detail\": \"Ollama sẵn sàng với qwen2.5:3b-instruct\"}"
+      }
+    ],
+    "llm_call": {
+      "query": "tai nghe bluetooth chống ồn",
+      "evidence": [
+        {
+          "product_id": "271312499",
+          "name": "Tai nghe Bluetooth True Wireless Sony WF-1000XM5 - Hàng Chính Hãng",
+          "category": "Điện tử & Phụ kiện",
+          "price_vnd": 6700000,
+          "rating": 4.8,
+          "description": "",
+          "review": "Đóng gói cẩn thận, giao hàng nhanh. App hỗ trợ nhiều chức năng, chế độ khử tiếng ồn ANC tốt, có chức năng tạm tắt nhạc khi nói chuyện và chuyển giữa các chế độ nghe khi ở yên, đi hoặc chạy bộ. Âm thanh hay, bass mạnh chắc, mid ổn, treb tốt. Nghe lossless rất ổn. Để nghe Spotify h",
+          "text_score": 0.8978340029716492,
+          "recommendation_score": 0.8978340029716492
+        },
+        {
+          "product_id": "272030678",
+          "name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+          "category": "Điện tử & Phụ kiện",
+          "price_vnd": 359000,
+          "rating": 4.7,
+          "description": "",
+          "review": "Hàng đúng mô tả. Bass nghe đã tai…",
+          "text_score": 0.8970881104469299,
+          "recommendation_score": 0.8970881104469299
+        },
+        {
+          "product_id": "276117054",
+          "name": "Tai nghe Bluetooth Apple AirPods 4",
+          "category": "Điện tử & Phụ kiện",
+          "price_vnd": 4289000,
+          "rating": 4.8,
+          "description": "",
+          "review": "Hàng còn nguyên seal. Luôn an tâm mua của tiki trading",
+          "text_score": 0.8965563178062439,
+          "recommendation_score": 0.8965563178062439
+        },
+        {
+          "product_id": "278748263",
+          "name": "Tai nghe Bluetooth Samsung Galaxy Buds Core (ANC) - Hàng chính hãng",
+          "category": "Điện tử & Phụ kiện",
+          "price_vnd": 1190000,
+          "rating": 4.7,
+          "description": "",
+          "review": "Âm nghe tốt, tuy nhiên đeo lâu sẽ đau vành tai, vì thiết kế hơi to.",
+          "text_score": 0.8963892459869385,
+          "recommendation_score": 0.8963892459869385
+        },
+        {
+          "product_id": "248761700",
+          "name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+          "category": "Điện tử & Phụ kiện",
+          "price_vnd": 745000,
+          "rating": 4.5,
+          "description": "",
+          "review": "Hàng đẹp y hình luôn nha, đeo thử mặc dù ko hiểu sao đeo trên tai hơi lỏng lỏng nhưng rất thoải mái không tuột không bị đau tai mà âm thanh cũng không lọt ra ngoài. Rất ưng đáng mua nha. tiki bây giờ ship hàng như tên lửa ấy vừa đặt xong mấy tiếng sau đã bắt nhận rồi không kịp tr",
+          "text_score": 0.89426589012146,
+          "recommendation_score": 0.89426589012146
+        }
+      ],
+      "reasons": {
+        "271312499": "Điểm gợi ý 0.8978; giá 6700000 VND; rating 4.8/5; review thật: \"Đóng gói cẩn thận, giao\".",
+        "272030678": "Điểm gợi ý 0.8971; giá 359000 VND; rating 4.7/5; review thật: \"Hàng đúng mô tả. Bass\".",
+        "276117054": "Điểm gợi ý 0.8966; giá 4289000 VND; rating 4.8/5; review thật: \"Hàng còn nguyên seal. Luôn\".",
+        "278748263": "Điểm gợi ý 0.8964; giá 1190000 VND; rating 4.7/5; review thật: \"Âm nghe tốt, tuy nhiên\".",
+        "248761700": "Điểm gợi ý 0.8943; giá 745000 VND; rating 4.5/5; review thật: \"Hàng đẹp y hình luôn\"."
+      },
+      "raw_llm_json": [
+        {
+          "271312499": "Điểm gợi ý 0.8978; giá 6700000 VND; rating 4.8/5; review thật: \"Đóng gói cẩn thận, giao\"."
+        },
+        {
+          "272030678": "Điểm gợi ý 0.8971; giá 359000 VND; rating 4.7/5; review thật: \"Hàng đúng mô tả. Bass\"."
+        },
+        {
+          "276117054": "Điểm gợi ý 0.8966; giá 4289000 VND; rating 4.8/5; review thật: \"Hàng còn nguyên seal. Luôn\"."
+        },
+        {
+          "278748263": "Điểm gợi ý 0.8964; giá 1190000 VND; rating 4.7/5; review thật: \"Âm nghe tốt, tuy nhiên\"."
+        },
+        {
+          "248761700": "Điểm gợi ý 0.8943; giá 745000 VND; rating 4.5/5; review thật: \"Hàng đẹp y hình luôn\"."
+        }
+      ]
+    },
+    "traceability": {
+      "product_count": 5,
+      "reason_count": 5,
+      "product_ids_match": true,
+      "items": [
+        {
+          "product_id": "271312499",
+          "reason": "Điểm gợi ý 0.8978; giá 6700000 VND; rating 4.8/5; review thật: \"Đóng gói cẩn thận, giao\".",
+          "numeric_claims": [
+            "48",
+            "5",
+            "6700000",
+            "8978"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "272030678",
+          "reason": "Điểm gợi ý 0.8971; giá 359000 VND; rating 4.7/5; review thật: \"Hàng đúng mô tả. Bass\".",
+          "numeric_claims": [
+            "359000",
+            "47",
+            "5",
+            "8971"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "276117054",
+          "reason": "Điểm gợi ý 0.8966; giá 4289000 VND; rating 4.8/5; review thật: \"Hàng còn nguyên seal. Luôn\".",
+          "numeric_claims": [
+            "4289000",
+            "48",
+            "5",
+            "8966"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "278748263",
+          "reason": "Điểm gợi ý 0.8964; giá 1190000 VND; rating 4.7/5; review thật: \"Âm nghe tốt, tuy nhiên\".",
+          "numeric_claims": [
+            "1190000",
+            "47",
+            "5",
+            "8964"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "248761700",
+          "reason": "Điểm gợi ý 0.8943; giá 745000 VND; rating 4.5/5; review thật: \"Hàng đẹp y hình luôn\".",
+          "numeric_claims": [
+            "45",
+            "5",
+            "745000",
+            "8943"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        }
+      ]
+    }
+  },
+  "image_only": {
+    "latency_ms": 375.117,
+    "results": [
+      {
+        "product_id": "3304875",
+        "product_name": "Sách Điều Kỳ Diệu Của Tiệm Tạp Hóa NAMIYA (Tái Bản)",
+        "category": "Sách",
+        "price_vnd": 107030,
+        "rating": 5.0,
+        "image_path": "data/images/3304875.jpg",
+        "text_score": null,
+        "image_score": 1.0000001192092896,
+        "final_score": 1.0000001192092896,
+        "reason": "Ảnh có đặc trưng thị giác gần với nhóm Sách."
+      },
+      {
+        "product_id": "117238177",
+        "product_name": "Sách Thư Viện Nửa Đêm",
+        "category": "Sách",
+        "price_vnd": 126000,
+        "rating": 5.0,
+        "image_path": "data/images/117238177.jpg",
+        "text_score": null,
+        "image_score": 0.7634300589561462,
+        "final_score": 0.7634300589561462,
+        "reason": "Ảnh có đặc trưng thị giác gần với nhóm Sách."
+      },
+      {
+        "product_id": "7982628",
+        "product_name": "Sách Suối Nguồn (Tái Bản)",
+        "category": "Sách",
+        "price_vnd": 294000,
+        "rating": 4.8,
+        "image_path": "data/images/7982628.jpg",
+        "text_score": null,
+        "image_score": 0.717542290687561,
+        "final_score": 0.717542290687561,
+        "reason": "Ảnh có đặc trưng thị giác gần với nhóm Sách."
+      },
+      {
+        "product_id": "109017985",
+        "product_name": "Sách Thiên Tài Bên Trái, Kẻ Điên Bên Phải (Tái Bản)",
+        "category": "Sách",
+        "price_vnd": 128880,
+        "rating": 4.8,
+        "image_path": "data/images/109017985.jpg",
+        "text_score": null,
+        "image_score": 0.6513895988464355,
+        "final_score": 0.6513895988464355,
+        "reason": "Ảnh có đặc trưng thị giác gần với nhóm Sách."
+      },
+      {
+        "product_id": "272155345",
+        "product_name": "Sách Kính Vạn Hoa Chết Chóc",
+        "category": "Sách",
+        "price_vnd": 133300,
+        "rating": 5.0,
+        "image_path": "data/images/272155345.jpg",
+        "text_score": null,
+        "image_score": 0.6503230929374695,
+        "final_score": 0.6503230929374695,
+        "reason": "Ảnh có đặc trưng thị giác gần với nhóm Sách."
+      }
+    ],
+    "llm_reason_call_count_after_mode": 1
+  },
+  "multimodal": {
+    "query": "tìm sản phẩm giống hình nhưng dưới 1 triệu",
+    "latency_ms": 4598.553,
+    "metadata": {
+      "mode": "MULTIMODAL",
+      "parser": {
+        "intent": "search_product",
+        "category": null,
+        "category_candidates": [],
+        "category_confidence": "none",
+        "category_alias": null,
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": 1000000,
+        "gender": null,
+        "keywords": [
+          "sản phẩm",
+          "hình",
+          "dưới 1 triệu"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "alpha": 0.8,
+      "llm_status": {
+        "ready": true,
+        "mode": "ollama",
+        "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "category_inference": {
+        "primary_category": "Sách",
+        "candidate_categories": [
+          "Sách"
+        ],
+        "scores": {
+          "Sách": 0.2528625726699829,
+          "Nhà cửa & Đời sống": 0.2292661964893341,
+          "Điện tử & Phụ kiện": 0.2095048725605011,
+          "Bách hóa": 0.20773038268089294,
+          "Làm đẹp & Sức khỏe": 0.20474925637245178,
+          "Điện gia dụng": 0.20354759693145752,
+          "Thời trang nam": 0.1941230744123459,
+          "Thời trang nữ": 0.19091372191905975
+        },
+        "confidence": "high",
+        "margin": 0.023596376180648804,
+        "strategy": "top_1_category",
+        "uncertain": false,
+        "source": "clip_zero_shot"
+      },
+      "effective_filters": {
+        "categories": [
+          "Sách"
+        ],
+        "soft_categories": [],
+        "price_min": null,
+        "price_max": 1000000
+      },
+      "candidate_count": 111
+    },
+    "price_filter_max_vnd": 1000000,
+    "all_results_within_price_filter": true,
+    "results": [
+      {
+        "product_id": "540039",
+        "product_name": "Sách Giáo Trình Chuẩn HSK 1 - Bài Học (Kèm file MP3)",
+        "category": "Sách",
+        "price_vnd": 157000,
+        "rating": 4.8,
+        "image_path": "data/images/540039.jpg",
+        "text_score": 0.8661210536956787,
+        "image_score": 0.3727308511734009,
+        "final_score": 0.8530428409576416,
+        "reason": "Điểm gợi ý 0.8530; giá 157000 VND; rating 4.8/5; review thật: \"nếu có muốn tăng sub,tăng\"."
+      },
+      {
+        "product_id": "271379451",
+        "product_name": "Sách Lý Thuyết Trò Chơi",
+        "category": "Sách",
+        "price_vnd": 121200,
+        "rating": 4.7,
+        "image_path": "data/images/271379451.jpg",
+        "text_score": 0.8517200350761414,
+        "image_score": 0.4803707003593445,
+        "final_score": 0.69475919008255,
+        "reason": "Điểm gợi ý 0.6948; giá 121200 VND; rating 4.7/5; review thật: \"/ Lý thuyết trò chơi\"."
+      },
+      {
+        "product_id": "48629535",
+        "product_name": "Sách Ngày Xưa Có Một Chuyện Tình (Tái Bản)",
+        "category": "Sách",
+        "price_vnd": 106875,
+        "rating": 5.0,
+        "image_path": "data/images/48629535.jpg",
+        "text_score": 0.8501841425895691,
+        "image_score": 0.5204434990882874,
+        "final_score": 0.684576690196991,
+        "reason": "Điểm gợi ý 0.6846; giá 106875 VND; rating 5/5; review thật: \"Giao hàng phải nói là\"."
+      },
+      {
+        "product_id": "32490132",
+        "product_name": "Sách Một Đời Như Kẻ Tìm Đường",
+        "category": "Sách",
+        "price_vnd": 141000,
+        "rating": 4.8,
+        "image_path": "data/images/32490132.jpg",
+        "text_score": 0.852625846862793,
+        "image_score": 0.3849000036716461,
+        "final_score": 0.6839343309402466,
+        "reason": "Điểm gợi ý 0.6839; giá 141000 VND; rating 4.8/5; review thật: \"Nhỏ bạn review sách nói\"."
+      },
+      {
+        "product_id": "45663008",
+        "product_name": "Sách Ngày Xưa Có Một Con Bò…(Tái Bản)",
+        "category": "Sách",
+        "price_vnd": 59000,
+        "rating": 4.8,
+        "image_path": "data/images/45663008.jpg",
+        "text_score": 0.8521524667739868,
+        "image_score": 0.37275463342666626,
+        "final_score": 0.6750569343566895,
+        "reason": "Điểm gợi ý 0.6751; giá 59000 VND; rating 4.8/5; review thật: \"quyển sách rất hay giúp\"."
+      }
+    ],
+    "llm_call": {
+      "query": "tìm sản phẩm giống hình nhưng dưới 1 triệu",
+      "evidence": [
+        {
+          "product_id": "540039",
+          "name": "Sách Giáo Trình Chuẩn HSK 1 - Bài Học (Kèm file MP3)",
+          "category": "Sách",
+          "price_vnd": 157000,
+          "rating": 4.8,
+          "description": "",
+          "review": "nếu có muốn tăng sub,tăng view,tăng giờ thì nhớ né gương mặt XẤU này ra nha. nó nhận 500K xong,bảo rằng trong ngày sẽ lên đơn cho mình.trong 1 ngày sẽ tăng 100 sub,trong 3 ngày sẽ có thêm 4000g và bật kiếm tiền cho mình. mình đã nghe theo lời nó và đã chuyển cho nó 500K.tới giờ đ",
+          "text_score": 0.8661210536956787,
+          "image_score": 0.3727308511734009,
+          "recommendation_score": 0.8530428409576416
+        },
+        {
+          "product_id": "271379451",
+          "name": "Sách Lý Thuyết Trò Chơi",
+          "category": "Sách",
+          "price_vnd": 121200,
+          "rating": 4.7,
+          "description": "",
+          "review": "/ Lý thuyết trò chơi là 1 khái niệm gần đây mình mới biết tới nhưng thật ra thì nó đã ứng dụng trong đời sống cũng từ lâu r. Khi đọc về chủ đề mình học đc nhiều khái niệm mới trong mỗi chương như: trò chơi có tổng bằng không hay khác, điểm cần bằng Nash,... Sản phẩm tốt cả về nội",
+          "text_score": 0.8517200350761414,
+          "image_score": 0.4803707003593445,
+          "recommendation_score": 0.69475919008255
+        },
+        {
+          "product_id": "48629535",
+          "name": "Sách Ngày Xưa Có Một Chuyện Tình (Tái Bản)",
+          "category": "Sách",
+          "price_vnd": 106875,
+          "rating": 5.0,
+          "description": "",
+          "review": "Giao hàng phải nói là siu nhanh luôn, ms đặt tối hqua mà trưa mai là giao r, sản phẩm không bị móp méo có điều bị gập giấy như ảnh ? Do mình mua sách ở tiki cũng nhiều r nên khá yên tâm mà giá lại rất rẻ so với giá trên sách ghi. Dù chưa đọc hết nhưng cảm thấy sách rất hay nhé, a",
+          "text_score": 0.8501841425895691,
+          "image_score": 0.5204434990882874,
+          "recommendation_score": 0.684576690196991
+        },
+        {
+          "product_id": "32490132",
+          "name": "Sách Một Đời Như Kẻ Tìm Đường",
+          "category": "Sách",
+          "price_vnd": 141000,
+          "rating": 4.8,
+          "description": "",
+          "review": "Nhỏ bạn review sách nói \"m phải đọc cho bằng dc\" nên thành ra mình mua giúp nó về làm kỉ niệm luôn :)). Sách vẫn được Fahasa đóng gói kĩ càng, chất lượng. Vì tình hình dịch nên k thể giao nhanh như trước nên mình cũng thông cảm xíu ?. Sách là cả tâm huyết của Bác Trường muốn gửi ",
+          "text_score": 0.852625846862793,
+          "image_score": 0.3849000036716461,
+          "recommendation_score": 0.6839343309402466
+        },
+        {
+          "product_id": "45663008",
+          "name": "Sách Ngày Xưa Có Một Con Bò…(Tái Bản)",
+          "category": "Sách",
+          "price_vnd": 59000,
+          "rating": 4.8,
+          "description": "",
+          "review": "quyển sách rất hay giúp chúng ta nhìn ra những lý do/ngụy biện của bản thân trước đây. Bản thân sách khong có vấn đề, nhưng cách gói hàng của Tiki chưa đủ tốt dù giao hàng siêu nhanh. Mình đặt cùng 2 quyển sách khác giày hơn nhưng gói sách chưa ki khiến cho quyển này bị xô và con",
+          "text_score": 0.8521524667739868,
+          "image_score": 0.37275463342666626,
+          "recommendation_score": 0.6750569343566895
+        }
+      ],
+      "reasons": {
+        "540039": "Điểm gợi ý 0.8530; giá 157000 VND; rating 4.8/5; review thật: \"nếu có muốn tăng sub,tăng\".",
+        "271379451": "Điểm gợi ý 0.6948; giá 121200 VND; rating 4.7/5; review thật: \"/ Lý thuyết trò chơi\".",
+        "48629535": "Điểm gợi ý 0.6846; giá 106875 VND; rating 5/5; review thật: \"Giao hàng phải nói là\".",
+        "32490132": "Điểm gợi ý 0.6839; giá 141000 VND; rating 4.8/5; review thật: \"Nhỏ bạn review sách nói\".",
+        "45663008": "Điểm gợi ý 0.6751; giá 59000 VND; rating 4.8/5; review thật: \"quyển sách rất hay giúp\"."
+      },
+      "raw_llm_json": [
+        {
+          "540039": "Điểm gợi ý 0.8530; giá 157000 VND; rating 4.8/5; review thật: \"nếu có muốn tăng sub,tăng\"."
+        },
+        {
+          "271379451": "Điểm gợi ý 0.6948; giá 121200 VND; rating 4.7/5; review thật: \"/ Lý thuyết trò chơi\"."
+        },
+        {
+          "48629535": "Điểm gợi ý 0.6846; giá 106875 VND; rating 5/5; review thật: \"Giao hàng phải nói là\"."
+        },
+        {
+          "32490132": "Điểm gợi ý 0.6839; giá 141000 VND; rating 4.8/5; review thật: \"Nhỏ bạn review sách nói\"."
+        },
+        {
+          "45663008": "Điểm gợi ý 0.6751; giá 59000 VND; rating 4.8/5; review thật: \"quyển sách rất hay giúp\"."
+        }
+      ]
+    },
+    "traceability": {
+      "product_count": 5,
+      "reason_count": 5,
+      "product_ids_match": true,
+      "items": [
+        {
+          "product_id": "540039",
+          "reason": "Điểm gợi ý 0.8530; giá 157000 VND; rating 4.8/5; review thật: \"nếu có muốn tăng sub,tăng\".",
+          "numeric_claims": [
+            "157000",
+            "48",
+            "5",
+            "8530"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "image_score",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "271379451",
+          "reason": "Điểm gợi ý 0.6948; giá 121200 VND; rating 4.7/5; review thật: \"/ Lý thuyết trò chơi\".",
+          "numeric_claims": [
+            "121200",
+            "47",
+            "5",
+            "6948"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "image_score",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "48629535",
+          "reason": "Điểm gợi ý 0.6846; giá 106875 VND; rating 5/5; review thật: \"Giao hàng phải nói là\".",
+          "numeric_claims": [
+            "106875",
+            "5",
+            "6846"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "image_score",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "32490132",
+          "reason": "Điểm gợi ý 0.6839; giá 141000 VND; rating 4.8/5; review thật: \"Nhỏ bạn review sách nói\".",
+          "numeric_claims": [
+            "141000",
+            "48",
+            "5",
+            "6839"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "image_score",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        },
+        {
+          "product_id": "45663008",
+          "reason": "Điểm gợi ý 0.6751; giá 59000 VND; rating 4.8/5; review thật: \"quyển sách rất hay giúp\".",
+          "numeric_claims": [
+            "48",
+            "5",
+            "59000",
+            "6751"
+          ],
+          "ungrounded_numeric_claims": [],
+          "has_real_review_evidence": true,
+          "evidence_fields": [
+            "category",
+            "description",
+            "image_score",
+            "name",
+            "price_vnd",
+            "product_id",
+            "rating",
+            "recommendation_score",
+            "review",
+            "text_score"
+          ]
+        }
+      ]
+    }
+  },
+  "checks": {
+    "text_encoder_ran": true,
+    "image_encoder_ran": true,
+    "fusion_ran": true,
+    "price_filter_ran": true,
+    "llm_explanations_ran": true,
+    "alpha_unchanged": true,
+    "numeric_claims_grounded": true
+  }
+}

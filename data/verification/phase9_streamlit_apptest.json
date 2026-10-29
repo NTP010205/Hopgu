@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-29T09:14:11.795476+00:00",
+  "files_tested": 6,
+  "files_without_exceptions": 6,
+  "results": [
+    {
+      "file": "app.py",
+      "exceptions": [],
+      "titles": [],
+      "warnings": []
+    },
+    {
+      "file": "pages/1_Tim_kiem.py",
+      "exceptions": [],
+      "titles": [],
+      "warnings": []
+    },
+    {
+      "file": "pages/2_Danh_muc.py",
+      "exceptions": [],
+      "titles": [],
+      "warnings": []
+    },
+    {
+      "file": "pages/3_Danh_gia.py",
+      "exceptions": [],
+      "titles": [],
+      "warnings": []
+    },
+    {
+      "file": "pages/4_He_thong.py",
+      "exceptions": [],
+      "titles": [],
+      "warnings": []
+    },
+    {
+      "file": "pages/5_Lookbook_Atelier.py",
+      "exceptions": [],
+      "titles": [],
+      "warnings": []
+    }
+  ]
+}

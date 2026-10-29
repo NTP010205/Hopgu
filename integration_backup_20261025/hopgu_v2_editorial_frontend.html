@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HỢP GU — Thời Trang Thiết Kế &amp; Lookbook Mùa Mới</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Caveat"', 'cursive'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg-page: #F5F4F0;
+      --text-main: #141413;
+      --text-sub: #5E5E5A;
+      --glass-bg: rgba(255, 255, 255, 0.82);
+      --glass-border: rgba(20, 20, 19, 0.08);
+      --card-bg: rgba(255, 255, 255, 0.92);
+      --accent: #183028;
+      --gold: #B89146;
+    }
+    body.theme-obsidian {
+      --bg-page: #0D0E10;
+      --text-main: #F5F5F7;
+      --text-sub: #A1A1A6;
+      --glass-bg: rgba(22, 23, 28, 0.82);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --card-bg: rgba(26, 27, 32, 0.90);
+      --accent: #D4AF37;
+      --gold: #E5C158;
+    }
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    /* Full-viewport Studio Backdrop Canvas */
+    #threeStageContainer {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    #mannequinCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      pointer-events: auto;
+    }
+
+    .studio-grid-overlay {
+      background-size: 64px 64px;
+      background-image:
+        linear-gradient(to right, rgba(17, 17, 19, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(17, 17, 19, 0.02) 1px, transparent 1px);
+    }
+    body.theme-obsidian .studio-grid-overlay {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    }
+
+    .apple-glass {
+      background: var(--glass-bg);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid var(--glass-border);
+    }
+    .apple-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    }
+    .apple-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 22px 44px -12px rgba(0, 0, 0, 0.10);
+      border-color: rgba(184, 145, 70, 0.45);
+    }
+
+    .corner-bracket-tl {
+      width: 12px;
+      height: 12px;
+      border-top: 1.5px solid currentColor;
+      border-left: 1.5px solid currentColor;
+      opacity: 0.45;
+    }
+    .corner-bracket-tr {
+      width: 12px;
+      height: 12px;
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+      opacity: 0.45;
+    }
+    .corner-bracket-bl {
+      width: 12px;
+      height: 12px;
+      border-bottom: 1.5px solid currentColor;
+      border-left: 1.5px solid currentColor;
+      opacity: 0.45;
+    }
+    .corner-bracket-br {
+      width: 12px;
+      height: 12px;
+      border-bottom: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+      opacity: 0.45;
+    }
+
+    /* Curved Fan / Arc Reel Carousel */
+    .reel-arc-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 36px 16px 60px;
+      perspective: 1400px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .reel-arc-stage::-webkit-scrollbar { display: none; }
+    .reel-card {
+      position: relative;
+      width: 174px;
+      height: 278px;
+      flex-shrink: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 22px 44px -15px rgba(0, 0, 0, 0.18);
+      border: 2px solid rgba(255, 255, 255, 0.75);
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.35s ease;
+      transform-origin: center bottom;
+      background: #EAE8E3;
+    }
+    @media (min-width: 1024px) {
+      .reel-card { width: 186px; height: 298px; }
+      .reel-card[data-arc="-3"] { transform: translateY(44px) rotate(-9deg) scale(0.93); }
+      .reel-card[data-arc="-2"] { transform: translateY(22px) rotate(-6deg) scale(0.96); }
+      .reel-card[data-arc="-1"] { transform: translateY(6px) rotate(-3deg) scale(0.985); }
+      .reel-card[data-arc="0"]  { transform: translateY(-4px) rotate(0deg) scale(1.03); z-index: 10; }
+      .reel-card[data-arc="1"]  { transform: translateY(6px) rotate(3deg) scale(0.985); }
+      .reel-card[data-arc="2"]  { transform: translateY(22px) rotate(6deg) scale(0.96); }
+      .reel-card[data-arc="3"]  { transform: translateY(44px) rotate(9deg) scale(0.93); }
+    }
+    .reel-card:hover, .reel-card.active-reel {
+      transform: translateY(-18px) rotate(0deg) scale(1.07) !important;
+      z-index: 30 !important;
+      box-shadow: 0 32px 64px -12px rgba(24, 48, 40, 0.32);
+      border-color: #C5A059;
+    }
+    .reel-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reel-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .scroll-chapter-card {
+      transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+    }
+    .scroll-chapter-card.chapter-active {
+      border-color: rgba(197, 160, 89, 0.65);
+      box-shadow: 0 28px 60px -15px rgba(0, 0, 0, 0.14);
+    }
+
+    body.pure-3d-mode main {
+      opacity: 0.04;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+    main {
+      transition: opacity 0.5s ease;
+    }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(120, 120, 128, 0.35); border-radius: 9999px; }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-[#183028] selection:text-white">
+
+  <!-- Fixed Full-Screen Lookbook Model Stage -->
+  <div id="threeStageContainer" aria-hidden="true">
+    <canvas id="mannequinCanvas"></canvas>
+    <div class="absolute inset-0 studio-grid-overlay pointer-events-none"></div>
+    <div id="stageVignette" class="absolute inset-0 pointer-events-none"
+         style="background: radial-gradient(circle at 52% 38%, rgba(245,244,240,0.02) 0%, rgba(245,244,240,0.34) 56%, rgba(245,244,240,0.90) 100%);"></div>
+  </div>
+
+  <!-- Top Storefront Announcement Bar + Main Navigation -->
+  <header class="sticky top-0 z-40 px-4 sm:px-8 pt-3 pb-2">
+    <div class="max-w-7xl mx-auto flex flex-col gap-2">
+      <div class="hidden sm:flex items-center justify-between text-[11px] font-medium tracking-wider uppercase opacity-75 px-3">
+        <span>HỢP GU ATELIER · BỘ SƯU TẬP XUÂN HÈ</span>
+        <span>MIỄN PHÍ VẬN CHUYỂN ĐƠN TỪ 499.000₫</span>
+        <span>ĐỔI TRẢ MIỄN PHÍ TRONG 30 NGÀY</span>
+      </div>
+
+      <div class="apple-glass rounded-full px-3 sm:px-5 py-2.5 flex items-center justify-between shadow-sm">
+        <button id="brandHomeBtn" type="button" class="flex items-center gap-2.5 text-left group focus:outline-none">
+          <span class="w-8 h-8 rounded-full bg-[#183028] text-white flex items-center justify-center font-serif text-sm font-bold tracking-wider group-hover:bg-[#C5A059] transition-colors">H</span>
+          <span class="font-serif font-bold tracking-wide text-lg sm:text-xl">Hợp Gu</span>
+          <span class="hidden md:inline-block text-[10px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-black/5 dark:bg-white/10 opacity-75">Atelier</span>
+        </button>
+
+        <nav class="flex items-center gap-1 overflow-x-auto max-w-full py-0.5" aria-label="Điều hướng chính">
+          <button type="button" data-nav-target="runway" class="nav-tab-btn px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-[#183028] text-white shadow-sm whitespace-nowrap">
+            Bộ Sưu Tập Mới
+          </button>
+          <button type="button" data-nav-target="search" class="nav-tab-btn px-4 py-1.5 rounded-full text-xs font-medium opacity-75 hover:opacity-100 transition-all whitespace-nowrap">
+            Phối Đồ &amp; Tìm Kiếm
+          </button>
+          <button type="button" data-nav-target="catalog" class="nav-tab-btn px-4 py-1.5 rounded-full text-xs font-medium opacity-75 hover:opacity-100 transition-all whitespace-nowrap">
+            Cửa Hàng
+          </button>
+          <button type="button" data-nav-target="metrics" class="nav-tab-btn px-4 py-1.5 rounded-full text-xs font-medium opacity-75 hover:opacity-100 transition-all whitespace-nowrap">
+            Về Hợp Gu &amp; Dịch Vụ
+          </button>
+        </nav>
+
+        <div class="flex items-center gap-1.5">
+          <button id="openSizeGuideBtn" type="button" class="hidden md:inline-flex items-center px-3 py-1.5 rounded-full text-[11px] font-medium border border-black/10 dark:border-white/20 hover:border-[#C5A059] transition-colors">
+            📏 Bảng Size
+          </button>
+          <button id="downloadFullHtmlBtn" type="button" class="hidden xl:inline-flex items-center px-3 py-1.5 rounded-full text-[11px] font-medium border border-black/10 dark:border-white/20 hover:border-[#C5A059] transition-colors" title="Tải xuống bản HTML độc lập đã tích hợp toàn bộ">
+            ⬇ Tải Web Đầy Đủ
+          </button>
+          <button id="cycleLightingBtn" type="button" class="hidden lg:inline-flex items-center px-3 py-1.5 rounded-full text-[11px] font-medium border border-black/10 dark:border-white/20 hover:border-[#C5A059] transition-colors">
+            ☀ Giao diện: Sáng
+          </button>
+          <button id="openSavedBagBtn" type="button" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-black/5 dark:bg-white/10 hover:bg-black/10 transition-colors">
+            <span>Giỏ Hàng</span>
+            <span id="savedCountBadge" class="w-5 h-5 rounded-full bg-[#183028] text-white text-[11px] font-mono flex items-center justify-center">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Lookbook View Toggle Button -->
+  <div class="fixed bottom-5 right-5 z-40 flex items-center gap-2">
+    <button id="peek3dSculptureBtn" type="button" class="apple-glass px-4 py-2 rounded-full text-xs font-medium shadow-lg hover:border-[#C5A059] transition-all flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-[#C5A059]"></span>
+      <span id="peek3dLabel">Xem Ảnh Lookbook Đầy Màn Hình</span>
+    </button>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 pb-28">
+
+    <!-- VIEW 01: BỘ SƯU TẬP & LOOKBOOK THỜI TRANG -->
+    <section id="view-runway" class="space-y-0">
+
+      <!-- HERO SECTION -->
+      <div class="min-h-[86vh] flex flex-col justify-between py-8 sm:py-14 relative">
+        <div class="flex items-center justify-between text-[11px] uppercase tracking-[0.18em] opacity-60">
+          <span>BỘ SƯU TẬP THỜI TRANG THIẾT KẾ</span>
+          <span class="hidden sm:inline">CHẤT LIỆU TỰ NHIÊN · PHOM DÁNG CHUẨN Á ĐÔNG</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-center my-auto py-8">
+          <div class="lg:col-span-6 text-left relative pl-3 sm:pl-5 py-4">
+            <div class="corner-bracket-tl mb-5"></div>
+
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/80 dark:bg-white/10 border border-black/10 text-[11px] font-medium tracking-wide mb-5 shadow-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#183028] dark:bg-[#E5C158]"></span>
+              <span id="stageLookBadge">Look 01 · Dạo Phố Thanh Lịch</span>
+            </div>
+
+            <h1 id="stageLookTitle" class="font-serif text-4xl sm:text-6xl xl:text-[68px] font-bold tracking-tight leading-[1.05] mb-5">
+              Thanh Lịch<br/>
+              Từng Đường Nét<br/>
+              <span class="italic font-normal text-[#183028] dark:text-[#E5C158]">Thời Trang Hiện Đại.</span>
+            </h1>
+
+            <p class="text-sm sm:text-base opacity-80 max-w-md leading-relaxed mb-6">
+              Khám phá 4 gợi ý phối đồ ứng dụng cao cho mùa mới — từ chất liệu Linen thoáng mát dạo phố, lụa công sở mềm mại đến phong cách năng động thường ngày.
+            </p>
+
+            <div class="corner-bracket-bl mb-6"></div>
+
+            <div class="flex flex-wrap items-center gap-3.5">
+              <button id="tryLookInSearchBtn" type="button"
+                      class="px-6 py-3.5 rounded-full bg-[#183028] text-white hover:opacity-95 text-xs uppercase tracking-wider font-semibold transition-all shadow-sm flex items-center gap-2">
+                <span>Mua Trọn Bộ Đang Mặc →</span>
+              </button>
+              <a href="#scrollChaptersStart" class="px-5 py-3.5 rounded-full apple-glass text-xs font-medium hover:border-[#C5A059] transition-colors">
+                Khám phá 4 Phong Cách ↓
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden lg:block lg:col-span-6"></div>
+        </div>
+
+        <!-- Bottom Highlights Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+          <div class="apple-glass rounded-2xl p-4 flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-[#183028]/10 dark:bg-white/10 flex items-center justify-center text-base">🌿</span>
+            <div>
+              <div class="text-xs font-bold">Chất Liệu Tuyển Chọn</div>
+              <div class="text-[11px] opacity-70">Linen tự nhiên, lụa tơ tằm &amp; cotton thoáng khí</div>
+            </div>
+          </div>
+
+          <div class="apple-glass rounded-2xl p-4 flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-[#183028]/10 dark:bg-white/10 flex items-center justify-center text-base">✂️</span>
+            <div>
+              <div class="text-xs font-bold">May Đo Tinh Tế</div>
+              <div class="text-[11px] opacity-70">Tôn dáng, che khuyết điểm và thoải mái vận động</div>
+            </div>
+          </div>
+
+          <div class="apple-glass rounded-2xl p-4 flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-[#183028]/10 dark:bg-white/10 flex items-center justify-center text-base">🎁</span>
+            <div>
+              <div class="text-xs font-bold">Đóng Gói Cao Cấp</div>
+              <div class="text-[11px] opacity-70">Hộp quà chỉn chu, hỗ trợ đổi size tận nơi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 02: 4 BỘ PHỐI LOOKBOOK CHI TIẾT -->
+      <div id="scrollChaptersStart" class="pt-24 pb-16 space-y-20">
+        <div class="max-w-3xl mx-auto text-center space-y-4 apple-glass rounded-3xl p-6 sm:p-8 shadow-sm">
+          <span class="text-[11px] uppercase tracking-[0.2em] opacity-60">LOOKBOOK XUÂN HÈ</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">
+            4 Phong Cách Chủ Đạo Mùa Này
+          </h2>
+          <p class="text-xs sm:text-sm opacity-75 max-w-xl mx-auto leading-relaxed">
+            Mỗi bộ trang phục được đội ngũ stylist của Hợp Gu kết hợp sẵn từ áo, quần/váy đến túi xách và phụ kiện đồng điệu.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-2.5 pt-2">
+            <button type="button" data-look-index="0" class="look-Quick-btn px-4 py-2 rounded-full text-xs font-medium bg-[#183028] text-white shadow-sm transition-all">
+              Look 01 · Dạo Phố
+            </button>
+            <button type="button" data-look-index="1" class="look-Quick-btn px-4 py-2 rounded-full text-xs font-medium apple-glass hover:border-[#C5A059] transition-all">
+              Look 02 · Công Sở
+            </button>
+            <button type="button" data-look-index="2" class="look-Quick-btn px-4 py-2 rounded-full text-xs font-medium apple-glass hover:border-[#C5A059] transition-all">
+              Look 03 · Năng Động
+            </button>
+            <button type="button" data-look-index="3" class="look-Quick-btn px-4 py-2 rounded-full text-xs font-medium apple-glass hover:border-[#C5A059] transition-all">
+              Look 04 · Dạo Biển &amp; Resort
+            </button>
+          </div>
+        </div>
+
+        <div id="verticalChaptersList" class="space-y-24"></div>
+
+        <!-- Sticky/Floating Live Outfit Dock -->
+        <div class="sticky bottom-5 z-30 max-w-4xl mx-auto apple-glass rounded-3xl p-3.5 sm:p-5 shadow-xl border border-black/10">
+          <div class="flex flex-wrap items-center justify-between gap-2 px-2 pb-3 text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span id="activeModelCaption" class="font-semibold">Trang phục đang hiển thị: Look 01 · Dạo Phố Cuối Tuần</span>
+            </div>
+            <span class="text-[11px] opacity-65">Chọn từng sản phẩm bên dưới để xem chi tiết &amp; thêm vào giỏ</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <button id="hotspotTopBtn" type="button" class="apple-card rounded-2xl p-3 flex items-center gap-3 text-left group">
+              <img id="hotspotTopThumb" src="https://placehold.co/120x120/F2F2F4/183028?text=Top" onerror="this.onerror=null;this.src='https://placehold.co/120x120/F2F2F4/183028?text=Top';" alt="Áo" class="w-12 h-12 rounded-xl object-cover bg-white shrink-0 border border-black/5" />
+              <div class="min-w-0 flex-1">
+                <div class="text-[10px] uppercase tracking-wider opacity-50">Áo / Đầm</div>
+                <div id="hotspotTopName" class="text-xs font-semibold truncate group-hover:text-[#C5A059] transition-colors">Áo Sơ Mi Nữ</div>
+                <div id="hotspotTopPrice" class="text-[11px] font-mono opacity-75">240.000₫</div>
+              </div>
+            </button>
+
+            <button id="hotspotBottomBtn" type="button" class="apple-card rounded-2xl p-3 flex items-center gap-3 text-left group">
+              <img id="hotspotBottomThumb" src="https://placehold.co/120x120/F2F2F4/183028?text=Bottom" onerror="this.onerror=null;this.src='https://placehold.co/120x120/F2F2F4/183028?text=Bottom';" alt="Quần / Chân váy" class="w-12 h-12 rounded-xl object-cover bg-white shrink-0 border border-black/5" />
+              <div class="min-w-0 flex-1">
+                <div class="text-[10px] uppercase tracking-wider opacity-50">Quần / Giày</div>
+                <div id="hotspotBottomName" class="text-xs font-semibold truncate group-hover:text-[#C5A059] transition-colors">Quần Jean Nữ</div>
+                <div id="hotspotBottomPrice" class="text-[11px] font-mono opacity-75">198.000₫</div>
+              </div>
+            </button>
+
+            <button id="hotspotAccBtn" type="button" class="apple-card rounded-2xl p-3 flex items-center gap-3 text-left group">
+              <img id="hotspotAccThumb" src="https://placehold.co/120x120/F2F2F4/183028?text=Bag" onerror="this.onerror=null;this.src='https://placehold.co/120x120/F2F2F4/183028?text=Bag';" alt="Phụ kiện" class="w-12 h-12 rounded-xl object-cover bg-white shrink-0 border border-black/5" />
+              <div class="min-w-0 flex-1">
+                <div class="text-[10px] uppercase tracking-wider opacity-50">Túi / Phụ Kiện</div>
+                <div id="hotspotAccName" class="text-xs font-semibold truncate group-hover:text-[#C5A059] transition-colors">Túi Xách Da</div>
+                <div id="hotspotAccPrice" class="text-[11px] font-mono opacity-75">156.000₫</div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 03: CURVED FAN REEL GALLERY -->
+      <div class="py-20 flex flex-col justify-center space-y-8">
+        <div class="text-center max-w-2xl mx-auto space-y-2 apple-glass rounded-3xl px-6 py-6">
+          <span class="text-[11px] uppercase tracking-[0.2em] opacity-60">THƯ VIỆN HÌNH ẢNH</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">
+            Cảm Hứng Phối Đồ Thường Ngày
+          </h2>
+          <p class="text-xs sm:text-sm opacity-75">
+            Chạm vào từng hình ảnh để xem set đồ tương ứng hoặc mở thông tin chi tiết của sản phẩm.
+          </p>
+        </div>
+
+        <div id="scrollyChaptersContainer" class="reel-arc-stage" aria-label="Bộ sưu tập người mẫu và sản phẩm"></div>
+      </div>
+
+      <!-- SECTION 04: SẢN PHẨM BÁN CHẠY & CHI TIẾT DỊCH VỤ / CHẤT LIỆU -->
+      <div class="py-16 space-y-20">
+        <div class="space-y-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 apple-glass rounded-3xl p-6">
+            <div>
+              <span class="text-[11px] uppercase tracking-[0.2em] opacity-60">SẢN PHẨM ĐƯỢC YÊU THÍCH</span>
+              <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight mt-1">Thiết Kế Nổi Bật Trong Tuần</h2>
+            </div>
+            <button type="button" id="jumpToCatalogFromRunwayBtn" class="px-5 py-2.5 rounded-full text-xs font-semibold bg-[#183028] text-white hover:opacity-90 transition-opacity self-start sm:self-auto">
+              Xem tất cả sản phẩm →
+            </button>
+          </div>
+
+          <div id="runwayFeaturedProductsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+
+        <!-- Chi tiết Chất liệu & Hướng dẫn bảo quản -->
+        <div class="apple-glass rounded-3xl p-6 sm:p-10 space-y-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-black/10 dark:border-white/10 pb-6">
+            <div>
+              <span class="text-[11px] uppercase tracking-[0.2em] opacity-60">CHẤT LƯỢNG TỪ SỢI VẢI</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Chất Liệu Chủ Đạo &amp; Cách Bảo Quản</h3>
+            </div>
+            <button id="openSizeGuideInlineBtn" type="button" class="px-4 py-2 rounded-full text-xs font-semibold border border-black/15 dark:border-white/20 hover:border-[#C5A059] self-start md:self-auto">
+              📏 Xem bảng quy đổi kích cỡ (S / M / L / XL)
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="apple-card rounded-2xl p-6 space-y-3">
+              <div class="text-xs font-mono uppercase tracking-wider text-[#183028] dark:text-[#E5C158] font-semibold">01 · Vải Linen Tự Nhiên</div>
+              <h4 class="text-base font-bold">Thoáng Mát &amp; Thấm Hút Tốt</h4>
+              <p class="text-xs opacity-75 leading-relaxed">
+                Được dệt từ sợi lanh tự nhiên đã qua xử lý làm mềm (washed linen), bề mặt vải có độ rủ nhẹ, càng mặc càng mềm và cực kỳ mát mẻ trong thời tiết nhiệt đới.
+              </p>
+              <div class="pt-2 text-[11px] opacity-65 border-t border-black/5">
+                • Giặt nhẹ bằng nước lạnh · Phơi nơi thoáng gió
+              </div>
+            </div>
+
+            <div class="apple-card rounded-2xl p-6 space-y-3">
+              <div class="text-xs font-mono uppercase tracking-wider text-[#183028] dark:text-[#E5C158] font-semibold">02 · Lụa Tổng Hợp Cao Cấp</div>
+              <h4 class="text-base font-bold">Mềm Mịn &amp; Ít Nhăn</h4>
+              <p class="text-xs opacity-75 leading-relaxed">
+                Bề mặt ánh nhẹ sang trọng, giữ phom áo sơ mi và đầm công sở đứng dáng suốt ngày dài làm việc mà không gây bí bách hay bám dính.
+              </p>
+              <div class="pt-2 text-[11px] opacity-65 border-t border-black/5">
+                • Ủi hơi nước ở nhiệt độ thấp · Không dùng chất tẩy mạnh
+              </div>
+            </div>
+
+            <div class="apple-card rounded-2xl p-6 space-y-3">
+              <div class="text-xs font-mono uppercase tracking-wider text-[#183028] dark:text-[#E5C158] font-semibold">03 · Denim &amp; Da Mềm</div>
+              <h4 class="text-base font-bold">Bền Bỉ &amp; Tôn Dáng</h4>
+              <p class="text-xs opacity-75 leading-relaxed">
+                Quần jean lưng cao sử dụng sợi cotton pha chút spandex co giãn nhẹ giúp ôm gọn vòng eo, kết hợp cùng dòng túi da PU cao cấp chống thấm nước.
+              </p>
+              <div class="pt-2 text-[11px] opacity-65 border-t border-black/5">
+                • Lộn trái khi giặt · Lau túi da bằng khăn ẩm mềm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- VIEW 02: TÌM KIẾM & GỢI Ý PHỐI ĐỒ -->
+    <section id="view-search" class="hidden space-y-8 pt-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-[11px] uppercase tracking-widest opacity-50">TÌM KIẾM NHANH</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight mt-1">Tìm Trang Phục Hợp Phong Cách</h2>
+        <p class="text-xs sm:text-sm opacity-75 mt-2">
+          Nhập tên món đồ, dịp mặc hoặc mức giá mong muốn để lọc nhanh các thiết kế phù hợp nhất.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto apple-glass rounded-3xl p-5 sm:p-7 shadow-md space-y-5">
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input id="aiSearchInput" type="text"
+                 placeholder="Nhập tên sản phẩm (VD: áo sơ mi trắng, quần jean ống rộng, đầm đi biển)..."
+                 class="flex-1 px-5 py-3.5 rounded-2xl bg-white/85 dark:bg-black/40 border border-black/10 text-sm focus:outline-none focus:border-[#C5A059]" />
+          <button id="runAiSearchBtn" type="button"
+                  class="px-7 py-3.5 rounded-2xl bg-[#183028] hover:bg-[#224237] text-white text-sm font-semibold transition-all shrink-0 shadow-sm">
+            Tìm sản phẩm
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs opacity-60 mr-1">Tìm nhanh:</span>
+          <button type="button" data-quick-query="áo sơ mi nữ form rộng đi làm dưới 350k" class="quick-query-chip px-3.5 py-1.5 rounded-full text-xs apple-card">Áo sơ mi nữ form rộng</button>
+          <button type="button" data-quick-query="quần jean nữ ống rộng lưng cao tôn dáng" class="quick-query-chip px-3.5 py-1.5 rounded-full text-xs apple-card">Quần jean ống rộng</button>
+          <button type="button" data-quick-query="túi xách nữ da mềm đeo chéo dưới 500k" class="quick-query-chip px-3.5 py-1.5 rounded-full text-xs apple-card">Túi xách da mềm</button>
+          <button type="button" data-quick-query="giày thể thao sneaker trắng êm chân" class="quick-query-chip px-3.5 py-1.5 rounded-full text-xs apple-card">Giày sneaker trắng</button>
+          <button type="button" data-quick-query="đầm váy midi linen đi biển" class="quick-query-chip px-3.5 py-1.5 rounded-full text-xs apple-card">Đầm midi đi biển</button>
+          <button type="button" data-quick-query="kính mát thời trang chống tia uv" class="quick-query-chip px-3.5 py-1.5 rounded-full text-xs apple-card">Kính mát thời trang</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-3 pt-3 border-t border-black/5 items-center">
+          <div class="md:col-span-5 flex items-center gap-2">
+            <input id="refImageInput" type="file" accept="image/*" class="hidden" />
+            <div id="refImageEmptyState" class="flex items-center gap-2 flex-wrap">
+              <button id="triggerFileSelectBtn" type="button" class="px-3.5 py-2 rounded-xl text-xs font-medium border border-black/15 hover:border-[#C5A059] transition-colors">
+                📷 Tìm theo ảnh mẫu…
+              </button>
+              <button id="useSampleRefImgBtn" type="button" class="px-3.5 py-2 rounded-xl text-xs font-medium bg-[#E3E7D3] text-[#183028] hover:opacity-90 transition-opacity">
+                Thử mẫu túi xách
+              </button>
+            </div>
+            <div id="refImagePreviewState" class="hidden items-center gap-2.5">
+              <img id="refImageThumb" src="https://placehold.co/80x80/F2F2F4/183028?text=Ref" alt="Ảnh mẫu" class="w-10 h-10 rounded-lg object-cover border border-black/10" />
+              <span id="refImageName" class="text-xs font-medium truncate max-w-[120px]">sample.jpg</span>
+              <button id="clearRefImageBtn" type="button" class="px-2.5 py-1 rounded-lg text-[11px] bg-red-500/10 text-red-600 font-medium">
+                ✕ Bỏ ảnh
+              </button>
+            </div>
+          </div>
+
+          <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-2.5 items-center">
+            <select id="searchCategorySelect" aria-label="Danh mục" class="px-3 py-2 rounded-xl bg-white/70 dark:bg-black/30 border border-black/10 text-xs">
+              <option value="">Tất cả danh mục</option>
+            </select>
+
+            <div class="px-2">
+              <div class="flex justify-between text-[11px] opacity-75 mb-0.5">
+                <span>Mức giá tối đa</span>
+                <span id="searchMaxPriceLabel" class="font-mono">Tất cả mức giá</span>
+              </div>
+              <input id="searchMaxPriceRange" type="range" min="0" max="1000000" step="50000" value="0" class="w-full accent-[#183028]" />
+            </div>
+
+            <select id="searchTopKSelect" aria-label="Số kết quả" class="px-3 py-2 rounded-xl bg-white/70 dark:bg-black/30 border border-black/10 text-xs">
+              <option value="6">Hiển thị 6 mẫu</option>
+              <option value="9" selected>Hiển thị 9 mẫu</option>
+              <option value="24">Hiển thị tất cả</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-black/5 text-xs">
+          <span id="parserSummaryText" class="opacity-75">Đang hiển thị tất cả danh mục · Mức giá: Tất cả</span>
+          <span id="backendStatusText" class="opacity-60">Backend: Đang kiểm tra…</span>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="flex items-center justify-between px-1">
+          <h3 id="searchResultsHeading" class="text-lg font-semibold">Sản phẩm phù hợp</h3>
+          <span class="text-xs opacity-60">Bấm vào sản phẩm để xem chi tiết chất liệu &amp; đánh giá</span>
+        </div>
+        <div id="searchResultsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+      </div>
+    </section>
+
+    <!-- VIEW 03: CỬA HÀNG / TẤT CẢ SẢN PHẨM -->
+    <section id="view-catalog" class="hidden space-y-8 pt-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <span class="text-[11px] uppercase tracking-widest opacity-50">DANH MỤC SẢN PHẨM</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">Tất Cả Thiết Kế</h2>
+        </div>
+        <button id="resetCatalogBtn" type="button" class="self-start sm:self-auto px-4 py-2 rounded-full text-xs font-medium apple-glass hover:border-[#C5A059]">
+          ↺ Đặt lại bộ lọc
+        </button>
+      </div>
+
+      <div class="apple-glass rounded-3xl p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+        <input id="catalogKeywordInput" type="text" placeholder="Tìm theo tên sản phẩm..." class="px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-black/30 border border-black/10 text-xs" />
+        <select id="catalogCategorySelect" aria-label="Lọc danh mục" class="px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-black/30 border border-black/10 text-xs">
+          <option value="">Tất cả danh mục</option>
+        </select>
+        <select id="catalogRatingSelect" aria-label="Lọc đánh giá" class="px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-black/30 border border-black/10 text-xs">
+          <option value="0">Tất cả đánh giá</option>
+          <option value="4.5">Từ 4.5★ trở lên</option>
+          <option value="4.8">Từ 4.8★ trở lên</option>
+        </select>
+        <select id="catalogSortSelect" aria-label="Sắp xếp" class="px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-black/30 border border-black/10 text-xs">
+          <option value="reviews_desc">Bán chạy nhất</option>
+          <option value="rating_desc">Đánh giá cao nhất</option>
+          <option value="price_asc">Giá: Thấp đến Cao</option>
+          <option value="price_desc">Giá: Cao đến Thấp</option>
+        </select>
+      </div>
+
+      <div id="catalogCountSummary" class="text-xs opacity-65 px-1">Đang hiển thị sản phẩm</div>
+      <div id="catalogGridContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </section>
+
+    <!-- VIEW 04: VỀ HỢP GU, CAM KẾT CHẤT LƯỢNG & DỊCH VỤ KHÁCH HÀNG -->
+    <section id="view-metrics" class="hidden space-y-12 pt-8">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-[11px] uppercase tracking-widest opacity-50">CÂU CHUYỆN THƯƠNG HIỆU</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">Về Hợp Gu Atelier</h2>
+        <p class="text-xs sm:text-sm opacity-75 leading-relaxed">
+          Ra đời với mong muốn mang lại tủ đồ tối giản, thanh lịch và dễ phối mỗi ngày cho phụ nữ và nam giới hiện đại tại Việt Nam.
+        </p>
+      </div>
+
+      <div id="evalCardsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+
+      <!-- Chính sách & Dịch vụ chi tiết -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="apple-glass rounded-3xl p-7 space-y-4">
+          <h3 class="font-serif text-2xl font-bold">Chính Sách Giao Hàng &amp; Đổi Trả</h3>
+          <ul class="space-y-3 text-xs sm:text-sm opacity-80 leading-relaxed">
+            <li>• <strong>Miễn phí vận chuyển toàn quốc</strong> cho mọi đơn hàng từ 499.000₫.</li>
+            <li>• <strong>Giao nhanh nội thành 2H</strong> tại TP.HCM và Hà Nội theo yêu cầu.</li>
+            <li>• <strong>Đổi size / đổi mẫu miễn phí trong 30 ngày</strong> kể từ ngày nhận hàng (sản phẩm còn nguyên tem mác, chưa qua giặt ủi).</li>
+            <li>• <strong>Kiểm tra hàng trước khi thanh toán (COD)</strong> hoặc thanh toán chuyển khoản / thẻ tiện lợi.</li>
+          </ul>
+        </div>
+
+        <div class="apple-glass rounded-3xl p-7 space-y-4">
+          <h3 class="font-serif text-2xl font-bold">Hệ Thống Cửa Hàng &amp; Liên Hệ</h3>
+          <ul class="space-y-3 text-xs sm:text-sm opacity-80 leading-relaxed">
+            <li>• <strong>Flagship Studio TP.HCM:</strong> 142 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh (09:00 – 22:00)</li>
+            <li>• <strong>Cửa hàng Thảo Điền:</strong> 48 Xuân Thủy, Thảo Điền, TP. Thủ Đức (09:30 – 21:30)</li>
+            <li>• <strong>Showroom Hà Nội:</strong> 68 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội (09:00 – 22:00)</li>
+            <li>• <strong>Hotline CSKH &amp; Tư vấn Size:</strong> <span class="font-mono font-semibold">1900 6868</span> · Email: <span class="font-mono">cskh@hopgu.vn</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-black/10 dark:border-white/10 apple-glass mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs opacity-75">
+      <div class="flex items-center gap-2.5">
+        <span class="w-6 h-6 rounded-full bg-[#183028] text-white flex items-center justify-center font-serif font-bold text-xs">H</span>
+        <span class="font-semibold">HỢP GU ATELIER</span>
+        <span>· Thời Trang Ứng Dụng &amp; Phụ Kiện</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-5">
+        <button type="button" id="footerSizeBtn" class="hover:underline">Bảng quy đổi kích cỡ</button>
+        <button type="button" id="footerAboutBtn" class="hover:underline">Chính sách đổi trả</button>
+        <button type="button" id="footerExportJsonBtn" class="hover:underline">Tải dữ liệu Catalog (.json)</button>
+        <span>© 2026 Hợp Gu Studio. Bảo lưu mọi quyền.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Detail Modal -->
+  <div id="productDetailModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-md p-4">
+    <div class="apple-glass bg-white/95 dark:bg-[#16171C]/95 rounded-3xl max-w-xl w-full p-6 relative shadow-2xl border border-black/10">
+      <button id="closeProductModalBtn" type="button" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center text-sm font-bold">✕</button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div id="sizeGuideModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-md p-4">
+    <div class="apple-glass bg-white/95 dark:bg-[#16171C]/95 rounded-3xl max-w-lg w-full p-6 relative shadow-2xl border border-black/10 space-y-4">
+      <div class="flex items-center justify-between border-b border-black/10 pb-3">
+        <div>
+          <span class="text-[10px] uppercase tracking-widest opacity-55">HƯỚNG DẪN CHỌN SIZE</span>
+          <h3 class="font-serif text-2xl font-bold">Bảng Quy Đổi Kích Cỡ Chuẩn</h3>
+        </div>
+        <button id="closeSizeGuideBtn" type="button" class="w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center text-sm font-bold">✕</button>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="border-b border-black/10 font-semibold">
+              <th class="py-2.5 px-2">Size</th>
+              <th class="py-2.5 px-2">Chiều cao (cm)</th>
+              <th class="py-2.5 px-2">Cân nặng (kg)</th>
+              <th class="py-2.5 px-2">Vòng ngực / Eo (cm)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-black/5 font-mono text-[11px]">
+            <tr>
+              <td class="py-2.5 px-2 font-bold">S</td>
+              <td class="py-2.5 px-2">150 – 158</td>
+              <td class="py-2.5 px-2">42 – 48</td>
+              <td class="py-2.5 px-2">82 / 64</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-2 font-bold">M</td>
+              <td class="py-2.5 px-2">156 – 164</td>
+              <td class="py-2.5 px-2">49 – 55</td>
+              <td class="py-2.5 px-2">86 / 68</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-2 font-bold">L</td>
+              <td class="py-2.5 px-2">160 – 168</td>
+              <td class="py-2.5 px-2">56 – 62</td>
+              <td class="py-2.5 px-2">90 / 72</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-2 font-bold">XL</td>
+              <td class="py-2.5 px-2">164 – 172</td>
+              <td class="py-2.5 px-2">63 – 70</td>
+              <td class="py-2.5 px-2">94 / 76</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-[11px] opacity-70 leading-relaxed">
+        * Mẹo chọn nhanh: Nếu bạn thích mặc rộng thoải mái (oversized) hoặc số đo nằm giữa 2 size, hãy ưu tiên chọn lớn hơn 1 size. Hỗ trợ đổi size tận nhà miễn phí trong 30 ngày.
+      </p>
+    </div>
+  </div>
+
+  <!-- Saved Shopping Bag Drawer Modal -->
+  <div id="savedBagModal" class="fixed inset-0 z-50 hidden items-center justify-end bg-black/50 backdrop-blur-sm">
+    <div class="apple-glass bg-white/95 dark:bg-[#16171C]/95 h-full w-full max-w-md p-6 flex flex-col justify-between shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-black/10">
+        <div>
+          <h3 class="text-lg font-bold">Giỏ Hàng Của Bạn</h3>
+          <p class="text-[11px] opacity-60">Miễn phí vận chuyển cho đơn từ 499.000₫</p>
+        </div>
+        <button id="closeSavedBagBtn" type="button" class="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center text-sm font-bold">✕</button>
+      </div>
+      <div id="savedBagList" class="flex-1 overflow-y-auto py-4 space-y-3"></div>
+      <div class="pt-4 border-t border-black/10 space-y-3">
+        <div class="flex items-center justify-between text-sm font-semibold">
+          <span>Tổng cộng tạm tính</span>
+          <span id="savedBagTotal" class="font-mono text-base">0₫</span>
+        </div>
+        <div id="checkoutFeedbackBanner" class="hidden p-3 rounded-xl bg-emerald-600/15 text-emerald-800 dark:text-emerald-300 text-xs font-medium text-center">
+          ✓ Đặt hàng thành công! Đội ngũ Hợp Gu sẽ liên hệ xác nhận giao hàng cho bạn.
+        </div>
+        <button id="checkoutBagBtn" type="button" class="w-full py-3 rounded-2xl bg-[#183028] text-white text-xs font-semibold hover:opacity-95 transition-opacity">
+          Tiến hành đặt hàng
+        </button>
+        <button id="clearSavedBagBtn" type="button" class="w-full py-2 rounded-2xl border border-red-500/30 text-red-600 text-xs font-semibold hover:bg-red-500/10 transition-colors">
+          Làm trống giỏ hàng
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic & Lookbook Backdrop Engine -->
+  <script>
+    let CATALOG_DATA = [];
+    let RECOMMENDATION_DATA = [];
+    let backendState = "LOADING";
+    let activeSearchRequest = 0;
+
+    // DEV ONLY: retained as an unused visual-reference fixture from the
+    // original mockup. Production catalog and search never read this array.
+    const DEV_ONLY_CATALOG_UNUSED = [
+      {
+        product_id: "146635373",
+        product_name: "Áo Sơ Mi Nữ Trắng Form Rộng Linen Cao Cấp",
+        category: "womens_fashion",
+        price_vnd: 240000,
+        rating: 4.9,
+        review_count: 842,
+        sizes: ["S", "M", "L"],
+        material: "100% Linen tự nhiên thoáng mát",
+        image_uri: "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Chất vải linen thoáng mát, mặc đi làm hay dạo phố đều rất sang."
+      },
+      {
+        product_id: "146957711",
+        product_name: "Quần Jean Nữ Ống Rộng Lưng Cao Tôn Dáng",
+        category: "womens_fashion",
+        price_vnd: 198000,
+        rating: 4.8,
+        review_count: 1205,
+        sizes: ["S", "M", "L", "XL"],
+        material: "Denim Cotton pha Spandex co giãn nhẹ",
+        image_uri: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Form quần chuẩn, che khuyết điểm tốt, vải denim mềm mại."
+      },
+      {
+        product_id: "93127044",
+        product_name: "Túi Xách Nữ Da Mềm Đeo Chéo Phong Cách Cổ Điển",
+        category: "bags_wallets",
+        price_vnd: 156000,
+        rating: 4.7,
+        review_count: 619,
+        sizes: ["Freesize"],
+        material: "Da PU mềm cao cấp chống thấm",
+        image_uri: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Da mềm, đường may chắc chắn, đựng vừa điện thoại và ví nhỏ."
+      },
+      {
+        product_id: "187278904",
+        product_name: "Áo Sơ Mi Lụa Công Sở Tay Phồng Hồng Đất Thanh Lịch",
+        category: "womens_fashion",
+        price_vnd: 285000,
+        rating: 4.9,
+        review_count: 530,
+        sizes: ["S", "M", "L"],
+        material: "Lụa tơ nhân tạo mềm mịn ít nhăn",
+        image_uri: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Vải lụa mịn mát, không nhăn, màu hồng đất tôn da cực kỳ."
+      },
+      {
+        product_id: "20161951",
+        product_name: "Quần Tây Nữ Ống Suông Kem Lưng Cao Công Sở",
+        category: "womens_fashion",
+        price_vnd: 260000,
+        rating: 4.8,
+        review_count: 412,
+        sizes: ["S", "M", "L", "XL"],
+        material: "Vải tuyết mưa dày dặn đứng phom",
+        image_uri: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Quần lên dáng suông thẳng tắp, phối với áo sơ mi rất hợp."
+      },
+      {
+        product_id: "277943671",
+        product_name: "Túi Xách Nữ Đỏ Rượu Vang Khóa Vàng Sang Trọng",
+        category: "bags_wallets",
+        price_vnd: 320000,
+        rating: 4.9,
+        review_count: 389,
+        sizes: ["Freesize"],
+        material: "Da Microfiber đứng phom, khóa mạ vàng",
+        image_uri: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Màu đỏ rượu bên ngoài đẹp hơn trong ảnh, form túi cứng cáp."
+      },
+      {
+        product_id: "276492318",
+        product_name: "Áo Thun Croptop Nữ Ôm Body Năng Động",
+        category: "womens_fashion",
+        price_vnd: 145000,
+        rating: 4.8,
+        review_count: 950,
+        sizes: ["S", "M", "L"],
+        material: "Thun gân Cotton 100% co giãn 4 chiều",
+        image_uri: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Thun gân co giãn 4 chiều, ôm gọn dáng và thấm hút mồ hôi tốt."
+      },
+      {
+        product_id: "276117054",
+        product_name: "Giày Thể Thao Sneaker Trắng Đế Êm Năng Động",
+        category: "footwear",
+        price_vnd: 390000,
+        rating: 4.9,
+        review_count: 1420,
+        sizes: ["36", "37", "38", "39", "40"],
+        material: "Da tổng hợp mềm, đế cao su êm chân",
+        image_uri: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Đi rất êm chân, phối đồ dạo phố hay đi học đều đẹp."
+      },
+      {
+        product_id: "20007807",
+        product_name: "Tai Nghe Chụp Tai Không Dây Phong Cách Retro",
+        category: "electronics_accessories",
+        price_vnd: 590000,
+        rating: 4.9,
+        review_count: 1120,
+        sizes: ["Freesize"],
+        material: "Khung hợp kim nhẹ & Đệm da êm ái",
+        image_uri: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Âm ấm, đệm tai êm, đeo làm phụ kiện phối đồ dạo phố cực chất."
+      },
+      {
+        product_id: "185821620",
+        product_name: "Đầm Váy Midi Linen Cổ Vuông Nâu Terracotta",
+        category: "womens_fashion",
+        price_vnd: 340000,
+        rating: 4.9,
+        review_count: 675,
+        sizes: ["S", "M", "L"],
+        material: "Linen tưng cao cấp có lớp lót lụa",
+        image_uri: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Đầm mặc đi biển hay dạo phố mùa hè đều xuất sắc, vải dày dặn."
+      },
+      {
+        product_id: "153570444",
+        product_name: "Giày Sandal Nữ Quai Mảnh Đế Bệt Đi Biển",
+        category: "footwear",
+        price_vnd: 185000,
+        rating: 4.7,
+        review_count: 340,
+        sizes: ["35", "36", "37", "38", "39"],
+        material: "Quai da vi sợi mềm, đế chống trượt",
+        image_uri: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Quai mềm không đau chân, màu kem dễ phối với đầm maxi."
+      },
+      {
+        product_id: "219152741",
+        product_name: "Túi Đeo Chéo Nhỏ Phối Cói Đi Biển Mùa Hè",
+        category: "bags_wallets",
+        price_vnd: 210000,
+        rating: 4.8,
+        review_count: 490,
+        sizes: ["Freesize"],
+        material: "Cói tự nhiên đan tay phối viền da",
+        image_uri: "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Túi nhỏ xinh, chụp hình ở resort cực kỳ ăn ảnh."
+      },
+      {
+        product_id: "15778666",
+        product_name: "Kem Chống Nắng Kiềm Dầu Dịu Nhẹ SPF50+",
+        category: "beauty_personal_care",
+        price_vnd: 275000,
+        rating: 4.9,
+        review_count: 2150,
+        sizes: ["50ml"],
+        material: "Chiết xuất rau má & Khoáng tự nhiên",
+        image_uri: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Thấm nhanh, không gây nhờn rít, nâng tông nhẹ tự nhiên."
+      },
+      {
+        product_id: "19823411",
+        product_name: "Áo Khoác Blazer Form Rộng Phong Cách Hàn Quốc",
+        category: "mens_fashion",
+        price_vnd: 420000,
+        rating: 4.8,
+        review_count: 510,
+        sizes: ["M", "L", "XL"],
+        material: "Vải Cashmere đứng phom, lót lụa",
+        image_uri: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Áo đứng form, lót trong mượt mà, mặc khoác ngoài rất lịch sự."
+      },
+      {
+        product_id: "88392014",
+        product_name: "Kính Mát Thời Trang Chống Tia UV400 Gọng Vuông",
+        category: "fashion_accessories",
+        price_vnd: 165000,
+        rating: 4.8,
+        review_count: 780,
+        sizes: ["Freesize"],
+        material: "Gọng Acetate bền nhẹ, tròng UV400",
+        image_uri: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Gọng kính chắc chắn, đeo êm mũi và chống chói nắng rất tốt."
+      },
+      {
+        product_id: "66481920",
+        product_name: "Đèn Bàn Trang Trí Minimalist Ánh Sáng Ấm",
+        category: "home_living",
+        price_vnd: 310000,
+        rating: 4.7,
+        review_count: 295,
+        sizes: ["Tiêu chuẩn"],
+        material: "Chụp vải Linen & Đế gỗ tự nhiên",
+        image_uri: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Thiết kế tối giản đẹp mắt, ánh sáng dịu mắt khi đọc sách đêm."
+      },
+      {
+        product_id: "30192831",
+        product_name: "Chân Váy Xếp Ly Dài Midi Lưng Cao Thanh Lịch",
+        category: "womens_fashion",
+        price_vnd: 235000,
+        rating: 4.9,
+        review_count: 610,
+        sizes: ["S", "M", "L"],
+        material: "Vải Tuyết Mưa dày dặn giữ nếp ly",
+        image_uri: "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Đường xếp ly sắc nét, giặt máy không bị mất form."
+      },
+      {
+        product_id: "30192832",
+        product_name: "Áo Sơ Mi Nam Oxford Dài Tay Trắng Chuẩn Phom",
+        category: "mens_fashion",
+        price_vnd: 295000,
+        rating: 4.8,
+        review_count: 740,
+        sizes: ["M", "L", "XL", "XXL"],
+        material: "100% Cotton Oxford thoáng khí",
+        image_uri: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Vải dày vừa phải, đứng cổ áo, mặc đi làm rất lịch lãm."
+      },
+      {
+        product_id: "30192833",
+        product_name: "Quần Âu Nam Ống Đứng Xám Đậm Co Giãn Nhẹ",
+        category: "mens_fashion",
+        price_vnd: 330000,
+        rating: 4.9,
+        review_count: 480,
+        sizes: ["29", "30", "31", "32", "34"],
+        material: "Vải Rayon pha Spandex chống nhăn",
+        image_uri: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Quần mặc thoải mái khi ngồi văn phòng cả ngày, đường chỉ tỉ mỉ."
+      },
+      {
+        product_id: "30192834",
+        product_name: "Giày Loafer Da Mềm Nữ Đế Thấp Phong Cách Vintage",
+        category: "footwear",
+        price_vnd: 360000,
+        rating: 4.8,
+        review_count: 525,
+        sizes: ["35", "36", "37", "38", "39"],
+        material: "Da Microfiber siêu mềm, lót đệm êm",
+        image_uri: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Da cực kỳ mềm, mang đi bộ nhiều không hề bị phồng chân."
+      },
+      {
+        product_id: "30192835",
+        product_name: "Khăn Lụa Vuông Họa Tiết Cổ Điển Phối Túi & Áo",
+        category: "fashion_accessories",
+        price_vnd: 120000,
+        rating: 4.9,
+        review_count: 410,
+        sizes: ["70x70cm"],
+        material: "Lụa Satin bóng mịn hai mặt",
+        image_uri: "https://images.unsplash.com/photo-1584030373081-f37b7bb4fa8e?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Màu sắc sang trọng, quàng cổ hay thắt nơ túi xách đều xinh."
+      },
+      {
+        product_id: "30192836",
+        product_name: "Thắt Lưng Nữ Da Bản Nhỏ Khóa Đồng Thanh Lịch",
+        category: "fashion_accessories",
+        price_vnd: 135000,
+        rating: 4.8,
+        review_count: 690,
+        sizes: ["Freesize"],
+        material: "Da bò lớp hai mềm bền, khóa hợp kim đồng",
+        image_uri: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Bản nhỏ vừa vặn để phối cùng quần tây lưng cao hoặc đầm sơ mi."
+      },
+      {
+        product_id: "30192837",
+        product_name: "Son Dưỡng Có Màu Hồng Đất Tự Nhiên Giàu Ẩm",
+        category: "beauty_personal_care",
+        price_vnd: 190000,
+        rating: 4.9,
+        review_count: 890,
+        sizes: ["3.5g"],
+        material: "Bơ hạt mỡ, dầu Jojoba & Vitamin E",
+        image_uri: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Màu hồng đất lên môi tự nhiên, mềm môi suốt cả ngày trong phòng máy lạnh."
+      },
+      {
+        product_id: "30192838",
+        product_name: "Nến Thơm Phòng Tinh Dầu Gỗ Tuyết Tùng & Trà Trắng",
+        category: "home_living",
+        price_vnd: 245000,
+        rating: 4.9,
+        review_count: 540,
+        sizes: ["200g"],
+        material: "Sáp đậu nành tự nhiên & Bấc gỗ",
+        image_uri: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80",
+        review_snippet: "Hương thơm thư giãn, nhẹ nhàng như mùi hương tại các boutique thời trang."
+      }
+    ];
+
+    const CATEGORY_LABELS = {
+      womens_fashion: "Thời trang nữ",
+      mens_fashion: "Thời trang nam",
+      footwear: "Giày dép",
+      bags_wallets: "Túi & Ví",
+      fashion_accessories: "Phụ kiện thời trang",
+      beauty_personal_care: "Làm đẹp & Sức khỏe",
+      electronics_accessories: "Điện tử & Phụ kiện",
+      home_living: "Nhà cửa & Đời sống",
+      home_appliances: "Điện gia dụng",
+      grocery: "Bách hóa",
+      books: "Sách",
+      "Thời trang nữ": "Thời trang nữ",
+      "Thời trang nam": "Thời trang nam",
+      "Làm đẹp & Sức khỏe": "Làm đẹp & Sức khỏe",
+      "Điện tử & Phụ kiện": "Điện tử & Phụ kiện",
+      "Nhà cửa & Đời sống": "Nhà cửa & Đời sống",
+      "Điện gia dụng": "Điện gia dụng",
+      "Bách hóa": "Bách hóa",
+      "Sách": "Sách"
+    };
+
+    function removeVietnameseTones(str) {
+      str = String(str || "").toLowerCase();
+      str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      str = str.replace(/[đĐ]/g, "d");
+      return str.replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>'"]/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
+      })[char]);
+    }
+
+    function safeProductImage(value) {
+      const path = String(value || "");
+      return /^\/data\/images\/[A-Za-z0-9._%\-]+$/.test(path) ? path : "";
+    }
+
+    function setBackendStatus(state, detail = "") {
+      backendState = state;
+      const el = document.getElementById("backendStatusText");
+      if (!el) return;
+      el.textContent = `Backend: ${state}${detail ? " · " + detail : ""}`;
+      el.className = state === "READY"
+        ? "text-emerald-700 dark:text-emerald-300 font-semibold"
+        : state === "FALLBACK"
+          ? "text-amber-700 dark:text-amber-300 font-semibold"
+          : "text-red-700 dark:text-red-300 font-semibold";
+    }
+
+    function populateCategoryDropdowns() {
+      const catSelect = document.getElementById("catalogCategorySelect");
+      const searchCatSelect = document.getElementById("searchCategorySelect");
+      if (!catSelect && !searchCatSelect) return;
+      const currentCat = catSelect ? catSelect.value : "";
+      const currentSearch = searchCatSelect ? searchCatSelect.value : "";
+
+      const rawCats = Array.from(new Set(CATALOG_DATA.map(item => item.category))).filter(Boolean);
+      rawCats.sort();
+      if (rawCats.length === 0) return;
+
+      const optsHtml = ['<option value="">Tất cả danh mục</option>']
+        .concat(rawCats.map(c => `<option value="${c}">${CATEGORY_LABELS[c] || c}</option>`))
+        .join("");
+
+      if (catSelect) {
+        catSelect.innerHTML = optsHtml;
+        if (currentCat) catSelect.value = currentCat;
+      }
+      if (searchCatSelect) {
+        searchCatSelect.innerHTML = optsHtml;
+        if (currentSearch) searchCatSelect.value = currentSearch;
+      }
+    }
+
+    const HERO_MODEL_PHOTO = "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85";
+
+    const LOOKBOOKS = [
+      {
+        index: 0,
+        code: "LOOK 01",
+        badge: "Look 01 · Dạo Phố Cuối Tuần",
+        title: "Dạo Phố",
+        subtitle: "Sơ Mi Linen Trắng & Quần Jean Ống Rộng",
+        caption: "Look 01 · Dạo Phố Cuối Tuần (Sơ Mi Linen & Jean Lưng Cao)",
+        story: "Sự kết hợp kinh điển giữa áo sơ mi trắng chất liệu linen thoáng mát, quần jean ống rộng lưng cao giúp kéo dài đôi chân và điểm xuyết bằng túi xách da mềm cổ điển.",
+        fabricNote: "Chất liệu: 100% Linen tự nhiên & Denim cotton mềm · Phù hợp: Cà phê cuối tuần, dạo phố",
+        modelPhoto: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85",
+        aiQuery: "áo sơ mi nữ trắng form rộng phối quần jean ống rộng và túi xách da nâu",
+        topId: "146635373",
+        bottomId: "146957711",
+        accId: "93127044",
+        accentHex: "#183028"
+      },
+      {
+        index: 1,
+        code: "LOOK 02",
+        badge: "Look 02 · Thanh Lịch Công Sở",
+        title: "Công Sở",
+        subtitle: "Sơ Mi Lụa Tay Phồng & Quần Tây Ống Suông",
+        caption: "Look 02 · Quý Cô Công Sở (Sơ Mi Lụa Hồng Đất & Túi Đỏ Rượu)",
+        story: "Tôn vinh nét nữ tính và chuyên nghiệp nơi văn phòng với áo sơ mi lụa tay phồng tông hồng đất dịu dàng, phối cùng quần tây kem ống suông và túi khóa vàng sang trọng.",
+        fabricNote: "Chất liệu: Lụa nhân tạo chống nhăn & Tuyết mưa cao cấp · Phù hợp: Đi làm, gặp gỡ đối tác",
+        modelPhoto: "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=1000&q=85",
+        aiQuery: "áo sơ mi nữ công sở tay phồng phối quần tây ống rộng và túi xách",
+        topId: "187278904",
+        bottomId: "20161951",
+        accId: "277943671",
+        accentHex: "#8C4A52"
+      },
+      {
+        index: 2,
+        code: "LOOK 03",
+        badge: "Look 03 · Năng Động Thường Ngày",
+        title: "Năng Động",
+        subtitle: "Áo Thun Croptop & Giày Sneaker Trắng",
+        caption: "Look 03 · Năng Động Thường Ngày (Croptop, Sneaker & Phụ Kiện)",
+        story: "Trẻ trung, khỏe khoắn cho những ngày di chuyển nhiều với áo thun gân co giãn 4 chiều, đôi sneaker trắng đế êm ái và tai nghe chụp tai phong cách retro.",
+        fabricNote: "Chất liệu: Thun gân Cotton 4 chiều & Da microfiber · Phù hợp: Dạo phố, du lịch, vận động",
+        modelPhoto: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85",
+        aiQuery: "áo thun nữ ôm body phối giày sneaker trắng và tai nghe",
+        topId: "276492318",
+        bottomId: "276117054",
+        accId: "20007807",
+        accentHex: "#2A473A"
+      },
+      {
+        index: 3,
+        code: "LOOK 04",
+        badge: "Look 04 · Kỳ Nghỉ Resort Mùa Hè",
+        title: "Resort",
+        subtitle: "Đầm Midi Linen Cổ Vuông & Túi Phối Cói",
+        caption: "Look 04 · Kỳ Nghỉ Mùa Hè (Đầm Linen Nâu Đất & Túi Phối Cói)",
+        story: "Mang trọn hơi thở biển cả và nắng ấm với thiết kế đầm midi cổ vuông tông nâu terracotta tôn da, kết hợp cùng sandal quai mảnh và túi đeo chéo phối cói.",
+        fabricNote: "Chất liệu: Linen tưng dày dặn & Cói đan thủ công · Phù hợp: Nghỉ dưỡng, dạo biển, tiệc trà",
+        modelPhoto: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85",
+        aiQuery: "đầm váy midi nữ cổ vuông dự tiệc dạo phố kèm túi đeo chéo nhỏ",
+        topId: "185821620",
+        bottomId: "153570444",
+        accId: "219152741",
+        accentHex: "#A85D3B"
+      }
+    ];
+
+    let currentLookIndex = 0;
+    let currentView = "runway";
+    let autoRotate = true;
+    let lightingThemeIndex = 0;
+    let uploadedRefImage = null;
+    let savedIds = [];
+
+    let targetVideoFrame = 0.0;
+    let smoothVideoFrame = 0.0;
+    let manualLookOverrideUntil = 0;
+
+    try {
+      const raw = localStorage.getItem("hopgu_v2_saved_ids");
+      if (raw) savedIds = JSON.parse(raw);
+    } catch (e) { savedIds = []; }
+
+    function saveBagState() {
+      try { localStorage.setItem("hopgu_v2_saved_ids", JSON.stringify(savedIds)); } catch (e) {}
+      const badge = document.getElementById("savedCountBadge");
+      if (badge) badge.textContent = String(savedIds.length);
+    }
+
+    function findProduct(pid) {
+      return RECOMMENDATION_DATA.find(item => String(item.product_id) === String(pid))
+        || CATALOG_DATA.find(item => String(item.product_id) === String(pid))
+        || null;
+    }
+
+    function formatVnd(amount) {
+      return Number(amount || 0).toLocaleString("vi-VN") + "₫";
+    }
+
+    function renderVerticalScrollChapters() {
+      const container = document.getElementById("verticalChaptersList");
+      if (!container) return;
+
+      container.innerHTML = LOOKBOOKS.map((look, idx) => {
+        const topItem = findProduct(look.topId);
+        const bottomItem = findProduct(look.bottomId);
+        const accItem = findProduct(look.accId);
+        const totalComboPrice = topItem.price_vnd + bottomItem.price_vnd + accItem.price_vnd;
+        const alignClass = idx % 2 === 0 ? "mr-auto" : "ml-auto";
+
+        return `
+          <div class="min-h-[48vh] flex items-center" data-scroll-chapter="${idx}">
+            <div class="scroll-chapter-card apple-glass rounded-3xl p-6 sm:p-8 max-w-lg w-full ${alignClass} shadow-lg relative">
+              <div class="corner-bracket-tl absolute top-3 left-3"></div>
+              <div class="corner-bracket-tr absolute top-3 right-3"></div>
+              <div class="corner-bracket-bl absolute bottom-3 left-3"></div>
+              <div class="corner-bracket-br absolute bottom-3 right-3"></div>
+
+              <div class="flex items-center justify-between text-[11px] font-medium uppercase tracking-widest opacity-60 mb-2">
+                <span>PHONG CÁCH 0${idx + 1} / 04</span>
+                <span>TRỌN BỘ: ${formatVnd(totalComboPrice)}</span>
+              </div>
+
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold tracking-tight">${look.subtitle}</h3>
+              <p class="text-xs sm:text-sm opacity-80 mt-2.5 leading-relaxed">${look.story}</p>
+              <div class="mt-3 px-3 py-2 rounded-xl bg-black/5 dark:bg-white/5 text-[11px] opacity-75">
+                ✦ ${look.fabricNote}
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-black/10 space-y-2.5">
+                <div class="text-[11px] font-medium uppercase tracking-wider opacity-60">Sản phẩm trong bộ phối này:</div>
+                <div class="grid grid-cols-3 gap-2.5">
+                  <button type="button" data-chapter-pid="${topItem.product_id}" class="apple-card rounded-xl p-2 text-left hover:border-[#C5A059]">
+                    <img src="${topItem.image_uri}" onerror="this.onerror=null;this.src='https://placehold.co/200x200/F2F2F4/183028?text=Hop+Gu';" alt="${topItem.product_name}" class="w-full h-16 object-cover bg-white rounded-lg mb-1.5" />
+                    <div class="text-[11px] font-semibold truncate">${topItem.product_name}</div>
+                    <div class="text-[10px] font-mono opacity-75">${formatVnd(topItem.price_vnd)}</div>
+                  </button>
+                  <button type="button" data-chapter-pid="${bottomItem.product_id}" class="apple-card rounded-xl p-2 text-left hover:border-[#C5A059]">
+                    <img src="${bottomItem.image_uri}" onerror="this.onerror=null;this.src='https://placehold.co/200x200/F2F2F4/183028?text=Hop+Gu';" alt="${bottomItem.product_name}" class="w-full h-16 object-cover bg-white rounded-lg mb-1.5" />
+                    <div class="text-[11px] font-semibold truncate">${bottomItem.product_name}</div>
+                    <div class="text-[10px] font-mono opacity-75">${formatVnd(bottomItem.price_vnd)}</div>
+                  </button>
+                  <button type="button" data-chapter-pid="${accItem.product_id}" class="apple-card rounded-xl p-2 text-left hover:border-[#C5A059]">
+                    <img src="${accItem.image_uri}" onerror="this.onerror=null;this.src='https://placehold.co/200x200/F2F2F4/183028?text=Hop+Gu';" alt="${accItem.product_name}" class="w-full h-16 object-cover bg-white rounded-lg mb-1.5" />
+                    <div class="text-[11px] font-semibold truncate">${accItem.product_name}</div>
+                    <div class="text-[10px] font-mono opacity-75">${formatVnd(accItem.price_vnd)}</div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-5 flex flex-wrap items-center justify-between gap-2">
+                <button type="button" data-activate-look="${idx}" class="px-4 py-2 rounded-full text-xs font-semibold border border-black/15 dark:border-white/20 hover:border-[#C5A059] transition-colors">
+                  Xem trên người mẫu
+                </button>
+                <button type="button" data-add-combo-look="${idx}" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#183028] text-white hover:opacity-90 transition-opacity">
+                  + Thêm cả 3 món vào giỏ
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      container.querySelectorAll("[data-chapter-pid]").forEach(btn => {
+        btn.addEventListener("click", () => openProductModal(btn.getAttribute("data-chapter-pid")));
+      });
+      container.querySelectorAll("[data-activate-look]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const idx = Number(btn.getAttribute("data-activate-look"));
+          manualLookOverrideUntil = performance.now() + 4500;
+          targetVideoFrame = idx + 1;
+          selectLookbook(idx, false);
+        });
+      });
+      container.querySelectorAll("[data-add-combo-look]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const idx = Number(btn.getAttribute("data-add-combo-look"));
+          const look = LOOKBOOKS[idx];
+          [look.topId, look.bottomId, look.accId].forEach(pid => {
+            if (!savedIds.includes(String(pid))) savedIds.push(String(pid));
+          });
+          saveBagState();
+          runAiSearch();
+          renderCatalogView();
+          renderRunwayFeaturedProducts();
+          renderSavedBagList();
+          const m = document.getElementById("savedBagModal");
+          if (m) { m.classList.remove("hidden"); m.classList.add("flex"); }
+        });
+      });
+    }
+
+    function getReelCards() {
+      const pHeadphone = findProduct("20007807") || CATALOG_DATA[0];
+      const pSneaker = findProduct("276117054") || CATALOG_DATA[1];
+      const pSkincare = findProduct("15778666") || CATALOG_DATA[2];
+      return [
+        { arc: -3, type: "look", lookIndex: 0, tag: "Look 01", title: "Dạo Phố Linen", subtitle: "3 sản phẩm phối sẵn", img: LOOKBOOKS[0].modelPhoto },
+        { arc: -2, type: "product", lookIndex: 2, productId: pHeadphone.product_id, tag: "Phụ kiện", title: "Tai Nghe Retro", subtitle: formatVnd(pHeadphone.price_vnd), img: pHeadphone.image_uri },
+        { arc: -1, type: "look", lookIndex: 1, tag: "Look 02", title: "Quý Cô Công Sở", subtitle: "3 sản phẩm phối sẵn", img: LOOKBOOKS[1].modelPhoto },
+        { arc:  0, type: "look", lookIndex: 2, tag: "Look 03", title: "Năng Động", subtitle: "3 sản phẩm phối sẵn", img: LOOKBOOKS[2].modelPhoto },
+        { arc:  1, type: "product", lookIndex: 2, productId: pSneaker.product_id, tag: "Giày dép", title: "Sneaker Trắng", subtitle: formatVnd(pSneaker.price_vnd), img: pSneaker.image_uri },
+        { arc:  2, type: "look", lookIndex: 3, tag: "Look 04", title: "Resort Mùa Hè", subtitle: "3 sản phẩm phối sẵn", img: LOOKBOOKS[3].modelPhoto },
+        { arc:  3, type: "product", lookIndex: 3, productId: pSkincare.product_id, tag: "Làm đẹp", title: "Kem Chống Nắng", subtitle: formatVnd(pSkincare.price_vnd), img: pSkincare.image_uri }
+      ];
+    }
+
+    function renderCurvedFanReels() {
+      const container = document.getElementById("scrollyChaptersContainer");
+      if (!container) return;
+      const cards = getReelCards();
+      container.innerHTML = cards.map((c, idx) => {
+        const isActive = c.lookIndex === currentLookIndex && c.type === "look";
+        return `
+          <div class="reel-card ${isActive ? 'active-reel' : ''}"
+               data-arc="${c.arc}"
+               data-reel-idx="${idx}"
+               data-look-index="${c.lookIndex}"
+               data-product-id="${c.productId || ''}">
+            <img src="${c.img}" onerror="this.onerror=null;this.src='https://placehold.co/400x600/EAE8E3/183028?text=Lookbook';" alt="${c.title}" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-medium uppercase tracking-wider bg-black/45 text-white backdrop-blur-md">
+                ${c.tag}
+              </span>
+              ${c.type === 'look' ? '<span class="w-6 h-6 rounded-full bg-white/90 text-[#183028] flex items-center justify-center text-[10px] font-bold shadow">✦</span>' : ''}
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center gap-2 text-white">
+              <div class="min-w-0 text-left">
+                <div class="text-xs font-semibold truncate">${c.title}</div>
+                <div class="text-[10px] opacity-80 truncate">${c.subtitle}</div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      container.querySelectorAll(".reel-card").forEach(cardEl => {
+        cardEl.addEventListener("click", () => {
+          const lIdx = Number(cardEl.getAttribute("data-look-index") || 0);
+          const pid = cardEl.getAttribute("data-product-id");
+          manualLookOverrideUntil = performance.now() + 4500;
+          targetVideoFrame = lIdx + 1;
+          selectLookbook(lIdx, false);
+          if (pid) openProductModal(pid);
+        });
+      });
+    }
+
+    function renderRunwayFeaturedProducts() {
+      const grid = document.getElementById("runwayFeaturedProductsGrid");
+      if (!grid) return;
+      const featuredIds = ["146635373", "187278904", "276492318", "185821620", "93127044", "19823411"];
+      const items = featuredIds.map(id => findProduct(id));
+      grid.innerHTML = items.map(item => renderCleanProductCard(item, true)).join("");
+      attachProductCardListeners(grid);
+    }
+
+    function selectLookbook(index, updateVideoTarget = true) {
+      currentLookIndex = (index + LOOKBOOKS.length) % LOOKBOOKS.length;
+      const look = LOOKBOOKS[currentLookIndex];
+      if (updateVideoTarget) {
+        manualLookOverrideUntil = performance.now() + 4500;
+        targetVideoFrame = currentLookIndex + 1;
+      }
+
+      const badgeEl = document.getElementById("stageLookBadge");
+      const captionEl = document.getElementById("activeModelCaption");
+      if (badgeEl) badgeEl.textContent = look.badge;
+      if (captionEl) captionEl.textContent = "Trang phục đang hiển thị: " + look.caption;
+
+      document.querySelectorAll(".look-Quick-btn").forEach(btn => {
+        const bIdx = Number(btn.getAttribute("data-look-index"));
+        if (bIdx === currentLookIndex) {
+          btn.className = "look-Quick-btn px-4 py-2 rounded-full text-xs font-medium bg-[#183028] text-white shadow-sm transition-all";
+        } else {
+          btn.className = "look-Quick-btn px-4 py-2 rounded-full text-xs font-medium apple-glass hover:border-[#C5A059] transition-all";
+        }
+      });
+
+      document.querySelectorAll("[data-scroll-chapter]").forEach(ch => {
+        const cIdx = Number(ch.getAttribute("data-scroll-chapter"));
+        const card = ch.querySelector(".scroll-chapter-card");
+        if (card) card.classList.toggle("chapter-active", cIdx === currentLookIndex);
+      });
+
+      const topItem = findProduct(look.topId);
+      const bottomItem = findProduct(look.bottomId);
+      const accItem = findProduct(look.accId);
+
+      const bindSlot = (prefix, item) => {
+        const nameEl = document.getElementById(prefix + "Name");
+        const priceEl = document.getElementById(prefix + "Price");
+        const thumbEl = document.getElementById(prefix + "Thumb");
+        const btnEl = document.getElementById(prefix + "Btn");
+        if (nameEl) nameEl.textContent = item.product_name;
+        if (priceEl) priceEl.textContent = formatVnd(item.price_vnd);
+        if (thumbEl) thumbEl.src = item.image_uri;
+        if (btnEl) btnEl.setAttribute("data-pid", item.product_id);
+      };
+      bindSlot("hotspotTop", topItem);
+      bindSlot("hotspotBottom", bottomItem);
+      bindSlot("hotspotAcc", accItem);
+
+      renderCurvedFanReels();
+    }
+
+    const videoFrames = [];
+    let mouseX = 0, mouseY = 0;
+
+    function initScrollVideoModelCanvas() {
+      const canvas = document.getElementById("mannequinCanvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+
+      const frameSources = [
+        HERO_MODEL_PHOTO,
+        LOOKBOOKS[0].modelPhoto,
+        LOOKBOOKS[1].modelPhoto,
+        LOOKBOOKS[2].modelPhoto,
+        LOOKBOOKS[3].modelPhoto
+      ];
+
+      frameSources.forEach((src, idx) => {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.src = src;
+        videoFrames[idx] = img;
+      });
+
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(window.innerWidth * dpr);
+        canvas.height = Math.floor(window.innerHeight * dpr);
+      }
+      resizeCanvas();
+      window.addEventListener("resize", resizeCanvas);
+
+      window.addEventListener("mousemove", (e) => {
+        mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+        mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+      });
+
+      window.addEventListener("scroll", () => {
+        const maxScroll = Math.max(1, document.body.scrollHeight - window.innerHeight);
+        const scrollRatio = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+
+        if (performance.now() > manualLookOverrideUntil) {
+          if (scrollRatio < 0.12) {
+            targetVideoFrame = (scrollRatio / 0.12) * 0.65;
+          } else if (scrollRatio <= 0.78) {
+            const chapterProgress = (scrollRatio - 0.12) / (0.78 - 0.12);
+            targetVideoFrame = 0.65 + chapterProgress * 3.35;
+          } else {
+            targetVideoFrame = 4.0;
+          }
+
+          const derivedLookIdx = Math.min(3, Math.max(0, Math.round(targetVideoFrame) - 1));
+          if (targetVideoFrame >= 0.55 && derivedLookIdx !== currentLookIndex) {
+            selectLookbook(derivedLookIdx, false);
+          }
+        }
+      }, { passive: true });
+
+      const particles = Array.from({ length: 32 }, (_, i) => ({
+        x: Math.random(),
+        y: Math.random(),
+        r: 1.1 + (i % 3) * 0.9,
+        vx: (Math.random() - 0.5) * 0.0002,
+        vy: -0.00025 - Math.random() * 0.0003,
+        alpha: 0.14 + Math.random() * 0.25
+      }));
+
+      function drawLivingModelFrame(img, alpha, morphDistortion, t, cw, ch, isObsidian) {
+        if (!img || !img.complete || !img.naturalWidth) return;
+
+        ctx.save();
+        ctx.globalAlpha = alpha;
+
+        const imgAspect = img.naturalWidth / img.naturalHeight;
+        const viewAspect = cw / ch;
+
+        let drawW, drawH;
+        if (imgAspect > viewAspect) {
+          drawH = ch * 1.04;
+          drawW = drawH * imgAspect;
+        } else {
+          drawH = ch * 1.06;
+          drawW = drawH * imgAspect;
+          if (drawW < cw * 0.48) {
+            drawW = cw * 0.48;
+            drawH = drawW / imgAspect;
+          }
+        }
+
+        const breathScale = 1.0 + Math.sin(t * 1.5) * 0.006 + Math.abs(morphDistortion) * 0.03;
+        const parallaxX = (autoRotate ? Math.sin(t * 0.5) * 8 : 0) + mouseX * 14;
+        const parallaxY = Math.cos(t * 0.8) * 4 + mouseY * 8;
+
+        const centerX = cw * 0.56 + parallaxX;
+        const centerY = ch * 0.50 + parallaxY;
+
+        const radGrad = ctx.createRadialGradient(centerX, centerY, drawW * 0.1, centerX, centerY, drawW * 0.72);
+        if (isObsidian) {
+          radGrad.addColorStop(0, "rgba(38, 40, 48, 0.95)");
+          radGrad.addColorStop(1, "rgba(13, 14, 16, 0)");
+        } else {
+          radGrad.addColorStop(0, "rgba(255, 255, 255, 0.95)");
+          radGrad.addColorStop(1, "rgba(245, 244, 240, 0)");
+        }
+        ctx.fillStyle = radGrad;
+        ctx.fillRect(0, 0, cw, ch);
+
+        const finalW = drawW * breathScale;
+        const finalH = drawH * breathScale;
+        const startX = centerX - finalW / 2;
+        const startY = centerY - finalH / 2;
+
+        const slices = 32;
+        const srcSliceH = img.naturalHeight / slices;
+        const dstSliceH = finalH / slices;
+
+        for (let s = 0; s < slices; s++) {
+          const normY = s / slices;
+          const idleWave = Math.sin(normY * 5.0 + t * 2.0) * 1.1 * normY;
+          const transitionWave = Math.sin(normY * 9.0 - t * 5.5) * (morphDistortion * 32.0);
+          const xOffset = idleWave + transitionWave;
+
+          ctx.drawImage(
+            img,
+            0,
+            s * srcSliceH,
+            img.naturalWidth,
+            srcSliceH + 0.8,
+            startX + xOffset,
+            startY + s * dstSliceH,
+            finalW,
+            dstSliceH + 0.9
+          );
+        }
+
+        const edgeGradLeft = ctx.createLinearGradient(startX, 0, startX + finalW * 0.16, 0);
+        const bgRgb = isObsidian ? "13, 14, 16" : "245, 244, 240";
+        edgeGradLeft.addColorStop(0, `rgba(${bgRgb}, 1)`);
+        edgeGradLeft.addColorStop(1, `rgba(${bgRgb}, 0)`);
+        ctx.fillStyle = edgeGradLeft;
+        ctx.fillRect(startX - 4, startY, finalW * 0.16 + 4, finalH);
+
+        const edgeGradRight = ctx.createLinearGradient(startX + finalW * 0.84, 0, startX + finalW, 0);
+        edgeGradRight.addColorStop(0, `rgba(${bgRgb}, 0)`);
+        edgeGradRight.addColorStop(1, `rgba(${bgRgb}, 1)`);
+        ctx.fillStyle = edgeGradRight;
+        ctx.fillRect(startX + finalW * 0.84, startY, finalW * 0.16 + 4, finalH);
+
+        ctx.restore();
+      }
+
+      const startTime = performance.now();
+      function renderLoop(now) {
+        requestAnimationFrame(renderLoop);
+        const t = (now - startTime) * 0.001;
+        const cw = canvas.width;
+        const ch = canvas.height;
+        const isObsidian = document.body.classList.contains("theme-obsidian");
+
+        smoothVideoFrame += (targetVideoFrame - smoothVideoFrame) * 0.085;
+        const clampedFrame = Math.min(4.0, Math.max(0.0, smoothVideoFrame));
+        const idxA = Math.floor(clampedFrame);
+        const idxB = Math.min(4, idxA + 1);
+        const blend = clampedFrame - idxA;
+
+        ctx.fillStyle = isObsidian ? "#0D0E10" : "#F5F4F0";
+        ctx.fillRect(0, 0, cw, ch);
+
+        const imgA = videoFrames[idxA];
+        const imgB = videoFrames[idxB];
+
+        if (blend < 0.005 || idxA === idxB) {
+          drawLivingModelFrame(imgA, 1.0, 0.0, t, cw, ch, isObsidian);
+        } else {
+          drawLivingModelFrame(imgA, 1.0 - blend * 0.85, blend * (1 - blend), t, cw, ch, isObsidian);
+          drawLivingModelFrame(imgB, blend, -(1 - blend) * blend, t, cw, ch, isObsidian);
+        }
+
+        particles.forEach(p => {
+          p.x = (p.x + p.vx + 1) % 1;
+          p.y = (p.y + p.vy + 1) % 1;
+          ctx.beginPath();
+          ctx.arc(p.x * cw, p.y * ch, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = isObsidian
+            ? `rgba(212, 175, 55, ${p.alpha})`
+            : `rgba(24, 48, 40, ${p.alpha * 0.45})`;
+          ctx.fill();
+        });
+      }
+
+      requestAnimationFrame(renderLoop);
+    }
+
+    function parseVietnameseQuery(rawText) {
+      const q = (rawText || "").toLowerCase().trim();
+      let detectedCat = "";
+      if (q.includes("sơ mi") || q.includes("đầm") || q.includes("váy") || q.includes("áo thun") || q.includes("croptop") || q.includes("quần jean") || q.includes("quần tây")) {
+        detectedCat = "womens_fashion";
+      } else if (q.includes("blazer") || q.includes("nam")) {
+        detectedCat = "mens_fashion";
+      } else if (q.includes("sneaker") || q.includes("giày") || q.includes("sandal") || q.includes("loafer")) {
+        detectedCat = "footwear";
+      } else if (q.includes("túi") || q.includes("ví") || q.includes("balo")) {
+        detectedCat = "bags_wallets";
+      } else if (q.includes("kính") || q.includes("khăn") || q.includes("thắt lưng")) {
+        detectedCat = "fashion_accessories";
+      } else if (q.includes("kem chống nắng") || q.includes("serum") || q.includes("sữa rửa mặt") || q.includes("son")) {
+        detectedCat = "beauty_personal_care";
+      } else if (q.includes("tai nghe") || q.includes("loa")) {
+        detectedCat = "electronics_accessories";
+      }
+      let maxPrice = null;
+      const m = q.match(/dưới\s*(\d+)\s*k/);
+      if (m) maxPrice = Number(m[1]) * 1000;
+      return {
+        raw_query: rawText,
+        inferred_category: detectedCat || null,
+        max_price_vnd: maxPrice
+      };
+    }
+
+    function runAiSearch() {
+      const inputEl = document.getElementById("aiSearchInput");
+      const catEl = document.getElementById("searchCategorySelect");
+      const priceEl = document.getElementById("searchMaxPriceRange");
+      const topKEl = document.getElementById("searchTopKSelect");
+
+      const query = inputEl ? inputEl.value.trim() : "";
+      const parsed = parseVietnameseQuery(query);
+      const selectedCat = (catEl && catEl.value) ? catEl.value : (parsed.inferred_category || "");
+      const sliderPrice = priceEl ? Number(priceEl.value) : 0;
+      const effectiveMaxPrice = sliderPrice > 0 ? sliderPrice : parsed.max_price_vnd;
+      const topK = topKEl ? Number(topKEl.value) : 9;
+
+      const summaryText = document.getElementById("parserSummaryText");
+      if (summaryText) {
+        summaryText.textContent = `Đang lọc: ${selectedCat ? (CATEGORY_LABELS[selectedCat] || selectedCat) : "Tất cả danh mục"} · Mức giá: ${effectiveMaxPrice ? "Dưới " + formatVnd(effectiveMaxPrice) : "Tất cả mức giá"}`;
+      }
+
+      const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+      const scored = CATALOG_DATA.map(item => {
+        let textScore = 0.62;
+        const nameLower = item.product_name.toLowerCase();
+        tokens.forEach(tk => {
+          if (tk.length > 1 && nameLower.includes(tk)) textScore += 0.11;
+        });
+        if (selectedCat && item.category === selectedCat) textScore += 0.16;
+        textScore = Math.min(0.99, textScore);
+
+        let imgScore = uploadedRefImage ? (item.category === (uploadedRefImage.category || "bags_wallets") ? 0.91 : 0.58) : 0.75;
+        const popBonus = Math.min(0.05, (item.rating / 5) * 0.03 + Math.min(1, item.review_count / 500) * 0.02);
+        const finalScore = Math.min(0.99, (uploadedRefImage ? (query ? 0.5 * textScore + 0.5 * imgScore : imgScore) : textScore) + popBonus);
+
+        return { ...item, finalScore };
+      }).filter(item => {
+        if (selectedCat && item.category !== selectedCat) return false;
+        if (effectiveMaxPrice && item.price_vnd > effectiveMaxPrice) return false;
+        return true;
+      }).sort((a, b) => b.finalScore - a.finalScore).slice(0, topK);
+
+      const list = scored.length > 0 ? scored : CATALOG_DATA.slice(0, topK);
+      const heading = document.getElementById("searchResultsHeading");
+      if (heading) heading.textContent = `Sản phẩm phù hợp (${list.length} thiết kế)`;
+
+      const grid = document.getElementById("searchResultsGrid");
+      if (grid) {
+        grid.innerHTML = list.map(item => renderCleanProductCard(item, true)).join("");
+        attachProductCardListeners(grid);
+      }
+    }
+
+    function renderCleanProductCard(item, showBadge) {
+      const isSaved = savedIds.includes(String(item.product_id));
+      const materialTag = item.material ? `<div class="text-[11px] opacity-65 truncate mt-0.5">${item.material}</div>` : "";
+      const imgSrc = item.image_uri || item.image_url || 'https://placehold.co/400x400/F2F2F4/183028?text=Hop+Gu';
+      const cdnFallback = item.image_url || '';
+      return `
+        <article class="apple-card rounded-3xl p-5 flex flex-col justify-between cursor-pointer group" data-card-pid="${item.product_id}">
+          <div>
+            <div class="relative aspect-square rounded-2xl overflow-hidden bg-white mb-4 border border-black/5">
+              <img src="${imgSrc}" data-cdn="${cdnFallback}" onerror="if(this.dataset.cdn && this.src!==this.dataset.cdn){this.src=this.dataset.cdn;}else{this.onerror=null;this.src='https://placehold.co/400x400/F2F2F4/183028?text=Hop+Gu';}" alt="${item.product_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              ${showBadge ? `<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-medium bg-[#183028] text-white shadow">Thiết kế mới</span>` : ''}
+              <button type="button" data-save-pid="${item.product_id}" aria-label="Thêm vào giỏ hàng"
+                      class="save-item-btn absolute top-3 right-3 w-8 h-8 rounded-full ${isSaved ? 'bg-[#C5A059] text-white' : 'bg-white/90 text-black'} shadow flex items-center justify-center text-xs font-bold transition-transform hover:scale-110">
+                ${isSaved ? '✓' : '+'}
+              </button>
+            </div>
+            <div class="text-[10px] uppercase tracking-wider opacity-50">${CATEGORY_LABELS[item.category] || item.category}</div>
+            <h4 class="text-sm font-semibold line-clamp-1 mt-1 group-hover:text-[#C5A059] transition-colors">${item.product_name}</h4>
+            ${materialTag}
+          </div>
+          <div class="flex items-center justify-between pt-3.5 mt-3 border-t border-black/5">
+            <span class="text-sm font-bold font-mono">${formatVnd(item.price_vnd)}</span>
+            <span class="text-xs opacity-70 font-mono">★ ${item.rating} (${item.review_count})</span>
+          </div>
+        </article>
+      `;
+    }
+
+    function attachProductCardListeners(rootEl) {
+      rootEl.querySelectorAll("[data-card-pid]").forEach(card => {
+        card.addEventListener("click", (ev) => {
+          const saveBtn = ev.target.closest("[data-save-pid]");
+          if (saveBtn) {
+            ev.stopPropagation();
+            toggleSaveProduct(saveBtn.getAttribute("data-save-pid"));
+            return;
+          }
+          openProductModal(card.getAttribute("data-card-pid"));
+        });
+      });
+    }
+
+    function toggleSaveProduct(pid) {
+      const sPid = String(pid);
+      if (savedIds.includes(sPid)) {
+        savedIds = savedIds.filter(x => x !== sPid);
+      } else {
+        savedIds.push(sPid);
+      }
+      saveBagState();
+      runAiSearch();
+      renderCatalogView();
+      renderRunwayFeaturedProducts();
+      renderSavedBagList();
+    }
+
+    function openProductModal(pid) {
+      const item = findProduct(pid);
+      const modal = document.getElementById("productDetailModal");
+      const content = document.getElementById("productModalContent");
+      if (!modal || !content || !item) return;
+      const isSaved = savedIds.includes(String(item.product_id));
+      const sizesList = Array.isArray(item.sizes) && item.sizes.length ? item.sizes.join(" · ") : "S · M · L";
+      const materialText = item.material || "Chất liệu tuyển chọn cao cấp";
+
+      const modalImg = item.image_uri || item.image_url || 'https://placehold.co/400x400/F2F2F4/183028?text=Hop+Gu';
+      const modalCdn = item.image_url || '';
+      content.innerHTML = `
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center">
+          <div class="aspect-square rounded-2xl bg-white overflow-hidden border border-black/5 flex items-center justify-center">
+            <img src="${modalImg}" data-cdn="${modalCdn}" onerror="if(this.dataset.cdn && this.src!==this.dataset.cdn){this.src=this.dataset.cdn;}else{this.onerror=null;this.src='https://placehold.co/400x400/F2F2F4/183028?text=Hop+Gu';}" alt="${item.product_name}" class="w-full h-full object-cover" />
+          </div>
+          <div class="space-y-3 text-left">
+            <span class="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#E3E7D3] text-[#183028] font-medium">
+              ${CATEGORY_LABELS[item.category] || item.category}
+            </span>
+            <h3 class="text-base font-bold leading-snug">${item.product_name}</h3>
+            <div class="text-xl font-bold font-mono text-[#183028] dark:text-[#E5C158]">${formatVnd(item.price_vnd)}</div>
+            <div class="text-xs opacity-75">Đánh giá: ★ ${item.rating} (${item.review_count} khách hàng đã mua)</div>
+            <div class="p-3 rounded-2xl bg-black/5 dark:bg-white/5 text-xs space-y-1">
+              <div><strong>Chất liệu:</strong> ${materialText}</div>
+              <div><strong>Kích cỡ sẵn có:</strong> <span class="font-mono">${sizesList}</span></div>
+            </div>
+            ${item.review_snippet ? `<blockquote class="p-3 rounded-2xl bg-black/5 dark:bg-white/5 text-xs italic opacity-85">"${item.review_snippet}"</blockquote>` : ''}
+            <div class="flex items-center gap-2 pt-2">
+              <button type="button" id="modalSaveToggleBtn" class="flex-1 py-2.5 rounded-xl bg-[#183028] text-white text-xs font-semibold">
+                ${isSaved ? '✓ Đã có trong giỏ hàng' : '+ Thêm vào giỏ hàng'}
+              </button>
+              <button type="button" id="modalFindSimilarBtn" class="px-4 py-2.5 rounded-xl border border-black/15 text-xs font-semibold hover:border-[#C5A059]">
+                Xem mẫu tương tự
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      document.getElementById("modalSaveToggleBtn")?.addEventListener("click", () => {
+        toggleSaveProduct(item.product_id);
+        openProductModal(item.product_id);
+      });
+      document.getElementById("modalFindSimilarBtn")?.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        uploadedRefImage = { name: item.product_name.slice(0, 22) + ".jpg", uri: item.image_uri, category: item.category };
+        syncRefImageUI();
+        const inputEl = document.getElementById("aiSearchInput");
+        if (inputEl) inputEl.value = item.product_name.split(" ").slice(0, 5).join(" ");
+        switchView("search");
+        runAiSearch();
+      });
+    }
+
+    function syncRefImageUI() {
+      const emptyState = document.getElementById("refImageEmptyState");
+      const previewState = document.getElementById("refImagePreviewState");
+      const thumb = document.getElementById("refImageThumb");
+      const name = document.getElementById("refImageName");
+      if (!emptyState || !previewState) return;
+      if (uploadedRefImage) {
+        emptyState.classList.add("hidden");
+        previewState.classList.remove("hidden");
+        previewState.classList.add("flex");
+        if (thumb) thumb.src = uploadedRefImage.uri;
+        if (name) name.textContent = uploadedRefImage.name;
+      } else {
+        emptyState.classList.remove("hidden");
+        previewState.classList.add("hidden");
+        previewState.classList.remove("flex");
+      }
+    }
+
+    function renderCatalogView() {
+      const kw = (document.getElementById("catalogKeywordInput")?.value || "").trim();
+      const kwLower = kw.toLowerCase();
+      const kwNorm = removeVietnameseTones(kw);
+      const cat = document.getElementById("catalogCategorySelect")?.value || "";
+      const minRating = Number(document.getElementById("catalogRatingSelect")?.value || 0);
+      const sortMode = document.getElementById("catalogSortSelect")?.value || "reviews_desc";
+
+      let filtered = CATALOG_DATA.filter(item => {
+        if (kw) {
+          const nameLower = (item.product_name || "").toLowerCase();
+          const nameNorm = removeVietnameseTones(item.product_name || "");
+          if (!nameLower.includes(kwLower) && !nameNorm.includes(kwNorm)) return false;
+        }
+        if (cat && item.category !== cat && item.category_slug !== cat) return false;
+        if (minRating > 0 && item.rating < minRating) return false;
+        return true;
+      });
+
+      filtered.sort((a, b) => {
+        if (sortMode === "price_asc") return a.price_vnd - b.price_vnd;
+        if (sortMode === "price_desc") return b.price_vnd - a.price_vnd;
+        if (sortMode === "rating_desc") return b.rating - a.rating;
+        return b.review_count - a.review_count;
+      });
+
+      const summary = document.getElementById("catalogCountSummary");
+      if (summary) summary.textContent = `Hiển thị ${filtered.length} sản phẩm chính hãng tại cửa hàng`;
+
+      const grid = document.getElementById("catalogGridContainer");
+      if (grid) {
+        grid.innerHTML = filtered.map(item => renderCleanProductCard(item, false)).join("");
+        attachProductCardListeners(grid);
+      }
+    }
+
+    function renderMetricsView() {
+      const container = document.getElementById("evalCardsContainer");
+      if (!container) return;
+      const cards = [
+        { label: "KHÁCH HÀNG HÀI LÒNG", value: "98.8%", sub: "Đánh giá 5 sao về phom dáng & đường may" },
+        { label: "GIAO HÀNG NHANH", value: "2 Giờ", sub: "Hỗ trợ giao hỏa tốc nội thành TP.HCM & Hà Nội" },
+        { label: "CHÍNH SÁCH ĐỔI TRẢ", value: "30 Ngày", sub: "Hỗ trợ đổi size và mẫu tận nơi miễn phí" },
+        { label: "CỬA HÀNG TRẢI NGHIỆM", value: "03 Cơ Sở", sub: "Không gian thử đồ thoải mái tại trung tâm" }
+      ];
+      container.innerHTML = cards.map(c => `
+        <div class="apple-card rounded-3xl p-6 text-left flex flex-col justify-between">
+          <span class="text-[10px] uppercase tracking-widest opacity-55">${c.label}</span>
+          <div class="font-serif text-4xl font-bold my-3 text-[#183028] dark:text-[#E5C158]">${c.value}</div>
+          <span class="text-xs opacity-75">${c.sub}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderSavedBagList() {
+      const listEl = document.getElementById("savedBagList");
+      const totalEl = document.getElementById("savedBagTotal");
+      const banner = document.getElementById("checkoutFeedbackBanner");
+      if (banner) banner.classList.add("hidden");
+      if (!listEl || !totalEl) return;
+      if (savedIds.length === 0) {
+        listEl.innerHTML = `<p class="text-xs opacity-60 text-center py-10">Giỏ hàng của bạn đang trống.</p>`;
+        totalEl.textContent = "0₫";
+        return;
+      }
+      let sum = 0;
+      listEl.innerHTML = savedIds.map(pid => {
+        const item = findProduct(pid);
+        sum += item.price_vnd;
+        return `
+          <div class="apple-card rounded-2xl p-3 flex items-center gap-3">
+            <img src="${item.image_uri}" onerror="this.onerror=null;this.src='https://placehold.co/100x100/F2F2F4/183028?text=Item';" alt="${item.product_name}" class="w-12 h-12 rounded-xl object-cover bg-white" />
+            <div class="min-w-0 flex-1 text-left">
+              <div class="text-xs font-semibold truncate">${item.product_name}</div>
+              <div class="text-xs font-mono opacity-75">${formatVnd(item.price_vnd)}</div>
+            </div>
+            <button type="button" data-remove-bag-pid="${item.product_id}" class="text-xs opacity-60 hover:opacity-100 px-2">✕</button>
+          </div>
+        `;
+      }).join("");
+      totalEl.textContent = formatVnd(sum);
+
+      listEl.querySelectorAll("[data-remove-bag-pid]").forEach(btn => {
+        btn.addEventListener("click", () => toggleSaveProduct(btn.getAttribute("data-remove-bag-pid")));
+      });
+    }
+
+    function switchView(target) {
+      currentView = target;
+      ["runway", "search", "catalog", "metrics"].forEach(v => {
+        const sec = document.getElementById("view-" + v);
+        if (sec) sec.classList.toggle("hidden", v !== target);
+      });
+      document.querySelectorAll(".nav-tab-btn").forEach(btn => {
+        const isCurrent = btn.getAttribute("data-nav-target") === target;
+        btn.className = isCurrent
+          ? "nav-tab-btn px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-[#183028] text-white shadow-sm whitespace-nowrap"
+          : "nav-tab-btn px-4 py-1.5 rounded-full text-xs font-medium opacity-75 hover:opacity-100 transition-all whitespace-nowrap";
+      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function openSizeGuideModal() {
+      const m = document.getElementById("sizeGuideModal");
+      if (m) { m.classList.remove("hidden"); m.classList.add("flex"); }
+    }
+
+    async function trySyncWithFullBackend() {
+      try {
+        const res = await fetch("/api/catalog", { method: "GET" });
+        if (!res.ok) return;
+        const payload = await res.json();
+        if (Array.isArray(payload.products) && payload.products.length > 0) {
+          CATALOG_DATA = payload.products;
+          populateCategoryDropdowns();
+          renderVerticalScrollChapters();
+          selectLookbook(currentLookIndex, false);
+          renderRunwayFeaturedProducts();
+          runAiSearch();
+          renderCatalogView();
+          renderSavedBagList();
+        }
+      } catch (err) {
+        // Hoạt động độc lập bình thường khi mở trực tiếp file HTML
+      }
+    }
+
+    function downloadStandaloneHtmlBundle() {
+      const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "HopGu_Atelier_Full_Website.html";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function exportCatalogJsonFile() {
+      const blob = new Blob([JSON.stringify(CATALOG_DATA, null, 2)], { type: "application/json;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "hopgu_catalog_data.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      populateCategoryDropdowns();
+      renderVerticalScrollChapters();
+      initScrollVideoModelCanvas();
+      selectLookbook(0, false);
+      renderRunwayFeaturedProducts();
+      saveBagState();
+      runAiSearch();
+      renderCatalogView();
+      renderMetricsView();
+      renderSavedBagList();
+      trySyncWithFullBackend();
+
+      document.querySelectorAll(".nav-tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => switchView(btn.getAttribute("data-nav-target")));
+      });
+
+      document.getElementById("brandHomeBtn")?.addEventListener("click", () => switchView("runway"));
+      document.getElementById("jumpToCatalogFromRunwayBtn")?.addEventListener("click", () => switchView("catalog"));
+      document.getElementById("footerAboutBtn")?.addEventListener("click", () => switchView("metrics"));
+      document.getElementById("downloadFullHtmlBtn")?.addEventListener("click", downloadStandaloneHtmlBundle);
+      document.getElementById("footerExportJsonBtn")?.addEventListener("click", exportCatalogJsonFile);
+
+      document.getElementById("openSizeGuideBtn")?.addEventListener("click", openSizeGuideModal);
+      document.getElementById("openSizeGuideInlineBtn")?.addEventListener("click", openSizeGuideModal);
+      document.getElementById("footerSizeBtn")?.addEventListener("click", openSizeGuideModal);
+      document.getElementById("closeSizeGuideBtn")?.addEventListener("click", () => {
+        const m = document.getElementById("sizeGuideModal");
+        if (m) { m.classList.add("hidden"); m.classList.remove("flex"); }
+      });
+
+      document.querySelectorAll(".look-Quick-btn").forEach(btn => {
+        btn.addEventListener("click", () => selectLookbook(Number(btn.getAttribute("data-look-index")), true));
+      });
+
+      ["hotspotTopBtn", "hotspotBottomBtn", "hotspotAccBtn"].forEach(id => {
+        document.getElementById(id)?.addEventListener("click", (e) => {
+          const pid = e.currentTarget.getAttribute("data-pid");
+          if (pid) openProductModal(pid);
+        });
+      });
+
+      document.getElementById("tryLookInSearchBtn")?.addEventListener("click", () => {
+        const look = LOOKBOOKS[currentLookIndex];
+        [look.topId, look.bottomId, look.accId].forEach(pid => {
+          if (!savedIds.includes(String(pid))) savedIds.push(String(pid));
+        });
+        saveBagState();
+        renderSavedBagList();
+        const m = document.getElementById("savedBagModal");
+        if (m) { m.classList.remove("hidden"); m.classList.add("flex"); }
+      });
+
+      document.getElementById("cycleLightingBtn")?.addEventListener("click", (e) => {
+        lightingThemeIndex = (lightingThemeIndex + 1) % 2;
+        const isObsidian = lightingThemeIndex === 1;
+        document.body.classList.toggle("theme-obsidian", isObsidian);
+        document.documentElement.classList.toggle("dark", isObsidian);
+        const vig = document.getElementById("stageVignette");
+        if (vig) {
+          vig.style.background = isObsidian
+            ? "radial-gradient(circle at 52% 38%, rgba(13,14,16,0.05) 0%, rgba(13,14,16,0.45) 58%, rgba(13,14,16,0.92) 100%)"
+            : "radial-gradient(circle at 52% 38%, rgba(245,244,240,0.02) 0%, rgba(245,244,240,0.34) 56%, rgba(245,244,240,0.90) 100%)";
+        }
+        e.currentTarget.textContent = isObsidian ? "🌙 Giao diện: Tối" : "☀ Giao diện: Sáng";
+      });
+
+      document.getElementById("peek3dSculptureBtn")?.addEventListener("click", () => {
+        const active = document.body.classList.toggle("pure-3d-mode");
+        const lbl = document.getElementById("peek3dLabel");
+        if (lbl) lbl.textContent = active ? "Hiện lại Trang Web" : "Xem Ảnh Lookbook Đầy Màn Hình";
+        const vig = document.getElementById("stageVignette");
+        if (vig) vig.style.opacity = active ? "0.08" : "1";
+      });
+
+      document.getElementById("runAiSearchBtn")?.addEventListener("click", runAiSearch);
+      document.getElementById("aiSearchInput")?.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") runAiSearch();
+      });
+      document.querySelectorAll(".quick-query-chip").forEach(chip => {
+        chip.addEventListener("click", () => {
+          const q = chip.getAttribute("data-quick-query") || "";
+          const inputEl = document.getElementById("aiSearchInput");
+          if (inputEl) inputEl.value = q;
+          runAiSearch();
+        });
+      });
+
+      document.getElementById("searchCategorySelect")?.addEventListener("change", runAiSearch);
+      document.getElementById("searchTopKSelect")?.addEventListener("change", runAiSearch);
+      document.getElementById("searchMaxPriceRange")?.addEventListener("input", (e) => {
+        const val = Number(e.target.value);
+        const lbl = document.getElementById("searchMaxPriceLabel");
+        if (lbl) lbl.textContent = val > 0 ? formatVnd(val) : "Tất cả mức giá";
+        runAiSearch();
+      });
+
+      document.getElementById("triggerFileSelectBtn")?.addEventListener("click", () => {
+        document.getElementById("refImageInput")?.click();
+      });
+      document.getElementById("refImageInput")?.addEventListener("change", (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          uploadedRefImage = { name: file.name, uri: String(reader.result), category: "bags_wallets" };
+          syncRefImageUI();
+          runAiSearch();
+        };
+        reader.readAsDataURL(file);
+      });
+      document.getElementById("useSampleRefImgBtn")?.addEventListener("click", () => {
+        const sampleItem = findProduct("93127044");
+        uploadedRefImage = { name: "tui-xach-mau.jpg", uri: sampleItem.image_uri, category: "bags_wallets" };
+        syncRefImageUI();
+        runAiSearch();
+      });
+      document.getElementById("clearRefImageBtn")?.addEventListener("click", () => {
+        uploadedRefImage = null;
+        syncRefImageUI();
+        runAiSearch();
+      });
+
+      ["catalogKeywordInput", "catalogCategorySelect", "catalogRatingSelect", "catalogSortSelect"].forEach(id => {
+        document.getElementById(id)?.addEventListener("input", renderCatalogView);
+        document.getElementById(id)?.addEventListener("change", renderCatalogView);
+      });
+      document.getElementById("resetCatalogBtn")?.addEventListener("click", () => {
+        const kw = document.getElementById("catalogKeywordInput");
+        const cat = document.getElementById("catalogCategorySelect");
+        const rat = document.getElementById("catalogRatingSelect");
+        const srt = document.getElementById("catalogSortSelect");
+        if (kw) kw.value = "";
+        if (cat) cat.value = "";
+        if (rat) rat.value = "0";
+        if (srt) srt.value = "reviews_desc";
+        renderCatalogView();
+      });
+
+      document.getElementById("closeProductModalBtn")?.addEventListener("click", () => {
+        const m = document.getElementById("productDetailModal");
+        if (m) { m.classList.add("hidden"); m.classList.remove("flex"); }
+      });
+      document.getElementById("openSavedBagBtn")?.addEventListener("click", () => {
+        renderSavedBagList();
+        const m = document.getElementById("savedBagModal");
+        if (m) { m.classList.remove("hidden"); m.classList.add("flex"); }
+      });
+      document.getElementById("closeSavedBagBtn")?.addEventListener("click", () => {
+        const m = document.getElementById("savedBagModal");
+        if (m) { m.classList.add("hidden"); m.classList.remove("flex"); }
+      });
+      document.getElementById("checkoutBagBtn")?.addEventListener("click", async () => {
+        if (savedIds.length === 0) return;
+        const banner = document.getElementById("checkoutFeedbackBanner");
+        if (banner) banner.classList.remove("hidden");
+        try {
+          await fetch("/api/checkout", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ items: savedIds, created_at: new Date().toISOString() })
+          });
+        } catch (e) {}
+      });
+      document.getElementById("clearSavedBagBtn")?.addEventListener("click", () => {
+        savedIds = [];
+        saveBagState();
+        renderSavedBagList();
+        runAiSearch();
+        renderCatalogView();
+        renderRunwayFeaturedProducts();
+      });
+    });
+  </script>
+</body>
+</html>

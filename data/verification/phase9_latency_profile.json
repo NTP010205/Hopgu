@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-10-11T18:39:19.617557+00:00",
+  "protocol": "single warmed multimodal request; real local models and Ollama; top-5 explanations",
+  "query": "tai nghe bluetooth true wireless chống ồn dưới 5 triệu",
+  "query_image_product_id": "271312499",
+  "llm_status": {
+    "ready": true,
+    "mode": "ollama",
+    "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+  },
+  "parsed_query": {
+    "intent": "search_product",
+    "category": "Điện tử & Phụ kiện",
+    "category_candidates": [
+      "Điện tử & Phụ kiện"
+    ],
+    "category_confidence": "high",
+    "category_alias": "tai nghe/headphone",
+    "colors": [],
+    "attributes": [
+      "bluetooth",
+      "chống ồn"
+    ],
+    "price_min": null,
+    "price_max": 5000000,
+    "gender": null,
+    "keywords": [
+      "tai nghe bluetooth",
+      "true wireless",
+      "chống ồn",
+      "dưới 5 triệu"
+    ],
+    "parser_mode": "ollama",
+    "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+  },
+  "category_policy": {
+    "source": "text_query",
+    "confidence": "high",
+    "strategy": "hard_constraint",
+    "alias": "tai nghe/headphone"
+  },
+  "candidate_count": 130,
+  "stages_ms": {
+    "parser_llm_ms": 1276.9019000006665,
+    "text_embedding_ms": 10.143999999854714,
+    "image_embedding_ms": 24.098899999444257,
+    "retrieval_ranking_ms": 3.628500000559143,
+    "explanation_generation_top5_ms": 3273.9474999998492
+  },
+  "measured_total_ms": 4588.720800000374,
+  "stage_share": {
+    "parser_llm_ms": 0.2782696868374651,
+    "text_embedding_ms": 0.002210637875342925,
+    "image_embedding_ms": 0.005251768640934156,
+    "retrieval_ranking_ms": 0.0007907432503975502,
+    "explanation_generation_top5_ms": 0.7134771633958602
+  },
+  "cache_hit_ms": {
+    "parser_llm": 0.36750000072061084,
+    "explanation_generation_top5": 0.06539999958476983
+  },
+  "reason_count": 5,
+  "reason_error": null,
+  "top5_product_ids": [
+    "272030678",
+    "276117054",
+    "278748263",
+    "181185263",
+    "191420029"
+  ]
+}

@@ -1,0 +1,33 @@
+{"id":"val_bach_01","split":"validation","query":"thùng sữa tươi ít đường cho gia đình","query_image_product_id":"14936798","relevant_product_ids":["14936798"],"relevant_categories":["Bách hóa"]}
+{"id":"val_beauty_01","split":"validation","query":"kem chống nắng dạng gel nhẹ mặt","query_image_product_id":"67421152","relevant_product_ids":["67421152"],"relevant_categories":["Làm đẹp & Sức khỏe"]}
+{"id":"val_home_01","split":"validation","query":"bình giữ nhiệt inox dung tích 800ml","query_image_product_id":"73124602","relevant_product_ids":["73124602"],"relevant_categories":["Nhà cửa & Đời sống"]}
+{"id":"val_book_01","split":"validation","query":"tiểu thuyết cảm động về một người đàn ông cô độc","query_image_product_id":"202879294","relevant_product_ids":["202879294"],"relevant_categories":["Sách"]}
+{"id":"val_men_01","split":"validation","query":"áo thun thể thao nam thấm hút mồ hôi","query_image_product_id":"193492866","relevant_product_ids":["193492866"],"relevant_categories":["Thời trang nam"]}
+{"id":"val_women_01","split":"validation","query":"quần jean nữ skinny lưng cao","query_image_product_id":"42712220","relevant_product_ids":["42712220"],"relevant_categories":["Thời trang nữ"]}
+{"id":"val_appliance_01","split":"validation","query":"máy lọc không khí cho phòng gia đình","query_image_product_id":"10131463","relevant_product_ids":["10131463"],"relevant_categories":["Điện gia dụng"]}
+{"id":"val_electronics_01","split":"validation","query":"tai nghe bluetooth true wireless chống ồn","query_image_product_id":"271312499","relevant_product_ids":["271312499"],"relevant_categories":["Điện tử & Phụ kiện"]}
+{"id":"test_bach_01","split":"test","query":"sữa đậu nành bổ sung canxi hộp một lít","query_image_product_id":"23192245","relevant_product_ids":["23192245"],"relevant_categories":["Bách hóa"]}
+{"id":"test_bach_02","split":"test","query":"gạo ST25 túi 5 kg","query_image_product_id":"277880353","relevant_product_ids":["277880353"],"relevant_categories":["Bách hóa"]}
+{"id":"test_bach_03","split":"test","query":"dầu hạt cải chai một lít để nấu ăn","query_image_product_id":"483310","relevant_product_ids":["483310"],"relevant_categories":["Bách hóa"]}
+{"id":"test_beauty_01","split":"test","query":"dầu gội cho tóc bạc và tóc rụng","query_image_product_id":"60684152","relevant_product_ids":["60684152"],"relevant_categories":["Làm đẹp & Sức khỏe"]}
+{"id":"test_beauty_02","split":"test","query":"kem dưỡng phục hồi và làm dịu da","query_image_product_id":"50037073","relevant_product_ids":["50037073"],"relevant_categories":["Làm đẹp & Sức khỏe"]}
+{"id":"test_beauty_03","split":"test","query":"bao cao su siêu mỏng nhạy cảm","query_image_product_id":"1672157","relevant_product_ids":["1672157"],"relevant_categories":["Làm đẹp & Sức khỏe"]}
+{"id":"test_home_01","split":"test","query":"bộ hộp cơm giữ nhiệt có túi mang đi làm","query_image_product_id":"53583472","relevant_product_ids":["53583472"],"relevant_categories":["Nhà cửa & Đời sống"]}
+{"id":"test_home_02","split":"test","query":"cốc giữ nhiệt inox 304 khoảng 500ml","query_image_product_id":"275189108","relevant_product_ids":["275189108"],"relevant_categories":["Nhà cửa & Đời sống"]}
+{"id":"test_home_03","split":"test","query":"ghế hỗ trợ ngồi đúng tư thế","query_image_product_id":"164479566","relevant_product_ids":["164479566"],"relevant_categories":["Nhà cửa & Đời sống"]}
+{"id":"test_book_01","split":"test","query":"sách tiệm tạp hóa Namiya","query_image_product_id":"3304875","relevant_product_ids":["3304875"],"relevant_categories":["Sách"]}
+{"id":"test_book_02","split":"test","query":"trọn bộ truyện Harry Potter tiếng Việt","query_image_product_id":"1080002","relevant_product_ids":["1080002"],"relevant_categories":["Sách"]}
+{"id":"test_book_03","split":"test","query":"sách tâm lý học về tiền và tài chính cá nhân","query_image_product_id":"273819808","relevant_product_ids":["273819808"],"relevant_categories":["Sách"]}
+{"id":"test_men_01","split":"test","query":"áo khoác gió nam chống nắng trượt nước","query_image_product_id":"201934333","relevant_product_ids":["201934333"],"relevant_categories":["Thời trang nam"]}
+{"id":"test_men_02","split":"test","query":"quần túi hộp nam vải kaki","query_image_product_id":"112086654","relevant_product_ids":["112086654"],"relevant_categories":["Thời trang nam"]}
+{"id":"test_men_03","split":"test","query":"quần lót boxer nam sợi tre thoáng mát","query_image_product_id":"41531018","relevant_product_ids":["41531018"],"relevant_categories":["Thời trang nam"]}
+{"id":"test_women_01","split":"test","query":"bộ đồ ngủ nữ bằng satin lụa","query_image_product_id":"24509494","relevant_product_ids":["24509494"],"relevant_categories":["Thời trang nữ"]}
+{"id":"test_women_02","split":"test","query":"quần lót nữ su đúc không đường may","query_image_product_id":"37126497","relevant_product_ids":["37126497"],"relevant_categories":["Thời trang nữ"]}
+{"id":"test_women_03","split":"test","query":"quần jean nữ ống rộng lưng cao","query_image_product_id":"146957711","relevant_product_ids":["146957711"],"relevant_categories":["Thời trang nữ"]}
+{"id":"test_appliance_01","split":"test","query":"nồi chiên không dầu có chức năng hấp","query_image_product_id":"113271935","relevant_product_ids":["113271935"],"relevant_categories":["Điện gia dụng"]}
+{"id":"test_appliance_02","split":"test","query":"nồi cơm điện cao tần dung tích 1.8 lít","query_image_product_id":"57899819","relevant_product_ids":["57899819"],"relevant_categories":["Điện gia dụng"]}
+{"id":"test_appliance_03","split":"test","query":"máy pha cà phê espresso gia đình","query_image_product_id":"548599","relevant_product_ids":["548599"],"relevant_categories":["Điện gia dụng"]}
+{"id":"test_electronics_01","split":"test","query":"chuột không dây yên tĩnh Logitech","query_image_product_id":"299461","relevant_product_ids":["299461"],"relevant_categories":["Điện tử & Phụ kiện"]}
+{"id":"test_electronics_02","split":"test","query":"bàn phím bluetooth không dây Logitech","query_image_product_id":"72746857","relevant_product_ids":["72746857"],"relevant_categories":["Điện tử & Phụ kiện"]}
+{"id":"test_electronics_03","split":"test","query":"loa vi tính bluetooth cho máy tính","query_image_product_id":"556556","relevant_product_ids":["556556"],"relevant_categories":["Điện tử & Phụ kiện"]}
+

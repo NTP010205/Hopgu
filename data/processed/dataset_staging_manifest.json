@@ -1,0 +1,29 @@
+{
+  "kind": "prepared_tiki_snapshot",
+  "rows": {
+    "products": 860,
+    "reviews": 14219
+  },
+  "categories": {
+    "Bách hóa": 77,
+    "Làm đẹp & Sức khỏe": 112,
+    "Nhà cửa & Đời sống": 72,
+    "Sách": 112,
+    "Thời trang nam": 122,
+    "Thời trang nữ": 121,
+    "Điện gia dụng": 112,
+    "Điện tử & Phụ kiện": 132
+  },
+  "raw_sha256": {
+    "products": "903498b676440274f1fdc3baa8494c892dd49dfd86dd8ade1745cbb1dd8bdbc8",
+    "details": "56249c68b18c92fd2bf1b8bceb47df4ecfc4175c351dd9b1ec790ecf59916148",
+    "reviews": "c3fc077f5105d214880e64befdfc2763f3dbfc9259b9a3368b464cc73ec02107"
+  },
+  "selection_manifest": "data/raw/phase9_coverage_manifest.json",
+  "selection_manifest_sha256": "d4cd3e5d190cc1df6c855fc9b3975b02445b4be9dfb544e6b0fb6053ac3cb2bf",
+  "supplement_raw_sha256": {
+    "products": "094d782afe1d381a6d752810443f761cd62c5878ffe966009443d0716f7221cf",
+    "details": "a2c89709da80fa522020a93524d76d5a396a2a6d7ff403d14c9cfd7c5390e4b9",
+    "reviews": "6889003463977753ae12aa0b86602a74bb43ca0189a6f90525e84ffb9ee36dad"
+  }
+}

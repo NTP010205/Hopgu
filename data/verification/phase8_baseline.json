@@ -1,0 +1,2724 @@
+{
+  "phase": 8,
+  "stage": "before_category_aware_changes",
+  "generated_at": "2026-10-11T18:01:01.008921+00:00",
+  "alpha": 0.8,
+  "catalog_size": 800,
+  "notes": [
+    "Không có product_name chứa balo hoặc túi xách trong catalog.",
+    "Probe bag_nearest_real dùng ảnh thật của bộ hộp cơm có túi mang theo; book_other là nhóm thay thế cho balo.",
+    "5 probe dùng QueryParser thật; bảng 24 query dùng rule category hiện hành để đo ranking xác định và không phụ thuộc trạng thái Ollama."
+  ],
+  "probes": [
+    {
+      "probe_id": "bag_nearest_real",
+      "query": "túi xách giống hình",
+      "source": {
+        "product_id": "53583472",
+        "product_name": "Bộ Hộp Cơm Giữ Nhiệt Lock&amp;Lock Easy Carry 2.0L LHC8039BLU Có Túi (1 Hộp 720ml, 2 Hộp 420ml Kèm 1 Bộ Muỗng Và Nĩa) - Màu Xanh",
+        "category": "Nhà cửa & Đời sống",
+        "image_path": "data/images/53583472.jpg"
+      },
+      "parsed_query": {
+        "intent": "search_product",
+        "category": null,
+        "colors": [],
+        "attributes": [
+          "giống hình"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "túi xách",
+          "giống hình"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "effective_price_min": null,
+      "effective_price_max": null,
+      "image_only": {
+        "category_counts_top20": {
+          "Nhà cửa & Đời sống": 15,
+          "Bách hóa": 1,
+          "Điện gia dụng": 4
+        },
+        "category_precision_at_20": 0.75,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "53583472",
+            "product_name": "Bộ Hộp Cơm Giữ Nhiệt Lock&amp;Lock Easy Carry 2.0L LHC8039BLU Có Túi (1 Hộp 720ml, 2 Hộp 420ml Kèm 1 Bộ Muỗng Và Nĩa) - Màu Xanh",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 1226120,
+            "text_score": null,
+            "image_score": 1.0,
+            "final_score": 1.0
+          },
+          {
+            "rank": 2,
+            "product_id": "202805930",
+            "product_name": "Bộ Hộp Cơm Giữ Nhiệt Hút Chân Không Lock&Lock NVY-4 - LHC8052S01",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 1103740,
+            "text_score": null,
+            "image_score": 0.8358035087585449,
+            "final_score": 0.8358035087585449
+          },
+          {
+            "rank": 3,
+            "product_id": "276120162",
+            "product_name": "Bình giữ nhiệt METRO CAFE TUMBLER LocknLock LHC4359 - Dung tích 650ml",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 447180,
+            "text_score": null,
+            "image_score": 0.8213226199150085,
+            "final_score": 0.8213226199150085
+          },
+          {
+            "rank": 4,
+            "product_id": "73124602",
+            "product_name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180SLV (800ML) - Màu",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 440220,
+            "text_score": null,
+            "image_score": 0.8191889524459839,
+            "final_score": 0.8191889524459839
+          },
+          {
+            "rank": 5,
+            "product_id": "273672038",
+            "product_name": "Ly nhựa 2 lớp Bubble Tea Cold Cup LocknLock HAP529 - Kèm ống hút - Dung tích 720ml",
+            "category": "Bách hóa",
+            "price_vnd": 136300,
+            "text_score": null,
+            "image_score": 0.8113112449645996,
+            "final_score": 0.8113112449645996
+          },
+          {
+            "rank": 6,
+            "product_id": "242747639",
+            "product_name": "Nồi điện đa năng Locknlock Electric multi pot EJP436IVY 220V, 50Hz, 600W, 1.5L- Màu ngà - Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 757480,
+            "text_score": null,
+            "image_score": 0.8098117709159851,
+            "final_score": 0.8098117709159851
+          },
+          {
+            "rank": 7,
+            "product_id": "262300577",
+            "product_name": "Bình giữ nhiệt Sling Ring Tumbler LocknLock LHC4321LVOL - Dung tích 650ml - Màu LVOL",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 451820,
+            "text_score": null,
+            "image_score": 0.8084290027618408,
+            "final_score": 0.8084290027618408
+          },
+          {
+            "rank": 8,
+            "product_id": "275058873",
+            "product_name": "Bình giữ nhiệt Metro Cafe Tumbler LocknLock LHC4357 - Dung tích 500ml - Phủ sứ",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 408320,
+            "text_score": null,
+            "image_score": 0.8042342066764832,
+            "final_score": 0.8042342066764832
+          },
+          {
+            "rank": 9,
+            "product_id": "195980111",
+            "product_name": "Bình giữ nhiệt LocknLock Hidden Moon LHC3275SBLU - 490ml",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 334080,
+            "text_score": null,
+            "image_score": 0.8014636635780334,
+            "final_score": 0.8014636635780334
+          },
+          {
+            "rank": 10,
+            "product_id": "273624233",
+            "product_name": "Bình giữ nhiệt LocknLock Metro Two Way LHC4272/LHC4274 - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 339840,
+            "text_score": null,
+            "image_score": 0.7926574945449829,
+            "final_score": 0.7926574945449829
+          },
+          {
+            "rank": 11,
+            "product_id": "195852183",
+            "product_name": "Bình giữ nhiệt bằng thép không gỉ LocknLock Jumbo Tumbler LHC4300YRED 900ML",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 498800,
+            "text_score": null,
+            "image_score": 0.7914321422576904,
+            "final_score": 0.7914321422576904
+          },
+          {
+            "rank": 12,
+            "product_id": "278101399",
+            "product_name": "Bình Giữ Nhiệt LocknLock Balance Fit Tumbler LHC4400 700ml",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 430360,
+            "text_score": null,
+            "image_score": 0.7889251708984375,
+            "final_score": 0.7889251708984375
+          },
+          {
+            "rank": 13,
+            "product_id": "201040328",
+            "product_name": "Bình giữ nhiệt LocknLock Riga Tumbler Vietnam Edition LHC4160 897ml",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 478500,
+            "text_score": null,
+            "image_score": 0.7791380882263184,
+            "final_score": 0.7791380882263184
+          },
+          {
+            "rank": 14,
+            "product_id": "278450191",
+            "product_name": "Bình giữ nhiệt LocknLock Bucket One-Touch LHC3345 có quai dung tích 550ml thép không gỉ - 3 màu",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 367040,
+            "text_score": null,
+            "image_score": 0.7762349843978882,
+            "final_score": 0.7762349843978882
+          },
+          {
+            "rank": 15,
+            "product_id": "249663070",
+            "product_name": "Nồi cơm điện cao tần Locknlock IH pressure rice cooker EJR526GRY (1.8 Lít)- Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 3981600,
+            "text_score": null,
+            "image_score": 0.7627210021018982,
+            "final_score": 0.7627210021018982
+          },
+          {
+            "rank": 16,
+            "product_id": "57588481",
+            "product_name": "Nồi Điện Đa Năng Lock&Lock EJP116BLK (0.8 Lít) - Hàng Chính Hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 605520,
+            "text_score": null,
+            "image_score": 0.7621405720710754,
+            "final_score": 0.7621405720710754
+          },
+          {
+            "rank": 17,
+            "product_id": "277809791",
+            "product_name": "Máy xay sinh tố cầm tay 400ml Elmich BLE9215 - Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 440000,
+            "text_score": null,
+            "image_score": 0.7589185237884521,
+            "final_score": 0.7589185237884521
+          },
+          {
+            "rank": 18,
+            "product_id": "277742262",
+            "product_name": "Hộp cơm giữ nhiệt inox 304 Elmich EL8302 dung tích 1.7L - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 688000,
+            "text_score": null,
+            "image_score": 0.7583874464035034,
+            "final_score": 0.7583874464035034
+          },
+          {
+            "rank": 19,
+            "product_id": "2153235",
+            "product_name": "Bình Giữ Nhiệt Lock&Lock Feather Light LHC4131BKB (450ml)",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 371780,
+            "text_score": null,
+            "image_score": 0.7551451921463013,
+            "final_score": 0.7551451921463013
+          },
+          {
+            "rank": 20,
+            "product_id": "277835581",
+            "product_name": "Hộp cơm 2 tầng inox 304 Elmich EL8313 (1.5L) - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 304000,
+            "text_score": null,
+            "image_score": 0.7509481310844421,
+            "final_score": 0.7509481310844421
+          }
+        ]
+      },
+      "multimodal": {
+        "candidate_count": 800,
+        "category_counts_top20": {
+          "Thời trang nam": 12,
+          "Thời trang nữ": 4,
+          "Nhà cửa & Đời sống": 1,
+          "Điện tử & Phụ kiện": 1,
+          "Sách": 1,
+          "Bách hóa": 1
+        },
+        "category_precision_at_20": 0.05,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "16712370",
+            "product_name": "Áo Khoác Kaki Nam Hai Lớp Simple Cao Cấp ShopN6-KK35",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": 0.8711807727813721,
+            "image_score": 0.6308833360671997,
+            "final_score": 0.9115903377532959
+          },
+          {
+            "rank": 2,
+            "product_id": "72462368",
+            "product_name": "Áo Khoác Nam Áo Khoác Dù Dày Nam Hai Lớp Lót Nỉ Chống Lạnh Chống Gió Chống Nắng Tia UV Cao Cấp AD64 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 189000,
+            "text_score": 0.8673695921897888,
+            "image_score": 0.594946563243866,
+            "final_score": 0.8709748387336731
+          },
+          {
+            "rank": 3,
+            "product_id": "37126497",
+            "product_name": "( 10 cái ) quần lót nữ Su đúc không đường may, hàng đẹp loại xịn W19_503",
+            "category": "Thời trang nữ",
+            "price_vnd": 229600,
+            "text_score": 0.8667236566543579,
+            "image_score": 0.5412846803665161,
+            "final_score": 0.8526970148086548
+          },
+          {
+            "rank": 4,
+            "product_id": "112086654",
+            "product_name": "Quần Túi Hộp Nam Lính Mỹ US ARMY U768 Cao Cấp, Chất Liệu Vải Kaki,Bền Màu, Ống Rộng Phong Cách, Thiết kế Túi Hộp- HÀNG CHÍNH HÃNG",
+            "category": "Thời trang nam",
+            "price_vnd": 500000,
+            "text_score": 0.8656448721885681,
+            "image_score": 0.5111376643180847,
+            "final_score": 0.8364161252975464
+          },
+          {
+            "rank": 5,
+            "product_id": "53583472",
+            "product_name": "Bộ Hộp Cơm Giữ Nhiệt Lock&amp;Lock Easy Carry 2.0L LHC8039BLU Có Túi (1 Hộp 720ml, 2 Hộp 420ml Kèm 1 Bộ Muỗng Và Nĩa) - Màu Xanh",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 1226120,
+            "text_score": 0.8505157828330994,
+            "image_score": 1.0,
+            "final_score": 0.8264456987380981
+          },
+          {
+            "rank": 6,
+            "product_id": "15784024",
+            "product_name": "Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Cao Cấp ShopN6 - AD34",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": 0.8595130443572998,
+            "image_score": 0.6756585240364075,
+            "final_score": 0.8243236541748047
+          },
+          {
+            "rank": 7,
+            "product_id": "108578225",
+            "product_name": "ÁO THUN NỮ CÁ SẤU CỔ TRỤ CÁ TÍNH THỜI TRANG NHIỀU MÀU",
+            "category": "Thời trang nữ",
+            "price_vnd": 81900,
+            "text_score": 0.8590114116668701,
+            "image_score": 0.5340855121612549,
+            "final_score": 0.7862016558647156
+          },
+          {
+            "rank": 8,
+            "product_id": "5372733",
+            "product_name": "Tấm Lót Chuột Cơ Bản Bo Viền Loại Tốt",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 25000,
+            "text_score": 0.8587693572044373,
+            "image_score": 0.5324208736419678,
+            "final_score": 0.783769965171814
+          },
+          {
+            "rank": 9,
+            "product_id": "192948878",
+            "product_name": "Áo sơ mi nữ form rộng ngắn tay GIẤU NÚT form hàn quốc trẻ trung năng động vải lụa mềm mịn mát ít nhăn-MURN03",
+            "category": "Thời trang nữ",
+            "price_vnd": 104500,
+            "text_score": 0.8575129508972168,
+            "image_score": 0.5629489421844482,
+            "final_score": 0.7805300951004028
+          },
+          {
+            "rank": 10,
+            "product_id": "37970004",
+            "product_name": "Combo 5 Quần Lót Nam Cao Cấp Munafie Co Dãn Xuất Nhật Kèm Túi Zip",
+            "category": "Thời trang nam",
+            "price_vnd": 170000,
+            "text_score": 0.8557844161987305,
+            "image_score": 0.6021024584770203,
+            "final_score": 0.7753910422325134
+          },
+          {
+            "rank": 11,
+            "product_id": "6187707",
+            "product_name": "Bộ 5 quần sịp đùi xuất Nhật chất lụa cao cấp",
+            "category": "Thời trang nam",
+            "price_vnd": 180000,
+            "text_score": 0.8549739122390747,
+            "image_score": 0.6246551275253296,
+            "final_score": 0.7739858031272888
+          },
+          {
+            "rank": 12,
+            "product_id": "217474961",
+            "product_name": "[KHÔNG CẦN DÙNG BƠM] Túi Hút Chân Không Đựng Quần Áo Chăn Ga Gối , Thú Bông Deli - Loại Dày Cao Cấp Bọc Để Chăn Màn 2 Lớp Khóa Zip Chống Rò Rỉ Hơi Bảo Vệ Quần Áo, Chăn Ga Khỏi Ẩm, Nấm Mốc, Chống Nước Tuyệt Đối",
+            "category": "Thời trang nam",
+            "price_vnd": 70200,
+            "text_score": 0.8571210503578186,
+            "image_score": 0.5305453538894653,
+            "final_score": 0.7694775462150574
+          },
+          {
+            "rank": 13,
+            "product_id": "186133766",
+            "product_name": "Quần Short Kaki Nam US ARMY, Quần Túi Hộp Nam Phong Cách Lính Chất Liệu KaKi Cao Cấp, Kiểu Dáng Trẻ Trung Năng Động -HÀNG CHÍNH HÃNG",
+            "category": "Thời trang nam",
+            "price_vnd": 299000,
+            "text_score": 0.8552234172821045,
+            "image_score": 0.591732382774353,
+            "final_score": 0.7681956887245178
+          },
+          {
+            "rank": 14,
+            "product_id": "73214429",
+            "product_name": "Áo Khoác Nam Áo Khoác Dù Nam Nữ Hai Lớp Chống Nước Chống Nắng Chống Gió Phối Nón Cao Cấp QD54 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nữ",
+            "price_vnd": 189000,
+            "text_score": 0.8558381795883179,
+            "image_score": 0.5656749606132507,
+            "final_score": 0.7671175003051758
+          },
+          {
+            "rank": 15,
+            "product_id": "276641698",
+            "product_name": "Tiệm sách của nàng (Nguyễn Nhật Ánh)",
+            "category": "Sách",
+            "price_vnd": 96000,
+            "text_score": 0.8602936267852783,
+            "image_score": 0.38643601536750793,
+            "final_score": 0.7616057395935059
+          },
+          {
+            "rank": 16,
+            "product_id": "97823540",
+            "product_name": "Áo Khoác Big Size Áo Khoác Dù Nam Có Cổ Trụ Chống Nắng Chống Nóng Chống Lạnh Chống Gió 2 Lớp Phối Logo Sọt Thời Trang Nam Tính Hàn Quốc Giá Tốt AD70",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": 0.8511282801628113,
+            "image_score": 0.6194271445274353,
+            "final_score": 0.7404361963272095
+          },
+          {
+            "rank": 17,
+            "product_id": "73335809",
+            "product_name": "Áo Khoác Nam Big Size Áo Khoác Dù Nam Cổ Cao Chống Lạnh Chống Gió Chống Nắng Tia UV Cao Cấp Nam Tính Hàn Quốc QM19 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": 0.851936936378479,
+            "image_score": 0.5790792107582092,
+            "final_score": 0.7375636100769043
+          },
+          {
+            "rank": 18,
+            "product_id": "7078807",
+            "product_name": "Bộ 10 Quần Lót Nam Chéo Nhật Bản Cao Cấp Thoáng Mát (Giao Màu Ngẫu Nhiên)",
+            "category": "Thời trang nam",
+            "price_vnd": 323400,
+            "text_score": 0.8519608378410339,
+            "image_score": 0.5745337605476379,
+            "final_score": 0.7366756200790405
+          },
+          {
+            "rank": 19,
+            "product_id": "55365176",
+            "product_name": "0.5kg túi zipper chỉ đỏ đựng thực phẩm",
+            "category": "Bách hóa",
+            "price_vnd": 69000,
+            "text_score": 0.8503827452659607,
+            "image_score": 0.620516836643219,
+            "final_score": 0.7344357371330261
+          },
+          {
+            "rank": 20,
+            "product_id": "24793563",
+            "product_name": "Áo thun nam cổ bẻ kiểu trơn có 1 túi áo",
+            "category": "Thời trang nam",
+            "price_vnd": 120000,
+            "text_score": 0.8492403030395508,
+            "image_score": 0.6538987755775452,
+            "final_score": 0.7328365445137024
+          }
+        ]
+      }
+    },
+    {
+      "probe_id": "shoes",
+      "query": "giày thể thao giống hình",
+      "source": {
+        "product_id": "277426915",
+        "product_name": "Giày đinh đá bóng sân cỏ nhân tạo Prowin H21",
+        "category": "Thời trang nam",
+        "image_path": "data/images/277426915.jpg"
+      },
+      "parsed_query": {
+        "intent": "search_product",
+        "category": null,
+        "colors": [],
+        "attributes": [
+          "giày thể thao"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "giày thể thao",
+          "giống hình"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "effective_price_min": null,
+      "effective_price_max": null,
+      "image_only": {
+        "category_counts_top20": {
+          "Thời trang nam": 19,
+          "Điện tử & Phụ kiện": 1
+        },
+        "category_precision_at_20": 0.95,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "277426915",
+            "product_name": "Giày đinh đá bóng sân cỏ nhân tạo Prowin H21",
+            "category": "Thời trang nam",
+            "price_vnd": 249000,
+            "text_score": null,
+            "image_score": 1.0000001192092896,
+            "final_score": 1.0000001192092896
+          },
+          {
+            "rank": 2,
+            "product_id": "57758774",
+            "product_name": "Quần short nam có Big Size 115kg lưng thun co giãn 4 chiều ,quần đùi nam thể thao cao cấp ShopN6 - QSB1 (sọc ngẫu nhiên)",
+            "category": "Thời trang nam",
+            "price_vnd": 69000,
+            "text_score": null,
+            "image_score": 0.6730097532272339,
+            "final_score": 0.6730097532272339
+          },
+          {
+            "rank": 3,
+            "product_id": "49733157",
+            "product_name": "Quần bơi nam giới dáng vừa, độ dài trên gối, chất thun bơi lạnh dày đẹp, co giãn 4 chiều ôm đùi gọn gàng dễ chịu, thoáng mát nhanh khô | BN005",
+            "category": "Thời trang nam",
+            "price_vnd": 115000,
+            "text_score": null,
+            "image_score": 0.639865517616272,
+            "final_score": 0.639865517616272
+          },
+          {
+            "rank": 4,
+            "product_id": "69307352",
+            "product_name": "Quần short nam thể thao đồ gym thun cotton 4 chiều, quần đùi nam mặc nhà thể thao cao cấp ShopN6 - QSB2 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 89000,
+            "text_score": null,
+            "image_score": 0.6306443810462952,
+            "final_score": 0.6306443810462952
+          },
+          {
+            "rank": 5,
+            "product_id": "35193581",
+            "product_name": "[FREEMAN] Combo 5 quần lót nam 639",
+            "category": "Thời trang nam",
+            "price_vnd": 245000,
+            "text_score": null,
+            "image_score": 0.6222907900810242,
+            "final_score": 0.6222907900810242
+          },
+          {
+            "rank": 6,
+            "product_id": "46699028",
+            "product_name": "Quần short thun nam có lưới thông hơi Phúc An 1051 màu",
+            "category": "Thời trang nam",
+            "price_vnd": 71100,
+            "text_score": null,
+            "image_score": 0.6211557984352112,
+            "final_score": 0.6211557984352112
+          },
+          {
+            "rank": 7,
+            "product_id": "95054251",
+            "product_name": "Quần Short Nam Big Size Quần Sọt Nam Thể Thao Cotton 4 Chiều Quần Đùi Nam Trên 100kg Quần Thun Nam Cao Cấp Giá Tốt WSB1 - ShopN6 (Sọc Ngẫu Nhiên)",
+            "category": "Thời trang nam",
+            "price_vnd": 69000,
+            "text_score": null,
+            "image_score": 0.6183388829231262,
+            "final_score": 0.6183388829231262
+          },
+          {
+            "rank": 8,
+            "product_id": "105708174",
+            "product_name": "Áo Khoác Big Size Áo Khoác Dù Nam Có Nón Cổ Trụ Chống Nắng Chống Nóng Chống Lạnh Chống Gió 2 Lớp Phối Logo Thời Trang Nam Tính Hàn Quốc Giá Tốt ShopN6 - QD58",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.617397129535675,
+            "final_score": 0.617397129535675
+          },
+          {
+            "rank": 9,
+            "product_id": "73335809",
+            "product_name": "Áo Khoác Nam Big Size Áo Khoác Dù Nam Cổ Cao Chống Lạnh Chống Gió Chống Nắng Tia UV Cao Cấp Nam Tính Hàn Quốc QM19 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.6147794127464294,
+            "final_score": 0.6147794127464294
+          },
+          {
+            "rank": 10,
+            "product_id": "56461941",
+            "product_name": "Áo Khoác Dù Nam Hai Lớp Chống Nắng Gió Bụi Bẩn Cao Cấp AD48 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 160000,
+            "text_score": null,
+            "image_score": 0.612289547920227,
+            "final_score": 0.612289547920227
+          },
+          {
+            "rank": 11,
+            "product_id": "73456416",
+            "product_name": "Áo Khoác Nam Big Size Áo Khoác Kaki Nam Hai Lớp Big Size Chống Lạnh Chống Nắng Chống Gió Hàn Quốc Cao Cấp WK35 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.6097429990768433,
+            "final_score": 0.6097429990768433
+          },
+          {
+            "rank": 12,
+            "product_id": "16712370",
+            "product_name": "Áo Khoác Kaki Nam Hai Lớp Simple Cao Cấp ShopN6-KK35",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.609053909778595,
+            "final_score": 0.609053909778595
+          },
+          {
+            "rank": 13,
+            "product_id": "73219234",
+            "product_name": "Áo Khoác Nam Áo Khoác Kaki Nam Big Size Cổ Cao Hai Lớp Chống Nắng Chống Lạnh Hàn Quốc Cao Cấp AK35 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 189000,
+            "text_score": null,
+            "image_score": 0.609053909778595,
+            "final_score": 0.609053909778595
+          },
+          {
+            "rank": 14,
+            "product_id": "104904605",
+            "product_name": "Quần short nam big size quần sọt nam thể thao quần đùi nam mặc nhà quần thun nam cotton 4 chiều co giãn cao cấp ShopN6 - TSB2",
+            "category": "Thời trang nam",
+            "price_vnd": 89000,
+            "text_score": null,
+            "image_score": 0.6010652780532837,
+            "final_score": 0.6010652780532837
+          },
+          {
+            "rank": 15,
+            "product_id": "67516317",
+            "product_name": "Áo Khoác Kaki Nam Áo Khoác Nam Hai Lớp FS Chống Nắng Chống Lạnh Cao Cấp KK46 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.598046064376831,
+            "final_score": 0.598046064376831
+          },
+          {
+            "rank": 16,
+            "product_id": "52188529",
+            "product_name": "Combo 4 Quần Lót Nam Quần Sịp Đùi Sợi Cotton Cao Cấp MRM FASHION Mix 2 Màu TẶNG Đôi Tất Nam Cao Cấp",
+            "category": "Thời trang nam",
+            "price_vnd": 265000,
+            "text_score": null,
+            "image_score": 0.5975284576416016,
+            "final_score": 0.5975284576416016
+          },
+          {
+            "rank": 17,
+            "product_id": "54645",
+            "product_name": "Tai nghe chụp tai Logitech H150 - 2 jack 3.5mm, Mic khử giảm tiếng ồn, âm thanh nổi - Màu",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 303000,
+            "text_score": null,
+            "image_score": 0.5947708487510681,
+            "final_score": 0.5947708487510681
+          },
+          {
+            "rank": 18,
+            "product_id": "15993454",
+            "product_name": "Áo Khoác Nam Áo Khoác Kaki Nam Đơn Giản Cao Cấp-KK34",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.5944757461547852,
+            "final_score": 0.5944757461547852
+          },
+          {
+            "rank": 19,
+            "product_id": "15992824",
+            "product_name": "Áo Khoác Nam Áo Khoác Dù Nam Cao Cấp-AD27",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.5940976142883301,
+            "final_score": 0.5940976142883301
+          },
+          {
+            "rank": 20,
+            "product_id": "31637401",
+            "product_name": "Combo 3 Quần Lót Nam Tam Giác Bamboo MRM Manlywear (Đen,Xanh Navy,Ghi nhạt)",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": null,
+            "image_score": 0.5913572311401367,
+            "final_score": 0.5913572311401367
+          }
+        ]
+      },
+      "multimodal": {
+        "candidate_count": 800,
+        "category_counts_top20": {
+          "Thời trang nam": 16,
+          "Thời trang nữ": 4
+        },
+        "category_precision_at_20": 0.8,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "277426915",
+            "product_name": "Giày đinh đá bóng sân cỏ nhân tạo Prowin H21",
+            "category": "Thời trang nam",
+            "price_vnd": 249000,
+            "text_score": 0.867302656173706,
+            "image_score": 1.0000001192092896,
+            "final_score": 1.0
+          },
+          {
+            "rank": 2,
+            "product_id": "154292862",
+            "product_name": "Quần đùi short gió nam thể thao Họa Tiết Rằn Ri trẻ trung năng động, thoáng mát co giãn 4 chiều MRM Manlywear",
+            "category": "Thời trang nam",
+            "price_vnd": 139000,
+            "text_score": 0.8604062795639038,
+            "image_score": 0.5694015026092529,
+            "final_score": 0.8472315073013306
+          },
+          {
+            "rank": 3,
+            "product_id": "99968881",
+            "product_name": "Set 2 quần đùi nam, quần Short Gió nam thể thao Basic trẻ trung năng động, thoáng mát co giãn 4 chiều MRM Manlywear",
+            "category": "Thời trang nam",
+            "price_vnd": 249000,
+            "text_score": 0.8569068312644958,
+            "image_score": 0.5878230333328247,
+            "final_score": 0.8241742849349976
+          },
+          {
+            "rank": 4,
+            "product_id": "42424755",
+            "product_name": "Quần Jogger Nam Thể Thao - Quần Nỉ Nam QD1 Lót Lông Cao Cấp Chính Hãng",
+            "category": "Thời trang nam",
+            "price_vnd": 239000,
+            "text_score": 0.8562142848968506,
+            "image_score": 0.48647451400756836,
+            "final_score": 0.7954756021499634
+          },
+          {
+            "rank": 5,
+            "product_id": "193492866",
+            "product_name": "Áo thun thể thao nam MRM Active Pro thấm hút mồ hôi tốt co dãn thoải mái vận động",
+            "category": "Thời trang nam",
+            "price_vnd": 129000,
+            "text_score": 0.8562281131744385,
+            "image_score": 0.4641706943511963,
+            "final_score": 0.7904563546180725
+          },
+          {
+            "rank": 6,
+            "product_id": "99958075",
+            "product_name": "Quần đùi short gió nam thể thao Basic trẻ trung năng động, thoáng mát co giãn 4 chiều MRM Manlywear",
+            "category": "Thời trang nam",
+            "price_vnd": 139000,
+            "text_score": 0.8507207036018372,
+            "image_score": 0.5857670307159424,
+            "final_score": 0.7754566669464111
+          },
+          {
+            "rank": 7,
+            "product_id": "7078761",
+            "product_name": "Bộ 5 Quần Lót Nam Nhật Cao Cấp (Giao Màu Ngẫu Nhiên)",
+            "category": "Thời trang nam",
+            "price_vnd": 168000,
+            "text_score": 0.8486708998680115,
+            "image_score": 0.5531343817710876,
+            "final_score": 0.7519689798355103
+          },
+          {
+            "rank": 8,
+            "product_id": "192948878",
+            "product_name": "Áo sơ mi nữ form rộng ngắn tay GIẤU NÚT form hàn quốc trẻ trung năng động vải lụa mềm mịn mát ít nhăn-MURN03",
+            "category": "Thời trang nữ",
+            "price_vnd": 104500,
+            "text_score": 0.8489525318145752,
+            "image_score": 0.4879316985607147,
+            "final_score": 0.7391768097877502
+          },
+          {
+            "rank": 9,
+            "product_id": "154298071",
+            "product_name": "Combo 2 quần đùi nam, quần Short Gió nam thể thao Họa Tiết Rằn Ri trẻ trung năng động, thoáng mát co giãn 4 chiều MRM Manlywear",
+            "category": "Thời trang nam",
+            "price_vnd": 269000,
+            "text_score": 0.8462393283843994,
+            "image_score": 0.5623093843460083,
+            "final_score": 0.7351144552230835
+          },
+          {
+            "rank": 10,
+            "product_id": "41531018",
+            "product_name": "Combo 3 quần lót nam Boxer sợi tre tự nhiên mềm mịn thoáng mát co giãn 4 chiều MRM Manlywear Tặng đôi tất nam Cao Cấp -Màu Ngẫu Nhiên",
+            "category": "Thời trang nam",
+            "price_vnd": 219000,
+            "text_score": 0.8449192047119141,
+            "image_score": 0.5512765645980835,
+            "final_score": 0.7222827672958374
+          },
+          {
+            "rank": 11,
+            "product_id": "69307352",
+            "product_name": "Quần short nam thể thao đồ gym thun cotton 4 chiều, quần đùi nam mặc nhà thể thao cao cấp ShopN6 - QSB2 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 89000,
+            "text_score": 0.8424491882324219,
+            "image_score": 0.6306443810462952,
+            "final_score": 0.721264123916626
+          },
+          {
+            "rank": 12,
+            "product_id": "52253824",
+            "product_name": "Quần short thun Nam tập GYM thể thao - Q0003",
+            "category": "Thời trang nam",
+            "price_vnd": 110000,
+            "text_score": 0.8448919057846069,
+            "image_score": 0.5369999408721924,
+            "final_score": 0.7187880277633667
+          },
+          {
+            "rank": 13,
+            "product_id": "58432849",
+            "product_name": "Bộ bơi nữ áo cộc tay, quần sooc đùi thể thao, đệm tròn dễ mặc, chất thun co giãn, dáng năng động, dấu bụng tốt | KT069",
+            "category": "Thời trang nữ",
+            "price_vnd": 290000,
+            "text_score": 0.8454925417900085,
+            "image_score": 0.505393922328949,
+            "final_score": 0.7162069082260132
+          },
+          {
+            "rank": 14,
+            "product_id": "31638205",
+            "product_name": "Combo 4 quần lót nam cạp 1cm sợi tre Bamboo tự nhiên mềm mịn thấm hút mồ hôi - Màu Ngẫu nhiên - 2XL",
+            "category": "Thời trang nam",
+            "price_vnd": 229000,
+            "text_score": 0.8439252376556396,
+            "image_score": 0.5108372569084167,
+            "final_score": 0.7052348852157593
+          },
+          {
+            "rank": 15,
+            "product_id": "91973812",
+            "product_name": "Áo Lót Nữ Su Đúc Hình Lá Không Gọng Đệm Dày Nâng Ngực A01 có ảnh thật",
+            "category": "Thời trang nữ",
+            "price_vnd": 74760,
+            "text_score": 0.8417513370513916,
+            "image_score": 0.49411460757255554,
+            "final_score": 0.6844367384910583
+          },
+          {
+            "rank": 16,
+            "product_id": "110139205",
+            "product_name": "Áo Gile Nam Lính Mỹ U869 Phong Cách US ARMY - HÀNG CHÍNH HÃNG",
+            "category": "Thời trang nam",
+            "price_vnd": 399500,
+            "text_score": 0.8374790549278259,
+            "image_score": 0.5707627534866333,
+            "final_score": 0.6687371730804443
+          },
+          {
+            "rank": 17,
+            "product_id": "37126497",
+            "product_name": "( 10 cái ) quần lót nữ Su đúc không đường may, hàng đẹp loại xịn W19_503",
+            "category": "Thời trang nữ",
+            "price_vnd": 229600,
+            "text_score": 0.8392040729522705,
+            "image_score": 0.4835096001625061,
+            "final_score": 0.6621330380439758
+          },
+          {
+            "rank": 18,
+            "product_id": "55022423",
+            "product_name": "KENDO - ÁO BA LỖ THỂ THAO TANK TOP size M - L - M",
+            "category": "Thời trang nam",
+            "price_vnd": 49500,
+            "text_score": 0.8390666246414185,
+            "image_score": 0.4814094007015228,
+            "final_score": 0.6605783104896545
+          },
+          {
+            "rank": 19,
+            "product_id": "73456416",
+            "product_name": "Áo Khoác Nam Big Size Áo Khoác Kaki Nam Hai Lớp Big Size Chống Lạnh Chống Nắng Chống Gió Hàn Quốc Cao Cấp WK35 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": 0.8350873589515686,
+            "image_score": 0.6097429990768433,
+            "final_score": 0.6590452194213867
+          },
+          {
+            "rank": 20,
+            "product_id": "97823540",
+            "product_name": "Áo Khoác Big Size Áo Khoác Dù Nam Có Cổ Trụ Chống Nắng Chống Nóng Chống Lạnh Chống Gió 2 Lớp Phối Logo Sọt Thời Trang Nam Tính Hàn Quốc Giá Tốt AD70",
+            "category": "Thời trang nam",
+            "price_vnd": 199000,
+            "text_score": 0.8368984460830688,
+            "image_score": 0.537095844745636,
+            "final_score": 0.6564698815345764
+          }
+        ]
+      }
+    },
+    {
+      "probe_id": "headphones",
+      "query": "tai nghe bluetooth giống hình",
+      "source": {
+        "product_id": "272030678",
+        "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+        "category": "Điện tử & Phụ kiện",
+        "image_path": "data/images/272030678.jpg"
+      },
+      "parsed_query": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": [],
+        "attributes": [
+          "tai nghe bluetooth",
+          "hình",
+          "bluetooth"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "tai nghe bluetooth",
+          "hình"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "effective_price_min": null,
+      "effective_price_max": null,
+      "image_only": {
+        "category_counts_top20": {
+          "Điện tử & Phụ kiện": 12,
+          "Nhà cửa & Đời sống": 3,
+          "Làm đẹp & Sức khỏe": 1,
+          "Điện gia dụng": 3,
+          "Bách hóa": 1
+        },
+        "category_precision_at_20": 0.6,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "272030678",
+            "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 359000,
+            "text_score": null,
+            "image_score": 1.0000001192092896,
+            "final_score": 1.0000001192092896
+          },
+          {
+            "rank": 2,
+            "product_id": "279143478",
+            "product_name": "Thiết bị định vị GPS HOCO E101 dùng cho cả Android và iOS, công nghệ UWB giúp định vị chính xác hơn, chống thất lạc hành lý, xe, chìa khóa - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 186000,
+            "text_score": null,
+            "image_score": 0.8119269013404846,
+            "final_score": 0.8119269013404846
+          },
+          {
+            "rank": 3,
+            "product_id": "273217798",
+            "product_name": "Tai Nghe có dây nhét tai M101 Pro 3.5mm âm thanh hay, chống ồn, hỗ trợ mic nghe gọi đầy đủ dây dài 1.2m - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 99000,
+            "text_score": null,
+            "image_score": 0.7641435861587524,
+            "final_score": 0.7641435861587524
+          },
+          {
+            "rank": 4,
+            "product_id": "273217833",
+            "product_name": "Tai nghe nhét tai jack cắm Type-C có mic hoco. M101 Pro tương thích rộng với các máy Android chân Type C và cho Iphone 15 Ipad Chân Type C - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 109000,
+            "text_score": null,
+            "image_score": 0.7508618831634521,
+            "final_score": 0.7508618831634521
+          },
+          {
+            "rank": 5,
+            "product_id": "276782048",
+            "product_name": "Củ Sạc Nhanh Cho Iphone Hoco C80/C80Plus/CS13/CS13A - Hỗ trợ sạc nhanh 20W PD QC3.0 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 89000,
+            "text_score": null,
+            "image_score": 0.7497093677520752,
+            "final_score": 0.7497093677520752
+          },
+          {
+            "rank": 6,
+            "product_id": "276827665",
+            "product_name": "Bộ Sạc Nhanh Cho Iphone PD20W Hoco C80/C80A/C109 2 cổng Usb và Type-C kèm dây sạc Type-C sang iPhone 1M Sạc 0-50% Pin trong 30 phút - Hàng chính hãng",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 179000,
+            "text_score": null,
+            "image_score": 0.7320006489753723,
+            "final_score": 0.7320006489753723
+          },
+          {
+            "rank": 7,
+            "product_id": "2001029",
+            "product_name": "Bộ Chuyển Đổi Ugreen HDMI Sang VGA Audio Cáp Tròn Có Nguồn Phụ 40253 - Hàng Chính Hãng",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 175000,
+            "text_score": null,
+            "image_score": 0.7231126427650452,
+            "final_score": 0.7231126427650452
+          },
+          {
+            "rank": 8,
+            "product_id": "275552221",
+            "product_name": "Quạt kẹp thắt lưng OVIE WF2 Yoobao tích điện 10000mAh kiêm Sạc Dự Phòng Đeo Thắt Lưng, Đeo Cổ có đèn hiển thị pin - Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 479000,
+            "text_score": null,
+            "image_score": 0.7164860963821411,
+            "final_score": 0.7164860963821411
+          },
+          {
+            "rank": 9,
+            "product_id": "174523824",
+            "product_name": "Máy sấy tóc Panasonic EH-ND65-K645 – Công suất tương đương 2300W – Sấy nóng lạnh – Đầu sấy tạo kiểu 11mm – Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 662000,
+            "text_score": null,
+            "image_score": 0.7057448029518127,
+            "final_score": 0.7057448029518127
+          },
+          {
+            "rank": 10,
+            "product_id": "276117054",
+            "product_name": "Tai nghe Bluetooth Apple AirPods 4",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 4289000,
+            "text_score": null,
+            "image_score": 0.6995540857315063,
+            "final_score": 0.6995540857315063
+          },
+          {
+            "rank": 11,
+            "product_id": "1935009",
+            "product_name": "Tai Nghe Apple EarPods Cổng Lightning",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 443000,
+            "text_score": null,
+            "image_score": 0.6951172351837158,
+            "final_score": 0.6951172351837158
+          },
+          {
+            "rank": 12,
+            "product_id": "272420799",
+            "product_name": "Tai Nghe Apple EarPods Cổng USB-C",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 500000,
+            "text_score": null,
+            "image_score": 0.6944350004196167,
+            "final_score": 0.6944350004196167
+          },
+          {
+            "rank": 13,
+            "product_id": "54645",
+            "product_name": "Tai nghe chụp tai Logitech H150 - 2 jack 3.5mm, Mic khử giảm tiếng ồn, âm thanh nổi - Màu",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 303000,
+            "text_score": null,
+            "image_score": 0.690470278263092,
+            "final_score": 0.690470278263092
+          },
+          {
+            "rank": 14,
+            "product_id": "191420029",
+            "product_name": "Tai nghe không dây SONY WI-C100 - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 544000,
+            "text_score": null,
+            "image_score": 0.6896985769271851,
+            "final_score": 0.6896985769271851
+          },
+          {
+            "rank": 15,
+            "product_id": "275494237",
+            "product_name": "Nồi chiên không dầu Philips 6.2 lít NA130/00 - Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 1340000,
+            "text_score": null,
+            "image_score": 0.6883772015571594,
+            "final_score": 0.6883772015571594
+          },
+          {
+            "rank": 16,
+            "product_id": "279331995",
+            "product_name": "Dụng cụ xay tỏi ớt LocknLock CKS321GRN CKS312GRN CKS327GRN CKS326GRN - kéo tay đơn giản",
+            "category": "Bách hóa",
+            "price_vnd": 82940,
+            "text_score": null,
+            "image_score": 0.6875613927841187,
+            "final_score": 0.6875613927841187
+          },
+          {
+            "rank": 17,
+            "product_id": "277742262",
+            "product_name": "Hộp cơm giữ nhiệt inox 304 Elmich EL8302 dung tích 1.7L - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 688000,
+            "text_score": null,
+            "image_score": 0.6870023012161255,
+            "final_score": 0.6870023012161255
+          },
+          {
+            "rank": 18,
+            "product_id": "123836523",
+            "product_name": "Adapter Sạc 1 Cổng USB Type-C 20W Apple",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 390000,
+            "text_score": null,
+            "image_score": 0.6819537878036499,
+            "final_score": 0.6819537878036499
+          },
+          {
+            "rank": 19,
+            "product_id": "156634748",
+            "product_name": "Cáp Sạc truyền dữ liệu 2.4 chống dối, dây dù dành cho Iphone,Ipad Hoco X14 Giao màu ngẫu nhiên- Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 65000,
+            "text_score": null,
+            "image_score": 0.6807096004486084,
+            "final_score": 0.6807096004486084
+          },
+          {
+            "rank": 20,
+            "product_id": "556556",
+            "product_name": "Loa Vi Tính Bluetooth Microlab M-106BT 2.1 (10W) - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 750000,
+            "text_score": null,
+            "image_score": 0.6783292293548584,
+            "final_score": 0.6783292293548584
+          }
+        ]
+      },
+      "multimodal": {
+        "candidate_count": 112,
+        "category_counts_top20": {
+          "Điện tử & Phụ kiện": 20
+        },
+        "category_precision_at_20": 1.0,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "272030678",
+            "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 359000,
+            "text_score": 0.8825387358665466,
+            "image_score": 1.0000001192092896,
+            "final_score": 0.9855656027793884
+          },
+          {
+            "rank": 2,
+            "product_id": "276117054",
+            "product_name": "Tai nghe Bluetooth Apple AirPods 4",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 4289000,
+            "text_score": 0.883179783821106,
+            "image_score": 0.6995540857315063,
+            "final_score": 0.8873648643493652
+          },
+          {
+            "rank": 3,
+            "product_id": "278748263",
+            "product_name": "Tai nghe Bluetooth Samsung Galaxy Buds Core (ANC) - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 1190000,
+            "text_score": 0.884279727935791,
+            "image_score": 0.5955322980880737,
+            "final_score": 0.8606447577476501
+          },
+          {
+            "rank": 4,
+            "product_id": "248761700",
+            "product_name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 745000,
+            "text_score": 0.882573664188385,
+            "image_score": 0.6002088189125061,
+            "final_score": 0.8481112122535706
+          },
+          {
+            "rank": 5,
+            "product_id": "54645",
+            "product_name": "Tai nghe chụp tai Logitech H150 - 2 jack 3.5mm, Mic khử giảm tiếng ồn, âm thanh nổi - Màu",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 303000,
+            "text_score": 0.8773675560951233,
+            "image_score": 0.690470278263092,
+            "final_score": 0.8360465168952942
+          },
+          {
+            "rank": 6,
+            "product_id": "273217833",
+            "product_name": "Tai nghe nhét tai jack cắm Type-C có mic hoco. M101 Pro tương thích rộng với các máy Android chân Type C và cho Iphone 15 Ipad Chân Type C - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 109000,
+            "text_score": 0.8747726678848267,
+            "image_score": 0.7508618831634521,
+            "final_score": 0.8353398442268372
+          },
+          {
+            "rank": 7,
+            "product_id": "181185263",
+            "product_name": "Tai Nghe Baseus Encok 3.5mm lateral in-ear Wired Earphone H17 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 159000,
+            "text_score": 0.8788379430770874,
+            "image_score": 0.6465361714363098,
+            "final_score": 0.8331003189086914
+          },
+          {
+            "rank": 8,
+            "product_id": "556556",
+            "product_name": "Loa Vi Tính Bluetooth Microlab M-106BT 2.1 (10W) - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 750000,
+            "text_score": 0.8735345602035522,
+            "image_score": 0.6783292293548584,
+            "final_score": 0.8000844717025757
+          },
+          {
+            "rank": 9,
+            "product_id": "271312499",
+            "product_name": "Tai nghe Bluetooth True Wireless Sony WF-1000XM5 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 6700000,
+            "text_score": 0.8709487915039062,
+            "image_score": 0.6420391201972961,
+            "final_score": 0.766142725944519
+          },
+          {
+            "rank": 10,
+            "product_id": "1935009",
+            "product_name": "Tai Nghe Apple EarPods Cổng Lightning",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 443000,
+            "text_score": 0.867477297782898,
+            "image_score": 0.6951172351837158,
+            "final_score": 0.7556483745574951
+          },
+          {
+            "rank": 11,
+            "product_id": "273217798",
+            "product_name": "Tai Nghe có dây nhét tai M101 Pro 3.5mm âm thanh hay, chống ồn, hỗ trợ mic nghe gọi đầy đủ dây dài 1.2m - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 99000,
+            "text_score": 0.8616878390312195,
+            "image_score": 0.7641435861587524,
+            "final_score": 0.7314308285713196
+          },
+          {
+            "rank": 12,
+            "product_id": "176899932",
+            "product_name": "Chuột không dây bluetooth Logitech Signature M650 - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 661000,
+            "text_score": 0.8643980622291565,
+            "image_score": 0.6249991655349731,
+            "final_score": 0.7059602737426758
+          },
+          {
+            "rank": 13,
+            "product_id": "191420029",
+            "product_name": "Tai nghe không dây SONY WI-C100 - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 544000,
+            "text_score": 0.8614577651023865,
+            "image_score": 0.6896985769271851,
+            "final_score": 0.7038740515708923
+          },
+          {
+            "rank": 14,
+            "product_id": "183513216",
+            "product_name": "Chuột công thái học không dây Logitech Lift Vertical - Bluetooth|USB Logi Bolt, Silent giảm ồn, 4 nút tùy chỉnh, tương thích với Windows/macOS/iPad/PC - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 1815000,
+            "text_score": 0.8625528812408447,
+            "image_score": 0.6601569652557373,
+            "final_score": 0.7027752995491028
+          },
+          {
+            "rank": 15,
+            "product_id": "271966725",
+            "product_name": "Loa Bluetooth Sony SRS-XB100 - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 1076166,
+            "text_score": 0.8592764735221863,
+            "image_score": 0.6623795628547668,
+            "final_score": 0.6763767004013062
+          },
+          {
+            "rank": 16,
+            "product_id": "116725239",
+            "product_name": "Chuột không dây Bluetooth, chuột máy tính HXSJ M107B chống ồn, DPI 1600, chế độ kép wireless usb 2.4Ghz, bluetooth chuyên dùng cho laptop, máy tính, tivi - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 245000,
+            "text_score": 0.8599656820297241,
+            "image_score": 0.6366167664527893,
+            "final_score": 0.6732145547866821
+          },
+          {
+            "rank": 17,
+            "product_id": "160906816",
+            "product_name": "Tai nghe có dây Sony MDR-EX155AP - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 690000,
+            "text_score": 0.8579702377319336,
+            "image_score": 0.6660951375961304,
+            "final_score": 0.6668269634246826
+          },
+          {
+            "rank": 18,
+            "product_id": "272420799",
+            "product_name": "Tai Nghe Apple EarPods Cổng USB-C",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 500000,
+            "text_score": 0.8556190729141235,
+            "image_score": 0.6944350004196167,
+            "final_score": 0.6570978760719299
+          },
+          {
+            "rank": 19,
+            "product_id": "379462",
+            "product_name": "Loa Vi Tính Microlab B51 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 279000,
+            "text_score": 0.8553451895713806,
+            "image_score": 0.6719686985015869,
+            "final_score": 0.6470866203308105
+          },
+          {
+            "rank": 20,
+            "product_id": "356188",
+            "product_name": "Chuột Có Dây Logitech B100 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "price_vnd": 77000,
+            "text_score": 0.8570490479469299,
+            "image_score": 0.6177559494972229,
+            "final_score": 0.6425346732139587
+          }
+        ]
+      }
+    },
+    {
+      "probe_id": "cosmetics_price",
+      "query": "kem chống nắng giống hình dưới 500 nghìn",
+      "source": {
+        "product_id": "55613571",
+        "product_name": "Kem Chống Nắng Tế Bào Gốc Kiềm Dầu Chống Nhăn Dưỡng Ẩm Trắng Da Cellkey-Scien Multi Perfect Sun Cream SPF50+PA++++ (50ml)",
+        "category": "Làm đẹp & Sức khỏe",
+        "image_path": "data/images/55613571.jpg"
+      },
+      "parsed_query": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "colors": [],
+        "attributes": [
+          "chống nắng"
+        ],
+        "price_min": null,
+        "price_max": 500000,
+        "gender": null,
+        "keywords": [
+          "kem",
+          "chống nắng",
+          "dưới",
+          "500",
+          "nghìn"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "effective_price_min": null,
+      "effective_price_max": 500000,
+      "image_only": {
+        "category_counts_top20": {
+          "Làm đẹp & Sức khỏe": 9,
+          "Sách": 1,
+          "Bách hóa": 6,
+          "Điện gia dụng": 1,
+          "Nhà cửa & Đời sống": 3
+        },
+        "category_precision_at_20": 0.45,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "55613571",
+            "product_name": "Kem Chống Nắng Tế Bào Gốc Kiềm Dầu Chống Nhăn Dưỡng Ẩm Trắng Da Cellkey-Scien Multi Perfect Sun Cream SPF50+PA++++ (50ml)",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 441450,
+            "text_score": null,
+            "image_score": 1.0,
+            "final_score": 1.0
+          },
+          {
+            "rank": 2,
+            "product_id": "55615437",
+            "product_name": "Tẩy Da Chết Mặt Tế Bào Gốc Thực Vật Lành Tính Làm Sạch Sâu Dịu Nhẹ Dưỡng Ẩm Sáng Da Cho Da Dầu Mụn Nhạy Cảm Cellkey-Scien White Peeling Gel (80ml)",
+            "category": "Sách",
+            "price_vnd": 299000,
+            "text_score": null,
+            "image_score": 0.8377102613449097,
+            "final_score": 0.8377102613449097
+          },
+          {
+            "rank": 3,
+            "product_id": "141367783",
+            "product_name": "Dầu gội gừng hà thủ ô Weilaiya 400ml - Nuôi dưỡng và phục hồi hư tổn cho mái tóc",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 390000,
+            "text_score": null,
+            "image_score": 0.701111912727356,
+            "final_score": 0.701111912727356
+          },
+          {
+            "rank": 4,
+            "product_id": "73429271",
+            "product_name": "Kem chống lão hóa Vichy Liftactiv Collagen Specialist 15ml",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 145000,
+            "text_score": null,
+            "image_score": 0.6696010828018188,
+            "final_score": 0.6696010828018188
+          },
+          {
+            "rank": 5,
+            "product_id": "5902685",
+            "product_name": "Sữa rửa mặt vitamin làm sáng da, mờ sẹo thâm dạng kem Acnes Vitamin Cleanser 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 62000,
+            "text_score": null,
+            "image_score": 0.6517389416694641,
+            "final_score": 0.6517389416694641
+          },
+          {
+            "rank": 6,
+            "product_id": "273060126",
+            "product_name": "Dầu massage body Kobi mát xa cơ thể giúp thư giãn, giảm đau cơ, giảm căng thẳng, mệt mỏi hiệu quả",
+            "category": "Bách hóa",
+            "price_vnd": 149000,
+            "text_score": null,
+            "image_score": 0.6207938194274902,
+            "final_score": 0.6207938194274902
+          },
+          {
+            "rank": 7,
+            "product_id": "247999867",
+            "product_name": "Gôm xịt tóc tạo kiểu siêu cứng, giữ nếp lâu Mugens Hair Spray Hàn Quốc 300ml + Móc khóa",
+            "category": "Bách hóa",
+            "price_vnd": 185000,
+            "text_score": null,
+            "image_score": 0.6061882972717285,
+            "final_score": 0.6061882972717285
+          },
+          {
+            "rank": 8,
+            "product_id": "185077932",
+            "product_name": "Gôm xịt tóc nam nữ BRITISH M Hard Tailor Spray giữ nếp, dễ dàng đổi kiểu 80ml",
+            "category": "Bách hóa",
+            "price_vnd": 350000,
+            "text_score": null,
+            "image_score": 0.6026750802993774,
+            "final_score": 0.6026750802993774
+          },
+          {
+            "rank": 9,
+            "product_id": "25108217",
+            "product_name": "Sữa rửa mặt ngăn ngừa mụn Acnes Creamy Wash 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 62000,
+            "text_score": null,
+            "image_score": 0.5965670347213745,
+            "final_score": 0.5965670347213745
+          },
+          {
+            "rank": 10,
+            "product_id": "176672117",
+            "product_name": "Sữa rửa mặt ngăn ngừa mụn dạng gel Acnes Gentle Wash 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 62000,
+            "text_score": null,
+            "image_score": 0.5963020324707031,
+            "final_score": 0.5963020324707031
+          },
+          {
+            "rank": 11,
+            "product_id": "206945062",
+            "product_name": "Kem Đánh Răng MEDIAN DENTAL IQ 93% 120g - MEDIAN GUM SCIENCE 87% - 93% 120g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 64500,
+            "text_score": null,
+            "image_score": 0.5923888087272644,
+            "final_score": 0.5923888087272644
+          },
+          {
+            "rank": 12,
+            "product_id": "145031054",
+            "product_name": "Dầu Gội Phủ Bạc Thảo Dược Komi Nhật Bản [Chai 500ml - Chính Hãng",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 469000,
+            "text_score": null,
+            "image_score": 0.5862241387367249,
+            "final_score": 0.5862241387367249
+          },
+          {
+            "rank": 13,
+            "product_id": "20831639",
+            "product_name": "Bộ lõi lọc nước Kangaroo số 1, 2, 3 Hàng chính hãng",
+            "category": "Điện gia dụng",
+            "price_vnd": 91000,
+            "text_score": null,
+            "image_score": 0.5854567885398865,
+            "final_score": 0.5854567885398865
+          },
+          {
+            "rank": 14,
+            "product_id": "83412126",
+            "product_name": "Bình Giữ Nhiệt Lock&Lock Energetic One-Touch Tumbler LHC3249 - 550ML",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 364240,
+            "text_score": null,
+            "image_score": 0.584694504737854,
+            "final_score": 0.584694504737854
+          },
+          {
+            "rank": 15,
+            "product_id": "271217228",
+            "product_name": "Ly nhựa 2 lớp LocknLock Rainbow HAP507WHTH - kèm ống hút - Dung tích 750ml",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 150220,
+            "text_score": null,
+            "image_score": 0.583407998085022,
+            "final_score": 0.583407998085022
+          },
+          {
+            "rank": 16,
+            "product_id": "275970374",
+            "product_name": "Dầu xả bưởi Cocoon 310ml",
+            "category": "Bách hóa",
+            "price_vnd": 148500,
+            "text_score": null,
+            "image_score": 0.5807690620422363,
+            "final_score": 0.5807690620422363
+          },
+          {
+            "rank": 17,
+            "product_id": "631959",
+            "product_name": "Kem mờ sẹo và thâm dạng gel Acnes Scar Care 12g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 67000,
+            "text_score": null,
+            "image_score": 0.5771417617797852,
+            "final_score": 0.5771417617797852
+          },
+          {
+            "rank": 18,
+            "product_id": "273672038",
+            "product_name": "Ly nhựa 2 lớp Bubble Tea Cold Cup LocknLock HAP529 - Kèm ống hút - Dung tích 720ml",
+            "category": "Bách hóa",
+            "price_vnd": 136300,
+            "text_score": null,
+            "image_score": 0.5756071209907532,
+            "final_score": 0.5756071209907532
+          },
+          {
+            "rank": 19,
+            "product_id": "279001572",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8347 dung tích 480ml",
+            "category": "Nhà cửa & Đời sống",
+            "price_vnd": 431000,
+            "text_score": null,
+            "image_score": 0.5667647123336792,
+            "final_score": 0.5667647123336792
+          },
+          {
+            "rank": 20,
+            "product_id": "273060653",
+            "product_name": "Dầu massage yoni body Kobi giúp cải thiện cảm xúc kéo dài cuộc yêu - 100ml",
+            "category": "Bách hóa",
+            "price_vnd": 127000,
+            "text_score": null,
+            "image_score": 0.566321074962616,
+            "final_score": 0.566321074962616
+          }
+        ]
+      },
+      "multimodal": {
+        "candidate_count": 107,
+        "category_counts_top20": {
+          "Làm đẹp & Sức khỏe": 20
+        },
+        "category_precision_at_20": 1.0,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "55613571",
+            "product_name": "Kem Chống Nắng Tế Bào Gốc Kiềm Dầu Chống Nhăn Dưỡng Ẩm Trắng Da Cellkey-Scien Multi Perfect Sun Cream SPF50+PA++++ (50ml)",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 441450,
+            "text_score": 0.8969146013259888,
+            "image_score": 1.0,
+            "final_score": 1.0
+          },
+          {
+            "rank": 2,
+            "product_id": "630778",
+            "product_name": "Kem chống nắng Skin Aqua dưỡng trắng, kiểm dầu, dùng hàng ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 55g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 197000,
+            "text_score": 0.8812602162361145,
+            "image_score": 0.4541172981262207,
+            "final_score": 0.7405344247817993
+          },
+          {
+            "rank": 3,
+            "product_id": "8959289",
+            "product_name": "Tinh chất chống nắng nâng tông Skin Aqua Tone up Lavender cho da tối màu & da vàng Sunplay Skin Aqua Tone Up UV Essence Lavender SPF 50+ PA++++ 50g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 159000,
+            "text_score": 0.8795483112335205,
+            "image_score": 0.4680641293525696,
+            "final_score": 0.7328842878341675
+          },
+          {
+            "rank": 4,
+            "product_id": "48291658",
+            "product_name": "Kem chống nắng body Skin Aqua mát lạnh dùng hàng ngày Sunplay Skin Aqua UV Body Cooling Lotion SPF 50+ PA++++ 150g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 176000,
+            "text_score": 0.8791143894195557,
+            "image_score": 0.47541749477386475,
+            "final_score": 0.7320196628570557
+          },
+          {
+            "rank": 5,
+            "product_id": "1313885",
+            "product_name": "Kem chống nắng Skin Aqua dưỡng trắng, kiểm dầu, dùng hàng ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 25g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 113000,
+            "text_score": 0.8776201009750366,
+            "image_score": 0.4356747567653656,
+            "final_score": 0.7107319235801697
+          },
+          {
+            "rank": 6,
+            "product_id": "630793",
+            "product_name": "Kem chống nắng Skin Aqua trang điểm tạo nền trắng mịn & đều màu dạng sữa Sunplay Skin Clear White CC Milk SPF 50, PA++++ 25g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 123000,
+            "text_score": 0.876908004283905,
+            "image_score": 0.44999492168426514,
+            "final_score": 0.7099469900131226
+          },
+          {
+            "rank": 7,
+            "product_id": "1313873",
+            "product_name": "Kem chống nắng Sunplay mát lạnh giải nhiệt dạng sữa Sunplay Super Cool SPF 50, PA++++ 30g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 86000,
+            "text_score": 0.8725442290306091,
+            "image_score": 0.5069477558135986,
+            "final_score": 0.6964688897132874
+          },
+          {
+            "rank": 8,
+            "product_id": "1313871",
+            "product_name": "Kem chống nắng Sunplay cực mạnh dạng sữa Sunplay Super Block SPF 50+, PA++++ 30g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 94000,
+            "text_score": 0.8741798996925354,
+            "image_score": 0.40575194358825684,
+            "final_score": 0.6790504455566406
+          },
+          {
+            "rank": 9,
+            "product_id": "1313877",
+            "product_name": "Kem chống nắng Sunplay cho bé từ 6 tháng tuổi và da nhạy cảm, dạng sữa Sunplay Baby Mild SPF 35, PA++ 30g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 86000,
+            "text_score": 0.8715206980705261,
+            "image_score": 0.4108272194862366,
+            "final_score": 0.6624985933303833
+          },
+          {
+            "rank": 10,
+            "product_id": "67421152",
+            "product_name": "Gel sữa chống nắng Senka Perfect UV Gel 80ml",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 189000,
+            "text_score": 0.8652486801147461,
+            "image_score": 0.5178285837173462,
+            "final_score": 0.6502023935317993
+          },
+          {
+            "rank": 11,
+            "product_id": "77986600",
+            "product_name": "Kem dưỡng trắng dạng gel giúp cải thiện thâm sạm Melano CC Whitening Gel 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 298000,
+            "text_score": 0.860953688621521,
+            "image_score": 0.4714273512363434,
+            "final_score": 0.6081039905548096
+          },
+          {
+            "rank": 12,
+            "product_id": "191752367",
+            "product_name": "[HOT DEAL] Kem Dưỡng Da Trắng Hồng ban đêm Giảm Thâm Sạm Không Cồn dạng gel SENKA AQUA BRIGHT GLOW GEL CREAM 50g - 15538",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 235000,
+            "text_score": 0.851848840713501,
+            "image_score": 0.5427245497703552,
+            "final_score": 0.5666059851646423
+          },
+          {
+            "rank": 13,
+            "product_id": "54058501",
+            "product_name": "Kem dưỡng trắng Hada Labo Perfect White Tranexamic Acid Cream 50g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 206000,
+            "text_score": 0.8537817001342773,
+            "image_score": 0.4348849654197693,
+            "final_score": 0.5493273735046387
+          },
+          {
+            "rank": 14,
+            "product_id": "631498",
+            "product_name": "Kem dưỡng cải thiện lão hóa Hada Labo Pro-Aging Retinol B3 Cream 50g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 239000,
+            "text_score": 0.8558628559112549,
+            "image_score": 0.3532623052597046,
+            "final_score": 0.5404292345046997
+          },
+          {
+            "rank": 15,
+            "product_id": "176672117",
+            "product_name": "Sữa rửa mặt ngăn ngừa mụn dạng gel Acnes Gentle Wash 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 62000,
+            "text_score": 0.8443905115127563,
+            "image_score": 0.5963020324707031,
+            "final_score": 0.5312542915344238
+          },
+          {
+            "rank": 16,
+            "product_id": "2775397",
+            "product_name": "Bao Cao Su Có Gai Nhật Bản Sagami Extreme White (10 Cái / Hộp)",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 73000,
+            "text_score": 0.8469279408454895,
+            "image_score": 0.47147417068481445,
+            "final_score": 0.5132827162742615
+          },
+          {
+            "rank": 17,
+            "product_id": "23576165",
+            "product_name": "KEM ĐÁNH RĂNG KIN B5 LÀM SẠCH MẢNG BÁM VÀ PHỤC HỒI NƯỚU RĂNG 125ML",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 205000,
+            "text_score": 0.8438771963119507,
+            "image_score": 0.5324376225471497,
+            "final_score": 0.5098112225532532
+          },
+          {
+            "rank": 18,
+            "product_id": "5902685",
+            "product_name": "Sữa rửa mặt vitamin làm sáng da, mờ sẹo thâm dạng kem Acnes Vitamin Cleanser 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 62000,
+            "text_score": 0.8374919891357422,
+            "image_score": 0.6517389416694641,
+            "final_score": 0.5002110004425049
+          },
+          {
+            "rank": 19,
+            "product_id": "33597687",
+            "product_name": "Son dưỡng môi không màu chuyển kem mịn LipIce Creamy",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 63000,
+            "text_score": 0.8490225076675415,
+            "image_score": 0.37379059195518494,
+            "final_score": 0.4999554753303528
+          },
+          {
+            "rank": 20,
+            "product_id": "276348907",
+            "product_name": "[100 Cái 6A] Thùng/Combo Khẩu Trang Y Tế Kháng Khuẩn Chống Nắng 6A An Tâm -10 Túi/100 Cái",
+            "category": "Làm đẹp & Sức khỏe",
+            "price_vnd": 110000,
+            "text_score": 0.841728687286377,
+            "image_score": 0.5402866005897522,
+            "final_score": 0.4974929988384247
+          }
+        ]
+      }
+    },
+    {
+      "probe_id": "book_other",
+      "query": "sách giống hình",
+      "source": {
+        "product_id": "3304875",
+        "product_name": "Sách Điều Kỳ Diệu Của Tiệm Tạp Hóa NAMIYA (Tái Bản)",
+        "category": "Sách",
+        "image_path": "data/images/3304875.jpg"
+      },
+      "parsed_query": {
+        "intent": "search_product",
+        "category": "Sách",
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "sách",
+          "giống hình"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "effective_price_min": null,
+      "effective_price_max": null,
+      "image_only": {
+        "category_counts_top20": {
+          "Sách": 15,
+          "Thời trang nam": 5
+        },
+        "category_precision_at_20": 0.75,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "3304875",
+            "product_name": "Sách Điều Kỳ Diệu Của Tiệm Tạp Hóa NAMIYA (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 107030,
+            "text_score": null,
+            "image_score": 1.0000001192092896,
+            "final_score": 1.0000001192092896
+          },
+          {
+            "rank": 2,
+            "product_id": "117238177",
+            "product_name": "Sách Thư Viện Nửa Đêm",
+            "category": "Sách",
+            "price_vnd": 126000,
+            "text_score": null,
+            "image_score": 0.7634300589561462,
+            "final_score": 0.7634300589561462
+          },
+          {
+            "rank": 3,
+            "product_id": "7982628",
+            "product_name": "Sách Suối Nguồn (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 294000,
+            "text_score": null,
+            "image_score": 0.717542290687561,
+            "final_score": 0.717542290687561
+          },
+          {
+            "rank": 4,
+            "product_id": "109017985",
+            "product_name": "Sách Thiên Tài Bên Trái, Kẻ Điên Bên Phải (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 128880,
+            "text_score": null,
+            "image_score": 0.6513895988464355,
+            "final_score": 0.6513895988464355
+          },
+          {
+            "rank": 5,
+            "product_id": "272155345",
+            "product_name": "Sách Kính Vạn Hoa Chết Chóc",
+            "category": "Sách",
+            "price_vnd": 133300,
+            "text_score": null,
+            "image_score": 0.6503230929374695,
+            "final_score": 0.6503230929374695
+          },
+          {
+            "rank": 6,
+            "product_id": "1080002",
+            "product_name": "Sách Boxset Harry Potter - Tiếng Việt (Trọn Bộ 7 Tập)",
+            "category": "Sách",
+            "price_vnd": 1473000,
+            "text_score": null,
+            "image_score": 0.6495273113250732,
+            "final_score": 0.6495273113250732
+          },
+          {
+            "rank": 7,
+            "product_id": "165030729",
+            "product_name": "Sách Những Kẻ Âu Lo",
+            "category": "Sách",
+            "price_vnd": 149000,
+            "text_score": null,
+            "image_score": 0.6442938446998596,
+            "final_score": 0.6442938446998596
+          },
+          {
+            "rank": 8,
+            "product_id": "13920941",
+            "product_name": "Combo Doraemon - Truyện Dài (Trọn Bộ 24 Cuốn) - Tái Bản",
+            "category": "Sách",
+            "price_vnd": 529200,
+            "text_score": null,
+            "image_score": 0.6273148655891418,
+            "final_score": 0.6273148655891418
+          },
+          {
+            "rank": 9,
+            "product_id": "14643411",
+            "product_name": "Sách Điều Kỳ Diệu (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 144000,
+            "text_score": null,
+            "image_score": 0.626220703125,
+            "final_score": 0.626220703125
+          },
+          {
+            "rank": 10,
+            "product_id": "113052442",
+            "product_name": "Áo thun nam Áo phông nam cổ tròn - không cổ Out of control thời trang siêu hot hàng đẹp bao đẹp-M190",
+            "category": "Thời trang nam",
+            "price_vnd": 203950,
+            "text_score": null,
+            "image_score": 0.610470175743103,
+            "final_score": 0.610470175743103
+          },
+          {
+            "rank": 11,
+            "product_id": "7369223",
+            "product_name": "Sách Cho Tôi Xin Một Vé Đi Tuổi Thơ",
+            "category": "Sách",
+            "price_vnd": 68400,
+            "text_score": null,
+            "image_score": 0.6077146530151367,
+            "final_score": 0.6077146530151367
+          },
+          {
+            "rank": 12,
+            "product_id": "12377498",
+            "product_name": "Sách Bố Con Cá Gai (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 103500,
+            "text_score": null,
+            "image_score": 0.5959570407867432,
+            "final_score": 0.5959570407867432
+          },
+          {
+            "rank": 13,
+            "product_id": "74021317",
+            "product_name": "Sách Cây Cam Ngọt Của Tôi",
+            "category": "Sách",
+            "price_vnd": 93750,
+            "text_score": null,
+            "image_score": 0.5896591544151306,
+            "final_score": 0.5896591544151306
+          },
+          {
+            "rank": 14,
+            "product_id": "202450677",
+            "product_name": "Chú Thuật Hồi Chiến Tập 8",
+            "category": "Sách",
+            "price_vnd": 28000,
+            "text_score": null,
+            "image_score": 0.5877640247344971,
+            "final_score": 0.5877640247344971
+          },
+          {
+            "rank": 15,
+            "product_id": "37970004",
+            "product_name": "Combo 5 Quần Lót Nam Cao Cấp Munafie Co Dãn Xuất Nhật Kèm Túi Zip",
+            "category": "Thời trang nam",
+            "price_vnd": 170000,
+            "text_score": null,
+            "image_score": 0.5860342979431152,
+            "final_score": 0.5860342979431152
+          },
+          {
+            "rank": 16,
+            "product_id": "56461941",
+            "product_name": "Áo Khoác Dù Nam Hai Lớp Chống Nắng Gió Bụi Bẩn Cao Cấp AD48 - ShopN6 (Nhiều Màu)",
+            "category": "Thời trang nam",
+            "price_vnd": 160000,
+            "text_score": null,
+            "image_score": 0.5819243788719177,
+            "final_score": 0.5819243788719177
+          },
+          {
+            "rank": 17,
+            "product_id": "160585832",
+            "product_name": "Sách Veil – Sắc Trắng Yêu Kiều - Tập 3 (Tặng Kèm Postcard)",
+            "category": "Sách",
+            "price_vnd": 91100,
+            "text_score": null,
+            "image_score": 0.580172061920166,
+            "final_score": 0.580172061920166
+          },
+          {
+            "rank": 18,
+            "product_id": "186286190",
+            "product_name": "Sách Mắt Biếc (Tái Bản 2022)",
+            "category": "Sách",
+            "price_vnd": 36000,
+            "text_score": null,
+            "image_score": 0.5778259634971619,
+            "final_score": 0.5778259634971619
+          },
+          {
+            "rank": 19,
+            "product_id": "113052759",
+            "product_name": "Áo khoác nam Áo khoát nam kaki chống nắng rẻ from rộng trơn cực chất siêu chất",
+            "category": "Thời trang nam",
+            "price_vnd": 245000,
+            "text_score": null,
+            "image_score": 0.5709154605865479,
+            "final_score": 0.5709154605865479
+          },
+          {
+            "rank": 20,
+            "product_id": "24793563",
+            "product_name": "Áo thun nam cổ bẻ kiểu trơn có 1 túi áo",
+            "category": "Thời trang nam",
+            "price_vnd": 120000,
+            "text_score": null,
+            "image_score": 0.5664058923721313,
+            "final_score": 0.5664058923721313
+          }
+        ]
+      },
+      "multimodal": {
+        "candidate_count": 112,
+        "category_counts_top20": {
+          "Sách": 20
+        },
+        "category_precision_at_20": 1.0,
+        "results": [
+          {
+            "rank": 1,
+            "product_id": "190861557",
+            "product_name": "Sách Yêu Những Ngày Nắng Chẳng Ghét Những Ngày Mưa",
+            "category": "Sách",
+            "price_vnd": 99000,
+            "text_score": 0.8828270435333252,
+            "image_score": 0.5088472962379456,
+            "final_score": 0.884932279586792
+          },
+          {
+            "rank": 2,
+            "product_id": "271379451",
+            "product_name": "Sách Lý Thuyết Trò Chơi",
+            "category": "Sách",
+            "price_vnd": 121200,
+            "text_score": 0.879595160484314,
+            "image_score": 0.4803707003593445,
+            "final_score": 0.840778648853302
+          },
+          {
+            "rank": 3,
+            "product_id": "59511811",
+            "product_name": "Sách Dấu Chân Trên Cát - Nguyên Phong (Tái Bản 2020)",
+            "category": "Sách",
+            "price_vnd": 111000,
+            "text_score": 0.8789595365524292,
+            "image_score": 0.4459453523159027,
+            "final_score": 0.8253417015075684
+          },
+          {
+            "rank": 4,
+            "product_id": "276641698",
+            "product_name": "Tiệm sách của nàng (Nguyễn Nhật Ánh)",
+            "category": "Sách",
+            "price_vnd": 96000,
+            "text_score": 0.8783332705497742,
+            "image_score": 0.43193092942237854,
+            "final_score": 0.8147952556610107
+          },
+          {
+            "rank": 5,
+            "product_id": "544731",
+            "product_name": "Sách Giáo Trình Chuẩn HSK 2 - Bài Học (Kèm file MP3)",
+            "category": "Sách",
+            "price_vnd": 165000,
+            "text_score": 0.876914381980896,
+            "image_score": 0.3793589472770691,
+            "final_score": 0.7860228419303894
+          },
+          {
+            "rank": 6,
+            "product_id": "270234757",
+            "product_name": "Sách Xứ Sở Miên Man",
+            "category": "Sách",
+            "price_vnd": 176000,
+            "text_score": 0.8723639249801636,
+            "image_score": 0.5425093173980713,
+            "final_score": 0.7714714407920837
+          },
+          {
+            "rank": 7,
+            "product_id": "271916321",
+            "product_name": "Sách Mùa hè không tên (Nguyễn Nhật Ánh) - Tặng kèm Bookmark, Tranh màu",
+            "category": "Sách",
+            "price_vnd": 103500,
+            "text_score": 0.8733954429626465,
+            "image_score": 0.4685021936893463,
+            "final_score": 0.7660961151123047
+          },
+          {
+            "rank": 8,
+            "product_id": "1080002",
+            "product_name": "Sách Boxset Harry Potter - Tiếng Việt (Trọn Bộ 7 Tập)",
+            "category": "Sách",
+            "price_vnd": 1473000,
+            "text_score": 0.8695573210716248,
+            "image_score": 0.6495273113250732,
+            "final_score": 0.7639937996864319
+          },
+          {
+            "rank": 9,
+            "product_id": "177487151",
+            "product_name": "Sách Nếu Biết Trăm Năm Là Hữu Hạn",
+            "category": "Sách",
+            "price_vnd": 140000,
+            "text_score": 0.8707140684127808,
+            "image_score": 0.5566014647483826,
+            "final_score": 0.7556385397911072
+          },
+          {
+            "rank": 10,
+            "product_id": "19274771",
+            "product_name": "Sách Chuỗi Án Mạng A.B.C (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 89000,
+            "text_score": 0.8729220628738403,
+            "image_score": 0.4334665834903717,
+            "final_score": 0.752397894859314
+          },
+          {
+            "rank": 11,
+            "product_id": "186286190",
+            "product_name": "Sách Mắt Biếc (Tái Bản 2022)",
+            "category": "Sách",
+            "price_vnd": 36000,
+            "text_score": 0.8698840141296387,
+            "image_score": 0.5778259634971619,
+            "final_score": 0.7509843707084656
+          },
+          {
+            "rank": 12,
+            "product_id": "633125",
+            "product_name": "Sách Lĩnh Nam Chích Quái",
+            "category": "Sách",
+            "price_vnd": 266000,
+            "text_score": 0.8704112768173218,
+            "image_score": 0.542188823223114,
+            "final_score": 0.7487502694129944
+          },
+          {
+            "rank": 13,
+            "product_id": "77982982",
+            "product_name": "Sách Trí Tuệ Xúc Cảm",
+            "category": "Sách",
+            "price_vnd": 131400,
+            "text_score": 0.8733420372009277,
+            "image_score": 0.36060187220573425,
+            "final_score": 0.7401977777481079
+          },
+          {
+            "rank": 14,
+            "product_id": "7982628",
+            "product_name": "Sách Suối Nguồn (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 294000,
+            "text_score": 0.865566611289978,
+            "image_score": 0.717542290687561,
+            "final_score": 0.7336456179618835
+          },
+          {
+            "rank": 15,
+            "product_id": "249875150",
+            "product_name": "Sách Hai số phận (bìa mềm)",
+            "category": "Sách",
+            "price_vnd": 179000,
+            "text_score": 0.8707305788993835,
+            "image_score": 0.45319291949272156,
+            "final_score": 0.7316033840179443
+          },
+          {
+            "rank": 16,
+            "product_id": "107802183",
+            "product_name": "Sách Sức Mạnh Tiềm Thức (Tái Bản) (Bìa Mềm)",
+            "category": "Sách",
+            "price_vnd": 98560,
+            "text_score": 0.8729164600372314,
+            "image_score": 0.2625611126422882,
+            "final_score": 0.7122930288314819
+          },
+          {
+            "rank": 17,
+            "product_id": "179063564",
+            "product_name": "Sách Tôi Tự Học",
+            "category": "Sách",
+            "price_vnd": 83500,
+            "text_score": 0.8693885803222656,
+            "image_score": 0.433460533618927,
+            "final_score": 0.711416482925415
+          },
+          {
+            "rank": 18,
+            "product_id": "7718737",
+            "product_name": "Sách Nghệ Thuật Tư Duy Rành Mạch (Tái Bản)",
+            "category": "Sách",
+            "price_vnd": 113960,
+            "text_score": 0.8671995401382446,
+            "image_score": 0.5082923769950867,
+            "final_score": 0.703560471534729
+          },
+          {
+            "rank": 19,
+            "product_id": "160585832",
+            "product_name": "Sách Veil – Sắc Trắng Yêu Kiều - Tập 3 (Tặng Kèm Postcard)",
+            "category": "Sách",
+            "price_vnd": 91100,
+            "text_score": 0.8652994632720947,
+            "image_score": 0.580172061920166,
+            "final_score": 0.6983641386032104
+          },
+          {
+            "rank": 20,
+            "product_id": "165030729",
+            "product_name": "Sách Những Kẻ Âu Lo",
+            "category": "Sách",
+            "price_vnd": 149000,
+            "text_score": 0.8638609647750854,
+            "image_score": 0.6442938446998596,
+            "final_score": 0.6967034935951233
+          }
+        ]
+      }
+    }
+  ],
+  "category_precision_at_20": {
+    "query_count": 24,
+    "image_only_mean": 0.7270833333333333,
+    "multimodal_mean": 0.8604166666666666,
+    "cases": [
+      {
+        "case_id": "test_bach_01",
+        "query": "sữa đậu nành bổ sung canxi hộp một lít",
+        "parsed_category": "Bách hóa",
+        "relevant_categories": [
+          "Bách hóa"
+        ],
+        "image_category_precision_at_20": 0.75,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Bách hóa": 15,
+          "Nhà cửa & Đời sống": 3,
+          "Làm đẹp & Sức khỏe": 2
+        },
+        "multimodal_top20_categories": {
+          "Bách hóa": 20
+        }
+      },
+      {
+        "case_id": "test_bach_02",
+        "query": "gạo ST25 túi 5 kg",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Bách hóa"
+        ],
+        "image_category_precision_at_20": 0.8,
+        "multimodal_category_precision_at_20": 0.55,
+        "image_top20_categories": {
+          "Bách hóa": 16,
+          "Làm đẹp & Sức khỏe": 4
+        },
+        "multimodal_top20_categories": {
+          "Bách hóa": 11,
+          "Điện gia dụng": 3,
+          "Nhà cửa & Đời sống": 2,
+          "Làm đẹp & Sức khỏe": 2,
+          "Sách": 1,
+          "Thời trang nam": 1
+        }
+      },
+      {
+        "case_id": "test_bach_03",
+        "query": "dầu hạt cải chai một lít để nấu ăn",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Bách hóa"
+        ],
+        "image_category_precision_at_20": 0.5,
+        "multimodal_category_precision_at_20": 0.6,
+        "image_top20_categories": {
+          "Bách hóa": 10,
+          "Làm đẹp & Sức khỏe": 8,
+          "Nhà cửa & Đời sống": 1,
+          "Sách": 1
+        },
+        "multimodal_top20_categories": {
+          "Bách hóa": 12,
+          "Nhà cửa & Đời sống": 1,
+          "Điện gia dụng": 6,
+          "Làm đẹp & Sức khỏe": 1
+        }
+      },
+      {
+        "case_id": "test_beauty_01",
+        "query": "dầu gội cho tóc bạc và tóc rụng",
+        "parsed_category": "Làm đẹp & Sức khỏe",
+        "relevant_categories": [
+          "Làm đẹp & Sức khỏe"
+        ],
+        "image_category_precision_at_20": 0.5,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Làm đẹp & Sức khỏe": 10,
+          "Bách hóa": 7,
+          "Điện gia dụng": 1,
+          "Nhà cửa & Đời sống": 1,
+          "Sách": 1
+        },
+        "multimodal_top20_categories": {
+          "Làm đẹp & Sức khỏe": 20
+        }
+      },
+      {
+        "case_id": "test_beauty_02",
+        "query": "kem dưỡng phục hồi và làm dịu da",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Làm đẹp & Sức khỏe"
+        ],
+        "image_category_precision_at_20": 0.65,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Làm đẹp & Sức khỏe": 13,
+          "Bách hóa": 3,
+          "Nhà cửa & Đời sống": 1,
+          "Sách": 1,
+          "Điện gia dụng": 2
+        },
+        "multimodal_top20_categories": {
+          "Làm đẹp & Sức khỏe": 20
+        }
+      },
+      {
+        "case_id": "test_beauty_03",
+        "query": "bao cao su siêu mỏng nhạy cảm",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Làm đẹp & Sức khỏe"
+        ],
+        "image_category_precision_at_20": 0.85,
+        "multimodal_category_precision_at_20": 0.75,
+        "image_top20_categories": {
+          "Làm đẹp & Sức khỏe": 17,
+          "Nhà cửa & Đời sống": 2,
+          "Bách hóa": 1
+        },
+        "multimodal_top20_categories": {
+          "Làm đẹp & Sức khỏe": 15,
+          "Nhà cửa & Đời sống": 1,
+          "Thời trang nữ": 1,
+          "Thời trang nam": 3
+        }
+      },
+      {
+        "case_id": "test_home_01",
+        "query": "bộ hộp cơm giữ nhiệt có túi mang đi làm",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Nhà cửa & Đời sống"
+        ],
+        "image_category_precision_at_20": 0.75,
+        "multimodal_category_precision_at_20": 0.5,
+        "image_top20_categories": {
+          "Nhà cửa & Đời sống": 15,
+          "Bách hóa": 1,
+          "Điện gia dụng": 4
+        },
+        "multimodal_top20_categories": {
+          "Nhà cửa & Đời sống": 10,
+          "Điện gia dụng": 3,
+          "Thời trang nam": 4,
+          "Bách hóa": 2,
+          "Làm đẹp & Sức khỏe": 1
+        }
+      },
+      {
+        "case_id": "test_home_02",
+        "query": "cốc giữ nhiệt inox 304 khoảng 500ml",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Nhà cửa & Đời sống"
+        ],
+        "image_category_precision_at_20": 0.95,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Nhà cửa & Đời sống": 19,
+          "Điện gia dụng": 1
+        },
+        "multimodal_top20_categories": {
+          "Nhà cửa & Đời sống": 20
+        }
+      },
+      {
+        "case_id": "test_home_03",
+        "query": "ghế hỗ trợ ngồi đúng tư thế",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Nhà cửa & Đời sống"
+        ],
+        "image_category_precision_at_20": 0.2,
+        "multimodal_category_precision_at_20": 0.3,
+        "image_top20_categories": {
+          "Nhà cửa & Đời sống": 4,
+          "Thời trang nam": 10,
+          "Điện tử & Phụ kiện": 2,
+          "Điện gia dụng": 1,
+          "Thời trang nữ": 1,
+          "Bách hóa": 2
+        },
+        "multimodal_top20_categories": {
+          "Nhà cửa & Đời sống": 6,
+          "Thời trang nam": 4,
+          "Điện gia dụng": 5,
+          "Thời trang nữ": 1,
+          "Làm đẹp & Sức khỏe": 3,
+          "Điện tử & Phụ kiện": 1
+        }
+      },
+      {
+        "case_id": "test_book_01",
+        "query": "sách tiệm tạp hóa Namiya",
+        "parsed_category": "Sách",
+        "relevant_categories": [
+          "Sách"
+        ],
+        "image_category_precision_at_20": 0.75,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Sách": 15,
+          "Thời trang nam": 5
+        },
+        "multimodal_top20_categories": {
+          "Sách": 20
+        }
+      },
+      {
+        "case_id": "test_book_02",
+        "query": "trọn bộ truyện Harry Potter tiếng Việt",
+        "parsed_category": "Sách",
+        "relevant_categories": [
+          "Sách"
+        ],
+        "image_category_precision_at_20": 0.3,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Sách": 6,
+          "Bách hóa": 3,
+          "Điện gia dụng": 2,
+          "Nhà cửa & Đời sống": 5,
+          "Thời trang nam": 3,
+          "Làm đẹp & Sức khỏe": 1
+        },
+        "multimodal_top20_categories": {
+          "Sách": 20
+        }
+      },
+      {
+        "case_id": "test_book_03",
+        "query": "sách tâm lý học về tiền và tài chính cá nhân",
+        "parsed_category": "Sách",
+        "relevant_categories": [
+          "Sách"
+        ],
+        "image_category_precision_at_20": 1.0,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Sách": 20
+        },
+        "multimodal_top20_categories": {
+          "Sách": 20
+        }
+      },
+      {
+        "case_id": "test_men_01",
+        "query": "áo khoác gió nam chống nắng trượt nước",
+        "parsed_category": "Thời trang nam",
+        "relevant_categories": [
+          "Thời trang nam"
+        ],
+        "image_category_precision_at_20": 0.85,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Thời trang nam": 17,
+          "Thời trang nữ": 3
+        },
+        "multimodal_top20_categories": {
+          "Thời trang nam": 20
+        }
+      },
+      {
+        "case_id": "test_men_02",
+        "query": "quần túi hộp nam vải kaki",
+        "parsed_category": "Thời trang nam",
+        "relevant_categories": [
+          "Thời trang nam"
+        ],
+        "image_category_precision_at_20": 0.95,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Thời trang nam": 19,
+          "Thời trang nữ": 1
+        },
+        "multimodal_top20_categories": {
+          "Thời trang nam": 20
+        }
+      },
+      {
+        "case_id": "test_men_03",
+        "query": "quần lót boxer nam sợi tre thoáng mát",
+        "parsed_category": "Thời trang nam",
+        "relevant_categories": [
+          "Thời trang nam"
+        ],
+        "image_category_precision_at_20": 1.0,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Thời trang nam": 20
+        },
+        "multimodal_top20_categories": {
+          "Thời trang nam": 20
+        }
+      },
+      {
+        "case_id": "test_women_01",
+        "query": "bộ đồ ngủ nữ bằng satin lụa",
+        "parsed_category": "Thời trang nữ",
+        "relevant_categories": [
+          "Thời trang nữ"
+        ],
+        "image_category_precision_at_20": 0.9,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Thời trang nữ": 18,
+          "Nhà cửa & Đời sống": 2
+        },
+        "multimodal_top20_categories": {
+          "Thời trang nữ": 20
+        }
+      },
+      {
+        "case_id": "test_women_02",
+        "query": "quần lót nữ su đúc không đường may",
+        "parsed_category": "Thời trang nữ",
+        "relevant_categories": [
+          "Thời trang nữ"
+        ],
+        "image_category_precision_at_20": 0.5,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Thời trang nữ": 10,
+          "Thời trang nam": 8,
+          "Nhà cửa & Đời sống": 1,
+          "Bách hóa": 1
+        },
+        "multimodal_top20_categories": {
+          "Thời trang nữ": 20
+        }
+      },
+      {
+        "case_id": "test_women_03",
+        "query": "quần jean nữ ống rộng lưng cao",
+        "parsed_category": "Thời trang nữ",
+        "relevant_categories": [
+          "Thời trang nữ"
+        ],
+        "image_category_precision_at_20": 0.95,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Thời trang nữ": 19,
+          "Nhà cửa & Đời sống": 1
+        },
+        "multimodal_top20_categories": {
+          "Thời trang nữ": 20
+        }
+      },
+      {
+        "case_id": "test_appliance_01",
+        "query": "nồi chiên không dầu có chức năng hấp",
+        "parsed_category": null,
+        "relevant_categories": [
+          "Điện gia dụng"
+        ],
+        "image_category_precision_at_20": 0.55,
+        "multimodal_category_precision_at_20": 0.95,
+        "image_top20_categories": {
+          "Điện gia dụng": 11,
+          "Nhà cửa & Đời sống": 8,
+          "Bách hóa": 1
+        },
+        "multimodal_top20_categories": {
+          "Điện gia dụng": 19,
+          "Thời trang nam": 1
+        }
+      },
+      {
+        "case_id": "test_appliance_02",
+        "query": "nồi cơm điện cao tần dung tích 1.8 lít",
+        "parsed_category": "Điện gia dụng",
+        "relevant_categories": [
+          "Điện gia dụng"
+        ],
+        "image_category_precision_at_20": 0.9,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Điện gia dụng": 18,
+          "Bách hóa": 2
+        },
+        "multimodal_top20_categories": {
+          "Điện gia dụng": 20
+        }
+      },
+      {
+        "case_id": "test_appliance_03",
+        "query": "máy pha cà phê espresso gia đình",
+        "parsed_category": "Bách hóa",
+        "relevant_categories": [
+          "Điện gia dụng"
+        ],
+        "image_category_precision_at_20": 0.7,
+        "multimodal_category_precision_at_20": 0.0,
+        "image_top20_categories": {
+          "Điện gia dụng": 14,
+          "Bách hóa": 2,
+          "Điện tử & Phụ kiện": 1,
+          "Nhà cửa & Đời sống": 3
+        },
+        "multimodal_top20_categories": {
+          "Bách hóa": 20
+        }
+      },
+      {
+        "case_id": "test_electronics_01",
+        "query": "chuột không dây yên tĩnh Logitech",
+        "parsed_category": "Điện tử & Phụ kiện",
+        "relevant_categories": [
+          "Điện tử & Phụ kiện"
+        ],
+        "image_category_precision_at_20": 0.95,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Điện tử & Phụ kiện": 19,
+          "Nhà cửa & Đời sống": 1
+        },
+        "multimodal_top20_categories": {
+          "Điện tử & Phụ kiện": 20
+        }
+      },
+      {
+        "case_id": "test_electronics_02",
+        "query": "bàn phím bluetooth không dây Logitech",
+        "parsed_category": "Điện tử & Phụ kiện",
+        "relevant_categories": [
+          "Điện tử & Phụ kiện"
+        ],
+        "image_category_precision_at_20": 1.0,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Điện tử & Phụ kiện": 20
+        },
+        "multimodal_top20_categories": {
+          "Điện tử & Phụ kiện": 20
+        }
+      },
+      {
+        "case_id": "test_electronics_03",
+        "query": "loa vi tính bluetooth cho máy tính",
+        "parsed_category": "Điện tử & Phụ kiện",
+        "relevant_categories": [
+          "Điện tử & Phụ kiện"
+        ],
+        "image_category_precision_at_20": 0.2,
+        "multimodal_category_precision_at_20": 1.0,
+        "image_top20_categories": {
+          "Điện tử & Phụ kiện": 4,
+          "Điện gia dụng": 13,
+          "Bách hóa": 1,
+          "Nhà cửa & Đời sống": 2
+        },
+        "multimodal_top20_categories": {
+          "Điện tử & Phụ kiện": 20
+        }
+      }
+    ]
+  }
+}

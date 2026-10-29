@@ -1,0 +1,2209 @@
+{
+  "generated_at": "2026-10-11T18:36:13.989190+00:00",
+  "catalog_products": 860,
+  "catalog_reviews": 14219,
+  "catalog_broad_categories": {
+    "Bách hóa": 77,
+    "Làm đẹp & Sức khỏe": 112,
+    "Nhà cửa & Đời sống": 72,
+    "Sách": 112,
+    "Thời trang nam": 122,
+    "Thời trang nữ": 121,
+    "Điện gia dụng": 112,
+    "Điện tử & Phụ kiện": 132
+  },
+  "catalog_subcategories": [
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách tư duy - Kỹ năng sống",
+      "count": 25
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bình giữ nhiệt",
+      "count": 24
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Quần ôm",
+      "count": 20
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Túi thời trang nữ",
+      "count": 18
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Balo và Vali",
+      "count": 18
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo khoác gió",
+      "count": 17
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo nâng ngực",
+      "count": 16
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần lót kiểu brief nam",
+      "count": 16
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Sữa rửa mặt",
+      "count": 16
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bao Da - Ốp Lưng Điện Thoại iPhone",
+      "count": 15
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa đậu nành",
+      "count": 13
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần short thun nam",
+      "count": 13
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem chống nắng",
+      "count": 13
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Chuột Văn Phòng Không Dây",
+      "count": 12
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần lót boxer nam",
+      "count": 12
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Bao cao su",
+      "count": 11
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Adapter Sạc - Củ Sạc Thường",
+      "count": 11
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo thun nam ba lỗ",
+      "count": 8
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện dài",
+      "count": 8
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Phụ kiện máy lọc nước",
+      "count": 8
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tiểu Thuyết Phương Tây",
+      "count": 8
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bàn ủi hơi nước",
+      "count": 7
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy sấy tóc",
+      "count": 7
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Dây Cáp Sạc iPhone, iPad",
+      "count": 7
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Son dưỡng",
+      "count": 7
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện Tranh, Manga, Comic",
+      "count": 7
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Pin tiểu, pin sạc",
+      "count": 7
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Tai Nghe Có Dây Nhét Tai",
+      "count": 7
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy xay sinh tố gia đình",
+      "count": 6
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Khẩu trang y tế",
+      "count": 6
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Dây Cáp Sạc USB Type-C",
+      "count": 6
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo thun nam ngắn tay không cổ",
+      "count": 6
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tiểu Thuyết Phương Đông",
+      "count": 6
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Hút bụi cầm tay",
+      "count": 6
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Chảo chiên",
+      "count": 6
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Quần lót không đường may",
+      "count": 5
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện ngắn - Tản văn - Tạp Văn Nước Ngoài",
+      "count": 5
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần lót nam",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy lọc không khí",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi áp suất điện",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bộ Phím Chuột Văn Phòng",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Tai Nghe True Wireless",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bàn Di Chuột - Miếng Lót Chuột",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy làm sữa đậu nành",
+      "count": 5
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dầu đậu nành",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy xay cầm tay",
+      "count": 5
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Sữa tắm",
+      "count": 5
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Quạt Đứng",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Root",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo kiểu nữ khác",
+      "count": 4
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Khử mùi cho nữ",
+      "count": 4
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Khử mùi cho nam",
+      "count": 4
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi tiềm, nồi nấu cháo",
+      "count": 4
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bộ hộp cơm giữ nhiệt",
+      "count": 4
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bếp điện từ đơn",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo thun nam ngắn tay có cổ",
+      "count": 4
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Mì ăn liền",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Giày thể thao nam cổ thấp",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần jeans nam",
+      "count": 4
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dầu Xả",
+      "count": 4
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Hộp nhựa đựng thực phẩm",
+      "count": 4
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Cà phê hòa tan",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần bơi - đi biển nam",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần jogger nam",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Quần ống rộng nữ",
+      "count": 4
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem dưỡng trắng",
+      "count": 4
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Dầu gội ngừa gãy rụng, kích thích mọc tóc",
+      "count": 4
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi cơm điện tử",
+      "count": 4
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem dưỡng trị mụn và phục hồi",
+      "count": 4
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi cơm nắp gài",
+      "count": 4
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi đa năng",
+      "count": 4
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Đồ bơi hai mảnh",
+      "count": 4
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Chuột Chơi Game",
+      "count": 3
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dầu olive",
+      "count": 3
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Hũ, lọ đựng gia vị",
+      "count": 3
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Ly trà",
+      "count": 3
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Loa Bluetooth",
+      "count": 3
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Văn học thiếu nhi",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo len - Áo khoác nỉ nữ",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo sơ mi nữ tay dài trơn",
+      "count": 3
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy pha cà phê gia đình",
+      "count": 3
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Dầu gội bóng mượt, phục hồi hư tổn",
+      "count": 3
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Bộ Adapter Sạc Kèm Cáp Sạc",
+      "count": 3
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Chăm sóc sức khỏe em bé",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo khoác chống nắng nữ",
+      "count": 3
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Bài học kinh doanh",
+      "count": 3
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện Giả tưởng - Huyền Bí - Phiêu Lưu",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Giày - Dép nữ",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Bộ đồ lót nam",
+      "count": 3
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi chiên",
+      "count": 3
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Thảm yoga",
+      "count": 3
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Ly giữ nhiệt",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Root",
+      "count": 3
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Bộ quần áo ngủ",
+      "count": 3
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Nghệ thuật sống",
+      "count": 3
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Thời Trang",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bàn Phím Chơi Game",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa hương vị",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Tinh dầu massage",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Chuột Văn Phòng Có Dây",
+      "count": 2
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem chống lão hóa",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Quạt mini",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Quạt sạc",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa dưỡng thể dưỡng trắng",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Phụ kiện máy hút bụi",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Kệ nhà bếp",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi lẩu điện",
+      "count": 2
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Băng vệ sinh ban ngày có cánh",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Tẩy tế bào chết cơ thể",
+      "count": 2
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Nhuộm tóc tạm thời",
+      "count": 2
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Sản phẩm chăm sóc cá nhân khác",
+      "count": 2
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem đánh răng ngừa sâu răng",
+      "count": 2
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem đánh răng trắng răng",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo khoác gió",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo sơ mi nữ",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Đầm suông",
+      "count": 2
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Sinh lý nam",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo sơ mi nữ tay ngắn trơn",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo thun nữ ngắn tay không cổ",
+      "count": 2
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Chảo xào",
+      "count": 2
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bàn ghế làm việc",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Quần jean nữ",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Quần shorts nữ",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Lịch Sử Thế Giới",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Thời Trang",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Luyện thi Tiếng Hoa HSK",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Cẩm nang làm cha mẹ",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện ngắn - Tản văn - Tạp Văn Việt Nam",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện kể cho bé",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách kỹ năng làm việc",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tiếng Hoa Giao Tiếp",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện Chữ Đam Mỹ",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Giáo trình Hán ngữ",
+      "count": 2
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Đồ ngủ cosplay, gợi cảm",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần ôm",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo khoác bomber nam",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần short kaki nam",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tủ, kệ sách",
+      "count": 2
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Thời Trang",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Truyện trinh thám",
+      "count": 2
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tác Phẩm Kinh Điển Nước Ngoài",
+      "count": 2
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Cáp Âm Thanh",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Hộp thủy tinh đựng thực phẩm",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Keo xịt tóc",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Giấy thấm dầu",
+      "count": 2
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dây Đeo Thay Thế, Phụ Trợ - Phụ Kiện Khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dưỡng mọc tóc",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dụng cụ pha chế",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Dụng cụ xay, giã",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Giá, móc, cây treo",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Gạo tẻ",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Hỗ trợ tim mạch khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Cáp đồng hồ thông minh",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Dây Cáp Sạc Micro USB",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Dụng cụ vệ sinh máy tính và laptop",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Hub Chuyển Đổi USB Type-C",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Loa Trợ Giảng",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Loa Vi Tính",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Miếng Dán Màn Hình Điện Thoại",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Máy cắt cỏ",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Máy tính bảng",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Máy đánh trứng",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Pin Sạc Dự Phòng Di Động",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tài chính cá nhân",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tác Phẩm Kinh Điển Việt Nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tôn Giáo - Tâm Linh Khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Tẩy tế bào chết vật lí",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Đạo đức - Kỹ năng sống",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Bộ quần áo nam kích cỡ lớn",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Giày đá banh nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Phụ kiện phòng ngủ khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần kaki nam dài",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần lót dây nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần lót nam khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần short jean nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Quần short tập Gym và Boxing Nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo khoác da nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách giáo dục",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách khởi nghiệp",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách kinh tế học - khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách tâm lý học - khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Đầm Dáng Xòe",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Danh nhân Nước Ngoài",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Dầu gội sạch gàu",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Dụng cụ diệt côn trùng khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Kiến Thức Bách Khoa",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Kỹ Năng Giao Tiếp",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Lịch Sử Việt Nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách Chữa Lành",
+      "count": 1
+    },
+    {
+      "broad_category": "Sách",
+      "subcategory": "Sách Tô Màu Dành Cho Người Lớn",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nam",
+      "subcategory": "Áo sơ mi nam tay ngắn họa tiết",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Giày lười hở gót",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Giày thể thao nam cổ thấp",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Quần tây nữ",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Túi xách to bản",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Túi đeo chéo công sở",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo bơi - đi biển nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo crop-top tay dài",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo hai dây - Áo ba lỗ nữ",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo khoác bomber nam",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo không đệm - Bralette",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo kiểu nữ",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Giá, kệ phơi quần áo",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Gối gòn",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Gội xả 2in1",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Khăn giấy ướt",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Khăn trải bàn",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Khăn tắm",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Ly rượu",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Ly, cốc nước",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Mặt nạ giấy",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Nệm cao su",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Thiết Bị Định Vị GPS",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Thiết bị phòng tắm khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo sơ mi nữ tay dài hoạ tiết",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo thun nam ngắn tay không cổ",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo thun nữ",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Áo thun đôi",
+      "count": 1
+    },
+    {
+      "broad_category": "Thời trang nữ",
+      "subcategory": "Đầm ngủ",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bàn ủi khô",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bút Trình Chiếu",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bếp hồng ngoại đơn",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bộ nồi",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Tảo",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Đèn xông",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bộ chuyển đổi HDMI - VGA",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bộ ga, ra, drap",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bộ hộp cơm Inox",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Bộ hộp cơm thủy tinh",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Chảo chiên trứng",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Gel bôi trơn",
+      "count": 1
+    },
+    {
+      "broad_category": "Nhà cửa & Đời sống",
+      "subcategory": "Ghế các loại",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Bộ nồi chảo",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Cáp HDMI - Displayport",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Hút bụi gia đình",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy làm sữa chua",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy xay thịt",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy ép chậm",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy ép nhanh",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Máy ép, duỗi tóc",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem dưỡng ẩm",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Kem trị sẹo",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Máy radio cassette",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Máy tăm nước cầm tay",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Nhíp, dao cạo",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Tẩy tế bào chết vật lí",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Đèn xông",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Bàn chải thường",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Bàn chải điện sóng âm",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Băng vệ sinh ban ngày không cánh",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Băng vệ sinh hàng ngày",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Cây lăn bụi",
+      "count": 1
+    },
+    {
+      "broad_category": "Làm đẹp & Sức khỏe",
+      "subcategory": "Dụng cụ tỉa lông mũi",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi cơm nắp rời",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi cơm điện",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi hấp",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Nồi lẻ",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Phụ kiện nhà bếp khác",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Máy tạo ẩm",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Máy đánh trứng",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Phấn nước",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Phấn phủ",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Phụ kiện giày patin",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa Chua Uống & Ăn",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa dưỡng thể dưỡng ẩm",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa tiệt trùng (UHT)",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Sữa đặc",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Thực phẩm ăn liền",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Tinh dầu",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Túi zip đựng thực phẩm",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện gia dụng",
+      "subcategory": "Điện thoại bàn",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bao Da - Ốp Lưng Điện Thoại Samsung",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bàn Phím Văn Phòng Có Dây",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bàn Phím Văn Phòng Không Dây",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Bộ lau nhà",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Cáp HDMI - Displayport",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Tai Nghe Bluetooth Nhét Tai",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Tai Nghe Có Dây Chụp Tai (Over-Ear)",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Bộ quần áo ngủ",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Bộ hộp đựng thực phẩm",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Thẻ Nhớ Điện Thoại",
+      "count": 1
+    },
+    {
+      "broad_category": "Bách hóa",
+      "subcategory": "Bình đun siêu tốc",
+      "count": 1
+    },
+    {
+      "broad_category": "Điện tử & Phụ kiện",
+      "subcategory": "Đèn năng lượng mặt trời",
+      "count": 1
+    }
+  ],
+  "catalog_keywords": {
+    "túi xách": {
+      "count": 20,
+      "broad_categories": {
+        "Thời trang nữ": 20
+      },
+      "subcategories": {
+        "Túi thời trang nữ": 18,
+        "Túi đeo chéo công sở": 1,
+        "Túi xách to bản": 1
+      },
+      "examples": [
+        {
+          "product_id": "106948689",
+          "product_name": "Túi xách  túi đeo vai nữ thời trang cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "219152741",
+          "product_name": "Túi xách nữ YUUMY YTX36",
+          "category_name": "Túi đeo chéo công sở",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "167599223",
+          "product_name": "Túi xách nữ thời trang cao cấp",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "177060582",
+          "product_name": "Túi xách nữ thời trang cao cấp",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "103660156",
+          "product_name": "Túi xách nữ thời trang cao cấp phong cách châu âu",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "188940966",
+          "product_name": "Túi xách túi đeo vai nữ thời trang cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "192559833",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "198883501",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "263081142",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách cá tính mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "177238136",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "162024663",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "192579893",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "201846041",
+          "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "53934661",
+          "product_name": "Túi xách nữ đeo chéo phong cách châu âu hiện đại ",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "247330454",
+          "product_name": "Túi Xách Nữ ️Túi Nữ Công Sở Thời Trang Thanh Lịch Sang Trọng Phong Cách Hàn Quốc Da Cao Cấp Chính Hãng HQ155",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "207925713",
+          "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "190355521",
+          "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "159946692",
+          "product_name": "Túi Yuumy ( Thời trang nữ tote - Túi xách da YTX18 )",
+          "category_name": "Túi xách to bản",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "177158869",
+          "product_name": "Túi xách nữ 2 trong 1 thời trang cao cấp",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "186530758",
+          "product_name": "Túi xách nữ da tự nhiên thời trang công sở cao cấp phong cách mới",
+          "category_name": "Túi thời trang nữ",
+          "broad_category": "Thời trang nữ"
+        }
+      ]
+    },
+    "túi đeo chéo": {
+      "count": 1,
+      "broad_categories": {
+        "Thời trang nữ": 1
+      },
+      "subcategories": {
+        "Túi đeo chéo công sở": 1
+      },
+      "examples": [
+        {
+          "product_id": "219152741",
+          "product_name": "Túi xách nữ YUUMY YTX36",
+          "category_name": "Túi đeo chéo công sở",
+          "broad_category": "Thời trang nữ"
+        }
+      ]
+    },
+    "balo": {
+      "count": 20,
+      "broad_categories": {
+        "Điện tử & Phụ kiện": 20
+      },
+      "subcategories": {
+        "Balo và Vali": 18,
+        "Thời Trang": 2
+      },
+      "examples": [
+        {
+          "product_id": "161923211",
+          "product_name": "Balo laptop nam cao cấp phong cách mới 15,6\"",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "179575196",
+          "product_name": "Balo laptop nam chống thấm nước cao cấp phong cách châu âu",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "270884423",
+          "product_name": "Balo laptop Natoli BST Vitality Backpack B12",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "185910043",
+          "product_name": "Balo laptop nam đa chức năng cao cấp phong cách mới 15.6\"",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "252588552",
+          "product_name": "Balo laptop 15.6inh đa chức năng thời trang cao cấp phong cách mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "186860669",
+          "product_name": "Balo laptop nam 17.3 inh đa chức năng cao cấp phong cách ca tính mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "195756358",
+          "product_name": "Balo laptop nam 17.3 inh đa chức năng cao cấp phong cách ca tính mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "273793147",
+          "product_name": "Balo nam laptop 17.3 inh thông minh đa chức năng thời trang cao cấp phong cách mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "77052330",
+          "product_name": "Balo laptop công nghệ, khóa số chống trộm chống rạch chống nước cao cấp phong cách mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "277603771",
+          "product_name": "Balo nam balo laptop nam công sở có chức năng mở rộng và chống nước hàng siêu cao cấp",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "198531302",
+          "product_name": "Balo laptop nam thông minh đa năng thời trang cao cấp phong cách mới 15.6\"",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "188428146",
+          "product_name": "Balo nữ laptop 14inh thời trang cao cấp phong cách mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "24496785",
+          "product_name": "Balo laptop Mikkor The Kalino",
+          "category_name": "Thời Trang",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "275056361",
+          "product_name": "Balo laptop 16inh đi học đi chơi đi làm thời trang cao cấp phong cách mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "277361630",
+          "product_name": "Balo nam balo laptop nam công sở chống trộm chống nước thời trang cao cấp phong cách mới",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "197418521",
+          "product_name": "Balo laptop nữ thời trang cao cấp phong cách mới 14\"",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "197410911",
+          "product_name": "Balo laptop nữ thời trang cao cấp phong cách mới 14\"",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "56347362",
+          "product_name": "Ba lô thông minh đa năng cao cấp nam công suất lớn tích hợp sạc usb tiện dụng chứa laptop 14 đến 17 inh",
+          "category_name": "Thời Trang",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "67318898",
+          "product_name": "Balo Laptop Nam Nữ XBags Naituo Xb2002 – Nhiều Ngăn Tiện Dụng, Chống Sốc, Chống Thấm, Đựng Laptop 15.6 Inch, Phù Hợp Đi Học Và Đi Làm!",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "194041528",
+          "product_name": "Balo Nam, Nữ Công Sở Đa Năng Teement, Đựng Vừa Laptop - Macbook - Máy Tính Xách Tay, Chất Liệu Vải Cao Cấp Chống Thấm Nước, Chống Xước, Có Cổng Sạc USB Tiện Lợi - Hàng Chính Hãng",
+          "category_name": "Balo và Vali",
+          "broad_category": "Điện tử & Phụ kiện"
+        }
+      ]
+    },
+    "giày/sneaker": {
+      "count": 26,
+      "broad_categories": {
+        "Bách hóa": 2,
+        "Nhà cửa & Đời sống": 2,
+        "Thời trang nam": 12,
+        "Thời trang nữ": 10
+      },
+      "subcategories": {
+        "Root": 7,
+        "Giày thể thao nam cổ thấp": 5,
+        "Thời Trang": 4,
+        "Giày - Dép nữ": 3,
+        "Giấy thấm dầu": 2,
+        "Quần ôm": 1,
+        "Giày đá banh nam": 1,
+        "Khăn giấy ướt": 1,
+        "Mặt nạ giấy": 1,
+        "Giày lười hở gót": 1
+      },
+      "examples": [
+        {
+          "product_id": "1634983",
+          "product_name": "Phim Thấm Dầu Acnes Oil Remover Film 50 Tờ",
+          "category_name": "Giấy thấm dầu",
+          "broad_category": "Bách hóa"
+        },
+        {
+          "product_id": "47663982",
+          "product_name": "Combo 18 Quần Lót Giấy Vải Thun Cotton Giặt Được Loại Đẹp",
+          "category_name": "Quần ôm",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "1634981",
+          "product_name": "Giấy thấm dầu kiểm soát nhờn, ngừa mụn Acnes Oil Remover Paper 100 tờ",
+          "category_name": "Giấy thấm dầu",
+          "broad_category": "Bách hóa"
+        },
+        {
+          "product_id": "85306901",
+          "product_name": "Combo 10 Mặt Nạ BNBG Hydrating Vita Genic Jelly Mask Dưỡng Ẩm Da Đa Tầng 30mlx10",
+          "category_name": "Mặt nạ giấy",
+          "broad_category": "Nhà cửa & Đời sống"
+        },
+        {
+          "product_id": "276129679",
+          "product_name": "Khăn Ướt Cồn LET-GREEN 90 Miếng | Sạch Khuẩn, Sạch Bẩn",
+          "category_name": "Khăn giấy ướt",
+          "broad_category": "Nhà cửa & Đời sống"
+        },
+        {
+          "product_id": "277426915",
+          "product_name": "Giày đinh đá bóng sân cỏ nhân tạo Prowin H21",
+          "category_name": "Giày đá banh nam",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "275905374",
+          "product_name": "Giày Sneaker Nam Vải Canvas DINCOX E12 Black Đơn Giản Thanh Lịch",
+          "category_name": "Giày thể thao nam cổ thấp",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "276258213",
+          "product_name": "Giày Sneaker Nam Nữ Vải Canvas DINCOX E12 Black/Beige Đơn Giản Thanh Lịch",
+          "category_name": "Giày thể thao nam cổ thấp",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "276814141",
+          "product_name": "New Arrivals | Giày Da Sneaker Nam Nữ DC39 COCO MILK DINCOX Shoes Đế Bằng - Microfiber Leather",
+          "category_name": "Giày thể thao nam cổ thấp",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "275933718",
+          "product_name": "Giày Sneaker Vải Canvas Nam Nữ E18 White Dincox Shoes Sang Trọng",
+          "category_name": "Giày thể thao nam cổ thấp",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "127379613",
+          "product_name": "Giày Sneaker Da Unisex DINCOX D20 White Năng Động Cá Tính",
+          "category_name": "Root",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "127379868",
+          "product_name": "Giày Sneaker Vải Unisex DINCOX D21 Black Cách Ấn Tượng",
+          "category_name": "Root",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "127380104",
+          "product_name": "Giày Sneaker Da Unisex DINCOX D20 Black Năng Động Cá Tính",
+          "category_name": "Root",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "48626351",
+          "product_name": "Giày Sneaker Convere Chuck Taylor All Star 1970s Hi Top 162053C",
+          "category_name": "Thời Trang",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "7997276",
+          "product_name": "Giày Sneaker Unisex Converse Chuck Taylor All Star 1970s All White Hi 2018",
+          "category_name": "Thời Trang",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "127379313",
+          "product_name": "Giày Sneaker Vải Unisex DINCOX D27 Đơn Giản Hiện Đại White",
+          "category_name": "Root",
+          "broad_category": "Thời trang nam"
+        },
+        {
+          "product_id": "127380264",
+          "product_name": "Giày Sneaker Vải Nữ DINCOX C20 Nữ Tính Sang Trọng Black",
+          "category_name": "Root",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "127379023",
+          "product_name": "Giày Sneaker Vải Nữ DINCOX C20 Nữ Tính Sang Trọng Off/White",
+          "category_name": "Root",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "93127044",
+          "product_name": "Giày Sneaker Vải Canvas Unisex C40 Off/white Dincox Đơn Giản Tinh Tế",
+          "category_name": "Root",
+          "broad_category": "Thời trang nữ"
+        },
+        {
+          "product_id": "153570444",
+          "product_name": "Giày Sục Đạp Gót Mules Vải Sneaker Unisex Tăng Chiều Cao 4cm DINCOX E10 Off/white",
+          "category_name": "Giày thể thao nam cổ thấp",
+          "broad_category": "Thời trang nữ"
+        }
+      ]
+    },
+    "tai nghe/headphone": {
+      "count": 14,
+      "broad_categories": {
+        "Điện tử & Phụ kiện": 14
+      },
+      "subcategories": {
+        "Tai Nghe Có Dây Nhét Tai": 7,
+        "Tai Nghe True Wireless": 5,
+        "Tai Nghe Có Dây Chụp Tai (Over-Ear)": 1,
+        "Tai Nghe Bluetooth Nhét Tai": 1
+      },
+      "examples": [
+        {
+          "product_id": "272420799",
+          "product_name": "Tai Nghe Apple EarPods Cổng USB-C",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "54645",
+          "product_name": "Tai nghe chụp tai Logitech H150 - 2 jack 3.5mm, Mic khử giảm tiếng ồn, âm thanh nổi - Màu",
+          "category_name": "Tai Nghe Có Dây Chụp Tai (Over-Ear)",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "1935009",
+          "product_name": "Tai Nghe Apple EarPods Cổng Lightning",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "272030678",
+          "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+          "category_name": "Tai Nghe True Wireless",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "276117054",
+          "product_name": "Tai nghe Bluetooth Apple AirPods 4",
+          "category_name": "Tai Nghe True Wireless",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "181185263",
+          "product_name": "Tai Nghe Baseus Encok 3.5mm lateral in-ear Wired Earphone H17 - Hàng Chính Hãng",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "273217798",
+          "product_name": "Tai Nghe có dây nhét tai M101 Pro 3.5mm âm thanh hay, chống ồn, hỗ trợ mic nghe gọi đầy đủ dây dài 1.2m - Hàng Chính Hãng",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "191420029",
+          "product_name": "Tai nghe không dây SONY WI-C100 - Hàng chính hãng",
+          "category_name": "Tai Nghe Bluetooth Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "273217833",
+          "product_name": "Tai nghe nhét tai jack cắm Type-C có mic hoco. M101 Pro tương thích rộng với các máy Android chân Type C và cho Iphone 15 Ipad Chân Type C - Hàng chính hãng",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "278748263",
+          "product_name": "Tai nghe Bluetooth Samsung Galaxy Buds Core (ANC) - Hàng chính hãng",
+          "category_name": "Tai Nghe True Wireless",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "149268229",
+          "product_name": "Tai nghe có dây Sony MDR-EX15AP - Hàng chính hãng",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "160906816",
+          "product_name": "Tai nghe có dây Sony MDR-EX155AP - Hàng chính hãng",
+          "category_name": "Tai Nghe Có Dây Nhét Tai",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "248761700",
+          "product_name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+          "category_name": "Tai Nghe True Wireless",
+          "broad_category": "Điện tử & Phụ kiện"
+        },
+        {
+          "product_id": "271312499",
+          "product_name": "Tai nghe Bluetooth True Wireless Sony WF-1000XM5 - Hàng Chính Hãng",
+          "category_name": "Tai Nghe True Wireless",
+          "broad_category": "Điện tử & Phụ kiện"
+        }
+      ]
+    },
+    "kem chống nắng": {
+      "count": 13,
+      "broad_categories": {
+        "Làm đẹp & Sức khỏe": 13
+      },
+      "subcategories": {
+        "Kem chống nắng": 13
+      },
+      "examples": [
+        {
+          "product_id": "67421152",
+          "product_name": "Gel sữa chống nắng Senka Perfect UV Gel 80ml",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "55613571",
+          "product_name": "Kem Chống Nắng Tế Bào Gốc Kiềm Dầu Chống Nhăn Dưỡng Ẩm Trắng Da Cellkey-Scien Multi Perfect Sun Cream SPF50+PA++++ (50ml)",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "114271441",
+          "product_name": "Bộ đôi Kem chống nắng dạng sữa dịu nhẹ cho da nhạy cảm và trẻ em (Anessa Mild Milk 60ml x2)",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "48291658",
+          "product_name": "Kem chống nắng body Skin Aqua mát lạnh dùng hàng ngày Sunplay Skin Aqua UV Body Cooling Lotion SPF 50+ PA++++ 150g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "116557922",
+          "product_name": "Bộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo + Kem chống nắng dạng gel dưỡng ẩm bảo vệ hoàn hảo (Anessa Gold Milk 60ml + Gold Gel 90g)",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "77305646",
+          "product_name": "Kem chống nắng dạng sữa dịu nhẹ cho da nhạy cảm và trẻ em Anessa Perfect UV Sunscreen Mild Milk For Sensitive Skin SPF 50+ PA++++ 60ml",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "8959289",
+          "product_name": "Tinh chất chống nắng nâng tông Skin Aqua Tone up Lavender cho da tối màu & da vàng Sunplay Skin Aqua Tone Up UV Essence Lavender SPF 50+ PA++++ 50g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313873",
+          "product_name": "Kem chống nắng Sunplay mát lạnh giải nhiệt dạng sữa Sunplay Super Cool SPF 50, PA++++ 30g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "630778",
+          "product_name": "Kem chống nắng Skin Aqua dưỡng trắng, kiểm dầu, dùng hàng ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 55g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313877",
+          "product_name": "Kem chống nắng Sunplay cho bé từ 6 tháng tuổi và da nhạy cảm, dạng sữa Sunplay Baby Mild SPF 35, PA++ 30g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "630793",
+          "product_name": "Kem chống nắng Skin Aqua trang điểm tạo nền trắng mịn & đều màu dạng sữa Sunplay Skin Clear White CC Milk SPF 50, PA++++ 25g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313885",
+          "product_name": "Kem chống nắng Skin Aqua dưỡng trắng, kiểm dầu, dùng hàng ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 25g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313871",
+          "product_name": "Kem chống nắng Sunplay cực mạnh dạng sữa Sunplay Super Block SPF 50+, PA++++ 30g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        }
+      ]
+    },
+    "mỹ phẩm": {
+      "count": 57,
+      "broad_categories": {
+        "Làm đẹp & Sức khỏe": 55,
+        "Nhà cửa & Đời sống": 1,
+        "Sách": 1
+      },
+      "subcategories": {
+        "Sữa rửa mặt": 16,
+        "Kem chống nắng": 13,
+        "Son dưỡng": 7,
+        "Dầu gội ngừa gãy rụng, kích thích mọc tóc": 4,
+        "Kem dưỡng trắng": 4,
+        "Kem dưỡng trị mụn và phục hồi": 4,
+        "Dầu gội bóng mượt, phục hồi hư tổn": 3,
+        "Nhuộm tóc tạm thời": 2,
+        "Gội xả 2in1": 1,
+        "Kem dưỡng ẩm": 1
+      },
+      "examples": [
+        {
+          "product_id": "67421152",
+          "product_name": "Gel sữa chống nắng Senka Perfect UV Gel 80ml",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "55613571",
+          "product_name": "Kem Chống Nắng Tế Bào Gốc Kiềm Dầu Chống Nhăn Dưỡng Ẩm Trắng Da Cellkey-Scien Multi Perfect Sun Cream SPF50+PA++++ (50ml)",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "114271441",
+          "product_name": "Bộ đôi Kem chống nắng dạng sữa dịu nhẹ cho da nhạy cảm và trẻ em (Anessa Mild Milk 60ml x2)",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "60684152",
+          "product_name": "Dầu Gội Hà Thủ Ô 2in1 Dành Riêng Cho TÓC BẠC Và RỤNG TÓC Cocayhoala Chai Lớn 450g Tiết Kiệm Hơn 1,5 lần",
+          "category_name": "Dầu gội ngừa gãy rụng, kích thích mọc tóc",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "48291658",
+          "product_name": "Kem chống nắng body Skin Aqua mát lạnh dùng hàng ngày Sunplay Skin Aqua UV Body Cooling Lotion SPF 50+ PA++++ 150g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "116557922",
+          "product_name": "Bộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo + Kem chống nắng dạng gel dưỡng ẩm bảo vệ hoàn hảo (Anessa Gold Milk 60ml + Gold Gel 90g)",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "50037073",
+          "product_name": "Cicaplast Baume B5 La Roche-Posay Kem Dưỡng Làm Dịu Mát Mượt & Phục Hồi Da Phù Hợp Cho Trẻ Em - Trẻ Sơ Sinh (100ml) - M6918702",
+          "category_name": "Kem dưỡng trị mụn và phục hồi",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "77305646",
+          "product_name": "Kem chống nắng dạng sữa dịu nhẹ cho da nhạy cảm và trẻ em Anessa Perfect UV Sunscreen Mild Milk For Sensitive Skin SPF 50+ PA++++ 60ml",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "76776131",
+          "product_name": "Dầu gội xả 2in1 Palmolive thiên nhiên 600ml",
+          "category_name": "Gội xả 2in1",
+          "broad_category": "Nhà cửa & Đời sống"
+        },
+        {
+          "product_id": "54058501",
+          "product_name": "Kem dưỡng trắng Hada Labo Perfect White Tranexamic Acid Cream 50g",
+          "category_name": "Kem dưỡng trắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "8959289",
+          "product_name": "Tinh chất chống nắng nâng tông Skin Aqua Tone up Lavender cho da tối màu & da vàng Sunplay Skin Aqua Tone Up UV Essence Lavender SPF 50+ PA++++ 50g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313873",
+          "product_name": "Kem chống nắng Sunplay mát lạnh giải nhiệt dạng sữa Sunplay Super Cool SPF 50, PA++++ 30g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1634963",
+          "product_name": "Son dưỡng có màu tự nhiên LipIce Sheer Color Q",
+          "category_name": "Son dưỡng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "631034",
+          "product_name": "Sữa rửa mặt dưỡng ẩm tối ưu Hada Labo Advanced Nourish Cleanser 80g",
+          "category_name": "Sữa rửa mặt",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "630778",
+          "product_name": "Kem chống nắng Skin Aqua dưỡng trắng, kiểm dầu, dùng hàng ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 55g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "54058503",
+          "product_name": "Sữa rửa mặt dưỡng trắng Hada Labo Perfect White Tranexamic Acid Cleanser 80g",
+          "category_name": "Sữa rửa mặt",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "631496",
+          "product_name": "Kem dưỡng ẩm Hada Labo Advanced Nourish Cream 50g",
+          "category_name": "Kem dưỡng ẩm",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313877",
+          "product_name": "Kem chống nắng Sunplay cho bé từ 6 tháng tuổi và da nhạy cảm, dạng sữa Sunplay Baby Mild SPF 35, PA++ 30g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "630793",
+          "product_name": "Kem chống nắng Skin Aqua trang điểm tạo nền trắng mịn & đều màu dạng sữa Sunplay Skin Clear White CC Milk SPF 50, PA++++ 25g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        },
+        {
+          "product_id": "1313885",
+          "product_name": "Kem chống nắng Skin Aqua dưỡng trắng, kiểm dầu, dùng hàng ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 25g",
+          "category_name": "Kem chống nắng",
+          "broad_category": "Làm đẹp & Sức khỏe"
+        }
+      ]
+    }
+  },
+  "phase9_additions": {
+    "count": 60,
+    "reviews": 129,
+    "groups": {
+      "handbag": 20,
+      "backpack": 20,
+      "shoes_men": 10,
+      "shoes_women": 10
+    }
+  },
+  "validation": {
+    "products_ok": true,
+    "reviews_ok": true,
+    "product_warnings": [],
+    "review_warnings": []
+  },
+  "checksums": {
+    "products_parquet_sha256": "bf0597c94a1c04951b79cb8c5e5a1918c50d41a036efda8e8c0536ce7963372b",
+    "reviews_parquet_sha256": "7b80fb467f429de437fe5a597f309d9c3f80929b32e626ec0197ce4118bfb650",
+    "coverage_manifest_sha256": "d4cd3e5d190cc1df6c855fc9b3975b02445b4be9dfb544e6b0fb6053ac3cb2bf"
+  }
+}

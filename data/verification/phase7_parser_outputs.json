@@ -1,0 +1,424 @@
+{
+  "generated_by": "scripts/verify_phase7_parser.py",
+  "generated_at": "2026-10-11T07:30:28.506449+00:00",
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "version": "0.40.3",
+    "configured_model": "qwen2.5:3b-instruct",
+    "status": {
+      "ready": true,
+      "mode": "ollama",
+      "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+    },
+    "models": [
+      {
+        "name": "qwen2.5:3b-instruct",
+        "model": "qwen2.5:3b-instruct",
+        "modified_at": "2026-10-11T13:58:18.110145+07:00",
+        "size": 1929912432,
+        "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "3.1B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 2048,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "product_count": 800,
+    "allowed_categories": [
+      "Bách hóa",
+      "Làm đẹp & Sức khỏe",
+      "Nhà cửa & Đời sống",
+      "Sách",
+      "Thời trang nam",
+      "Thời trang nữ",
+      "Điện gia dụng",
+      "Điện tử & Phụ kiện"
+    ]
+  },
+  "query_count": 6,
+  "queries": [
+    {
+      "query": "túi đeo chéo nữ màu đen dưới 500 nghìn",
+      "latency_ms": 1341.344,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": [
+          "đen"
+        ],
+        "attributes": [],
+        "price_min": null,
+        "price_max": 500000,
+        "gender": "nữ",
+        "keywords": [
+          "túi đeo chéo",
+          "nữ",
+          "màu đen",
+          "dưới 500 nghìn"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": [
+          "đen"
+        ],
+        "attributes": [
+          "đeo chéo"
+        ],
+        "price_min": null,
+        "price_max": 500000,
+        "gender": "nữ",
+        "keywords": [
+          "túi đeo chéo",
+          "nữ",
+          "màu đen",
+          "dưới 500 nghìn"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "fallback_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": [
+          "đen"
+        ],
+        "attributes": [
+          "đeo chéo"
+        ],
+        "price_min": null,
+        "price_max": 500000,
+        "gender": "nữ",
+        "keywords": [
+          "tui",
+          "deo",
+          "cheo",
+          "den",
+          "500",
+          "nghin"
+        ],
+        "parser_mode": "fallback",
+        "parser_detail": "Phase 7 comparison: rule-based"
+      }
+    },
+    {
+      "query": "giày chạy bộ nam nhẹ dưới 1 triệu",
+      "latency_ms": 1026.225,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nam",
+        "colors": null,
+        "attributes": null,
+        "price_min": 1000000,
+        "price_max": null,
+        "gender": "nam",
+        "keywords": [
+          "giày",
+          "chạy",
+          "bộ",
+          "nam",
+          "nữa",
+          "tri",
+          "tri"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nam",
+        "colors": [],
+        "attributes": [
+          "nhẹ",
+          "chạy bộ"
+        ],
+        "price_min": null,
+        "price_max": 1000000,
+        "gender": "nam",
+        "keywords": [
+          "giày",
+          "chạy",
+          "bộ",
+          "nam"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "fallback_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nam",
+        "colors": [],
+        "attributes": [
+          "nhẹ",
+          "chạy bộ"
+        ],
+        "price_min": null,
+        "price_max": 1000000,
+        "gender": "nam",
+        "keywords": [
+          "giay",
+          "chay",
+          "bo",
+          "nhe",
+          "trieu"
+        ],
+        "parser_mode": "fallback",
+        "parser_detail": "Phase 7 comparison: rule-based"
+      }
+    },
+    {
+      "query": "tai nghe bluetooth chống ồn",
+      "latency_ms": 788.1,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "tai nghe bluetooth",
+          "chống ồn"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": [],
+        "attributes": [
+          "bluetooth",
+          "chống ồn"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "tai nghe bluetooth",
+          "chống ồn"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "fallback_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": [],
+        "attributes": [
+          "bluetooth",
+          "chống ồn"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "tai",
+          "nghe",
+          "bluetooth",
+          "chong",
+          "on"
+        ],
+        "parser_mode": "fallback",
+        "parser_detail": "Phase 7 comparison: rule-based"
+      }
+    },
+    {
+      "query": "kem chống nắng cho da dầu",
+      "latency_ms": 851.056,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "colors": null,
+        "attributes": [
+          "cho da dầu"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "kem chống nắng",
+          "da dầu"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "colors": [],
+        "attributes": [
+          "cho da dầu",
+          "da dầu",
+          "chống nắng"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "kem chống nắng",
+          "da dầu"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "fallback_parser_output": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "colors": [],
+        "attributes": [
+          "da dầu",
+          "chống nắng"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "kem",
+          "chong",
+          "nang",
+          "da",
+          "dau"
+        ],
+        "parser_mode": "fallback",
+        "parser_detail": "Phase 7 comparison: rule-based"
+      }
+    },
+    {
+      "query": "balo laptop chống nước",
+      "latency_ms": 1079.632,
+      "raw_llm_json": {
+        "query": "balo laptop chống nước",
+        "allowed_categories": [
+          "Thời trang nam",
+          "Thời trang nữ"
+        ],
+        "category": null,
+        "colors": null,
+        "attributes": [
+          "balo",
+          "laptop",
+          "chống nước"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "balo",
+          "laptop",
+          "chống nước"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": [],
+        "attributes": [
+          "balo",
+          "laptop",
+          "chống nước"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "balo",
+          "laptop",
+          "chống nước"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "fallback_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": [],
+        "attributes": [
+          "chống nước",
+          "laptop"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "balo",
+          "laptop",
+          "chong",
+          "nuoc"
+        ],
+        "parser_mode": "fallback",
+        "parser_detail": "Phase 7 comparison: rule-based"
+      }
+    },
+    {
+      "query": "tôi muốn một chiếc túi giống hình này nhưng rẻ hơn 600 nghìn",
+      "latency_ms": 1052.321,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": 500000,
+        "gender": null,
+        "keywords": [
+          "túi",
+          "hình này",
+          "rẻ hơn 600 nghìn"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": null,
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": 600000,
+        "gender": null,
+        "keywords": [
+          "túi",
+          "hình này",
+          "rẻ hơn 600 nghìn"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      },
+      "fallback_parser_output": {
+        "intent": "search_product",
+        "category": null,
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": 600000,
+        "gender": null,
+        "keywords": [
+          "muon",
+          "mot",
+          "chiec",
+          "tui",
+          "giong",
+          "hinh",
+          "nay",
+          "nhung",
+          "re",
+          "hon",
+          "600",
+          "nghin"
+        ],
+        "parser_mode": "fallback",
+        "parser_detail": "Phase 7 comparison: rule-based"
+      }
+    }
+  ]
+}

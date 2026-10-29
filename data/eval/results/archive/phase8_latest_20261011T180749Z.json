@@ -1,0 +1,87 @@
+{
+  "generated_by": "scripts/evaluate.py",
+  "generated_at": "2026-10-11T18:07:49.830603+00:00",
+  "k": 5,
+  "dataset": {
+    "products": 800,
+    "product_ids_sha256": "77a99508b7bebada02fe71076a0c58db91691dd19f34fd06bedc0ae48abd4d42",
+    "text_dataset_sha256": "7d523eb7298af02ace6e154730306224f220cd9fe601f232d18346c657b052a3",
+    "image_dataset_sha256": "63c428519139c9d56fe06af0e16370f09f19ea2e5bfc738e4d1dc1fad6a41471"
+  },
+  "models": {
+    "text": "intfloat/multilingual-e5-small",
+    "vision": "openai/clip-vit-base-patch32"
+  },
+  "alpha_selection": {
+    "selected": 0.8,
+    "selected_on": "fixed_from_previous_phase_no_retune",
+    "validation_query_count": 8,
+    "grid": []
+  },
+  "manual_test": {
+    "query_count": 24,
+    "systems": {
+      "text_only": {
+        "precision_at_5": 0.8916666666666666,
+        "hit_at_5": 0.9583333333333334,
+        "ndcg_at_5": 0.9070729199263813,
+        "latency_ms_mean": 301.728704166635
+      },
+      "image_only": {
+        "precision_at_5": 0.9083333333333333,
+        "hit_at_5": 0.9166666666666666,
+        "ndcg_at_5": 0.9096008290567997,
+        "latency_ms_mean": 77.34027083317112,
+        "category_precision_at_20": 0.875
+      },
+      "multimodal": {
+        "precision_at_5": 0.9,
+        "hit_at_5": 0.9166666666666666,
+        "ndcg_at_5": 0.9051136071935396,
+        "latency_ms_mean": 54.228300000128606,
+        "category_precision_at_20": 0.8729166666666667
+      }
+    }
+  },
+  "proxy": {
+    "query_count": 32,
+    "note": "Proxy: query lấy từ title/description/image; cùng broad category được xem là relevant.",
+    "systems": {
+      "text_only": {
+        "precision_at_5": 0.9125,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.9354785141461727,
+        "latency_ms_mean": 15.207381249979335
+      },
+      "image_only": {
+        "precision_at_5": 0.8062499999999999,
+        "hit_at_5": 0.90625,
+        "ndcg_at_5": 0.8250327182247558,
+        "latency_ms_mean": 45.51410937500577,
+        "category_precision_at_20": 0.79375
+      },
+      "multimodal": {
+        "precision_at_5": 0.8625,
+        "hit_at_5": 0.90625,
+        "ndcg_at_5": 0.8746859729635722,
+        "latency_ms_mean": 52.01298437503965,
+        "category_precision_at_20": 0.8
+      }
+    }
+  },
+  "category_precision_at_20_comparison": {
+    "query_count": 24,
+    "before": {
+      "image_only": 0.7270833333333333,
+      "multimodal": 0.8604166666666666
+    },
+    "after": {
+      "image_only": 0.875,
+      "multimodal": 0.8729166666666667
+    },
+    "delta": {
+      "image_only": 0.1479166666666667,
+      "multimodal": 0.012500000000000067
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-10-11T18:11:50.586133+00:00",
+  "offline_models": true,
+  "fallback_status": {
+    "ready": false,
+    "mode": "fallback",
+    "detail": "Không kết nối được Ollama: ConnectTimeout"
+  },
+  "configured_ollama_after_test": {
+    "ready": true,
+    "mode": "ollama",
+    "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+  },
+  "result_counts": {
+    "text_only": 20,
+    "image_only": 20,
+    "multimodal": 20
+  },
+  "fallback_parser_verified": true,
+  "price_filter_verified": true,
+  "component_scores_verified": true,
+  "alpha": 0.8
+}

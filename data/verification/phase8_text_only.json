@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-10-11T18:10:28.171630+00:00",
+  "query": "tai nghe bluetooth chống ồn dưới 1 triệu",
+  "llm_status": {
+    "ready": true,
+    "mode": "ollama",
+    "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+  },
+  "count": 20,
+  "category_constraint_verified": true,
+  "price_constraint_verified": true,
+  "scores_verified": true,
+  "results": [
+    {
+      "product_id": "272030678",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 359000,
+      "text_score": 0.8905476331710815,
+      "final_score": 0.8905476331710815
+    },
+    {
+      "product_id": "248761700",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 745000,
+      "text_score": 0.8894168138504028,
+      "final_score": 0.8894168138504028
+    },
+    {
+      "product_id": "273217798",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 99000,
+      "text_score": 0.885178804397583,
+      "final_score": 0.885178804397583
+    },
+    {
+      "product_id": "181185263",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 159000,
+      "text_score": 0.8847030401229858,
+      "final_score": 0.8847030401229858
+    },
+    {
+      "product_id": "116725239",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 245000,
+      "text_score": 0.8839004039764404,
+      "final_score": 0.8839004039764404
+    },
+    {
+      "product_id": "191420029",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 544000,
+      "text_score": 0.8832005858421326,
+      "final_score": 0.8832005858421326
+    },
+    {
+      "product_id": "54645",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 303000,
+      "text_score": 0.8808470964431763,
+      "final_score": 0.8808470964431763
+    },
+    {
+      "product_id": "556556",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 750000,
+      "text_score": 0.8791846632957458,
+      "final_score": 0.8791846632957458
+    },
+    {
+      "product_id": "160906816",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 690000,
+      "text_score": 0.8738721609115601,
+      "final_score": 0.8738721609115601
+    },
+    {
+      "product_id": "1935009",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 443000,
+      "text_score": 0.8681008219718933,
+      "final_score": 0.8681008219718933
+    },
+    {
+      "product_id": "88796298",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 40000,
+      "text_score": 0.8663680553436279,
+      "final_score": 0.8663680553436279
+    },
+    {
+      "product_id": "272420799",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 500000,
+      "text_score": 0.8663212060928345,
+      "final_score": 0.8663212060928345
+    },
+    {
+      "product_id": "176899932",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 661000,
+      "text_score": 0.8650156259536743,
+      "final_score": 0.8650156259536743
+    },
+    {
+      "product_id": "273217833",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 109000,
+      "text_score": 0.8649081587791443,
+      "final_score": 0.8649081587791443
+    },
+    {
+      "product_id": "75655835",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 62800,
+      "text_score": 0.8627691268920898,
+      "final_score": 0.8627691268920898
+    },
+    {
+      "product_id": "356188",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 77000,
+      "text_score": 0.8613071441650391,
+      "final_score": 0.8613071441650391
+    },
+    {
+      "product_id": "196201409",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 347000,
+      "text_score": 0.8605614304542542,
+      "final_score": 0.8605614304542542
+    },
+    {
+      "product_id": "72725402",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 638000,
+      "text_score": 0.8597276210784912,
+      "final_score": 0.8597276210784912
+    },
+    {
+      "product_id": "157215759",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 350000,
+      "text_score": 0.8595577478408813,
+      "final_score": 0.8595577478408813
+    },
+    {
+      "product_id": "88796437",
+      "category": "Điện tử & Phụ kiện",
+      "price_vnd": 50000,
+      "text_score": 0.8594239354133606,
+      "final_score": 0.8594239354133606
+    }
+  ]
+}

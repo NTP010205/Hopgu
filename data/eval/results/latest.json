@@ -1,0 +1,161 @@
+{
+  "generated_by": "scripts/evaluate.py",
+  "generated_at": "2026-10-11T18:45:43.848887+00:00",
+  "k": 5,
+  "dataset": {
+    "products": 860,
+    "product_ids_sha256": "784038a5e7f591c8fc11f6b9da85f2f87c0d9b0ee48603024c6f3e8898bce955",
+    "text_dataset_sha256": "bd192ea5b05809ada5436ca82abf10bdd809cae8e53660af07d53b0c5cf673c0",
+    "image_dataset_sha256": "b3b414728353724552881bcfa19ea5956582fbb327376c5168fbe0d698971866"
+  },
+  "models": {
+    "text": "intfloat/multilingual-e5-small",
+    "vision": "openai/clip-vit-base-patch32"
+  },
+  "alpha_selection": {
+    "selected": 0.8,
+    "selected_on": "fixed_from_previous_phase_no_retune",
+    "validation_query_count": 8,
+    "grid": []
+  },
+  "evaluation_protocol": {
+    "labels_unchanged": true,
+    "queries_sha256": "770a1f5d9d781c44b6b51924089c0c4f7816abcc12208dffda973bf782a3ff49",
+    "image_only_uses_text_query": false,
+    "image_only_note": "Phase 9 sửa bug evaluator Phase 8: image-only nay chỉ dùng ảnh và CLIP zero-shot category guardrail, khớp production search_image.",
+    "multimodal_category_policy": "text high-confidence hard gate; text medium-confidence global + fixed category bonus; otherwise CLIP zero-shot guardrail"
+  },
+  "manual_test": {
+    "query_count": 24,
+    "systems": {
+      "text_only": {
+        "precision_at_5": 0.9333333333333332,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.948739586593048,
+        "latency_ms_mean": 283.389933333486
+      },
+      "image_only": {
+        "precision_at_5": 0.9500000000000001,
+        "hit_at_5": 0.9583333333333334,
+        "ndcg_at_5": 0.9512674957234664,
+        "latency_ms_mean": 58.04312083319019,
+        "category_precision_at_20": 0.9041666666666667
+      },
+      "multimodal": {
+        "precision_at_5": 0.9833333333333334,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.988446940526873,
+        "latency_ms_mean": 52.314045833251534,
+        "category_precision_at_20": 0.9562499999999999
+      }
+    }
+  },
+  "proxy": {
+    "query_count": 32,
+    "note": "Proxy: query lấy từ title/description/image; cùng broad category được xem là relevant.",
+    "systems": {
+      "text_only": {
+        "precision_at_5": 0.80625,
+        "hit_at_5": 0.90625,
+        "ndcg_at_5": 0.8216673018273107,
+        "latency_ms_mean": 17.095474999962335
+      },
+      "image_only": {
+        "precision_at_5": 0.775,
+        "hit_at_5": 0.84375,
+        "ndcg_at_5": 0.7858964279166623,
+        "latency_ms_mean": 37.79526562487945,
+        "category_precision_at_20": 0.75
+      },
+      "multimodal": {
+        "precision_at_5": 0.78125,
+        "hit_at_5": 0.84375,
+        "ndcg_at_5": 0.7865493782074002,
+        "latency_ms_mean": 81.67935000005855,
+        "category_precision_at_20": 0.7562500000000001
+      }
+    }
+  },
+  "category_precision_at_20_comparison": {
+    "query_count": 24,
+    "before": {
+      "image_only": 0.7270833333333333,
+      "multimodal": 0.8604166666666666
+    },
+    "after": {
+      "image_only": 0.9041666666666667,
+      "multimodal": 0.9562499999999999
+    },
+    "delta": {
+      "image_only": 0.17708333333333337,
+      "multimodal": 0.09583333333333333
+    }
+  },
+  "phase_comparison": {
+    "phase7": {
+      "text_only": {
+        "precision_at_5": 0.8916666666666666,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.9144991108889041,
+        "latency_ms_mean": 13.139599999969201
+      },
+      "image_only": {
+        "precision_at_5": 0.8333333333333334,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.8692234750338521,
+        "latency_ms_mean": 33.20287083340645
+      },
+      "multimodal": {
+        "precision_at_5": 0.9249999999999999,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.9432727083633671,
+        "latency_ms_mean": 42.75695416648281
+      }
+    },
+    "phase8": {
+      "text_only": {
+        "precision_at_5": 0.8916666666666666,
+        "hit_at_5": 0.9583333333333334,
+        "ndcg_at_5": 0.9070729199263813,
+        "latency_ms_mean": 301.728704166635
+      },
+      "image_only": {
+        "precision_at_5": 0.9083333333333333,
+        "hit_at_5": 0.9166666666666666,
+        "ndcg_at_5": 0.9096008290567997,
+        "latency_ms_mean": 77.34027083317112,
+        "category_precision_at_20": 0.875
+      },
+      "multimodal": {
+        "precision_at_5": 0.9,
+        "hit_at_5": 0.9166666666666666,
+        "ndcg_at_5": 0.9051136071935396,
+        "latency_ms_mean": 54.228300000128606,
+        "category_precision_at_20": 0.8729166666666667
+      }
+    },
+    "phase9": {
+      "text_only": {
+        "precision_at_5": 0.9333333333333332,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.948739586593048,
+        "latency_ms_mean": 283.389933333486
+      },
+      "image_only": {
+        "precision_at_5": 0.9500000000000001,
+        "hit_at_5": 0.9583333333333334,
+        "ndcg_at_5": 0.9512674957234664,
+        "latency_ms_mean": 58.04312083319019,
+        "category_precision_at_20": 0.9041666666666667
+      },
+      "multimodal": {
+        "precision_at_5": 0.9833333333333334,
+        "hit_at_5": 1.0,
+        "ndcg_at_5": 0.988446940526873,
+        "latency_ms_mean": 52.314045833251534,
+        "category_precision_at_20": 0.9562499999999999
+      }
+    },
+    "comparability_note": "Labels và alpha giữ nguyên. Phase 8 image-only từng vô tình dùng parsed text category; Phase 9 sửa bug đó, nên image-only Phase 8/9 không hoàn toàn cùng protocol. Multimodal vẫn so sánh trực tiếp được."
+  }
+}

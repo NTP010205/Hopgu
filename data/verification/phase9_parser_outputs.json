@@ -1,0 +1,530 @@
+{
+  "generated_by": "scripts/verify_phase9_parser.py",
+  "generated_at": "2026-10-11T18:40:05.285125+00:00",
+  "catalog_products": 860,
+  "allowed_categories": [
+    "Bách hóa",
+    "Làm đẹp & Sức khỏe",
+    "Nhà cửa & Đời sống",
+    "Sách",
+    "Thời trang nam",
+    "Thời trang nữ",
+    "Điện gia dụng",
+    "Điện tử & Phụ kiện"
+  ],
+  "ollama_status": {
+    "ready": true,
+    "mode": "ollama",
+    "detail": "Ollama sẵn sàng với qwen2.5:3b-instruct",
+    "model": "qwen2.5:3b-instruct"
+  },
+  "query_count": 11,
+  "queries": [
+    {
+      "query": "túi xách công sở",
+      "expected_category": "Thời trang nữ",
+      "expected_confidence": "high",
+      "latency_ms": 1155.3657999993447,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": null,
+        "gender": "female",
+        "keywords": [
+          "túi xách",
+          "công sở"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "category_candidates": [
+          "Thời trang nữ"
+        ],
+        "category_confidence": "high",
+        "category_alias": "túi xách/túi đeo chéo",
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "túi xách",
+          "công sở"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "túi đeo chéo màu đen",
+      "expected_category": "Thời trang nữ",
+      "expected_confidence": "high",
+      "latency_ms": 843.2819999998173,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": [
+          "đen"
+        ],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": "nv",
+        "keywords": [
+          "túi đeo chéo",
+          "màu đen"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "category_candidates": [
+          "Thời trang nữ"
+        ],
+        "category_confidence": "high",
+        "category_alias": "túi xách/túi đeo chéo",
+        "colors": [
+          "đen"
+        ],
+        "attributes": [
+          "đeo chéo"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "túi đeo chéo",
+          "màu đen"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "balo laptop chống nước",
+      "expected_category": "Điện tử & Phụ kiện",
+      "expected_confidence": "high",
+      "latency_ms": 1238.8186999996833,
+      "raw_llm_json": {
+        "query": "balo laptop chống nước",
+        "allowed_categories": [
+          "Thời trang nữ"
+        ],
+        "schema": {
+          "intent": "search_product",
+          "category": "Thời trang nữ",
+          "colors": [
+            "đỏ",
+            "xanh"
+          ],
+          "attributes": [
+            "balo",
+            "laptop",
+            "chống nước"
+          ],
+          "price_min": null,
+          "price_max": null,
+          "gender": "female",
+          "keywords": [
+            "balo",
+            "laptop",
+            "chống nước"
+          ]
+        }
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "category_candidates": [
+          "Điện tử & Phụ kiện"
+        ],
+        "category_confidence": "high",
+        "category_alias": "balo/backpack",
+        "colors": [],
+        "attributes": [
+          "chống nước",
+          "laptop"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "balo",
+          "laptop",
+          "chong",
+          "nuoc"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "giày sneaker màu trắng",
+      "expected_category": "Thời trang nam",
+      "expected_confidence": "medium",
+      "latency_ms": 866.0947999997006,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": [
+          "white"
+        ],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": "female",
+        "keywords": [
+          "giày",
+          "sneaker",
+          "màu",
+          "trắng"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nam",
+        "category_candidates": [
+          "Thời trang nam",
+          "Thời trang nữ"
+        ],
+        "category_confidence": "medium",
+        "category_alias": "giày/sneaker không rõ giới tính",
+        "colors": [
+          "trắng"
+        ],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "giày",
+          "sneaker",
+          "màu",
+          "trắng"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "sneaker nữ đế thấp",
+      "expected_category": "Thời trang nữ",
+      "expected_confidence": "high",
+      "latency_ms": 1018.8605999992433,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "colors": [
+          "đỏ",
+          "xanh"
+        ],
+        "attributes": [
+          "sneaker",
+          "nữ",
+          "đế thấp"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": "nữ",
+        "keywords": [
+          "sneaker",
+          "nữ",
+          "đế thấp"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Thời trang nữ",
+        "category_candidates": [
+          "Thời trang nữ"
+        ],
+        "category_confidence": "high",
+        "category_alias": "giày/sneaker nữ",
+        "colors": [],
+        "attributes": [
+          "sneaker",
+          "đế thấp"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": "nữ",
+        "keywords": [
+          "sneaker",
+          "nữ",
+          "đế thấp"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "tai nghe bluetooth chống ồn",
+      "expected_category": "Điện tử & Phụ kiện",
+      "expected_confidence": "high",
+      "latency_ms": 939.6054999997432,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": null,
+        "attributes": [
+          "tai nghe bluetooth",
+          "chống ồn"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "tai nghe bluetooth",
+          "chống ồn"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "category_candidates": [
+          "Điện tử & Phụ kiện"
+        ],
+        "category_confidence": "high",
+        "category_alias": "tai nghe/headphone",
+        "colors": [],
+        "attributes": [
+          "tai nghe bluetooth",
+          "chống ồn",
+          "bluetooth"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "tai nghe bluetooth",
+          "chống ồn"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "headphone không dây",
+      "expected_category": "Điện tử & Phụ kiện",
+      "expected_confidence": "high",
+      "latency_ms": 797.3839000005682,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "headphone",
+          "không",
+          "dây"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Điện tử & Phụ kiện",
+        "category_candidates": [
+          "Điện tử & Phụ kiện"
+        ],
+        "category_confidence": "high",
+        "category_alias": "tai nghe/headphone",
+        "colors": [],
+        "attributes": [
+          "không dây"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "headphone",
+          "không",
+          "dây"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "kem chống nắng cho da dầu",
+      "expected_category": "Làm đẹp & Sức khỏe",
+      "expected_confidence": "high",
+      "latency_ms": 869.0043999995396,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "kem",
+          "chống nắng",
+          "da",
+          "dầu"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "category_candidates": [
+          "Làm đẹp & Sức khỏe"
+        ],
+        "category_confidence": "high",
+        "category_alias": "kem chống nắng/mỹ phẩm",
+        "colors": [],
+        "attributes": [
+          "da dầu",
+          "chống nắng"
+        ],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "kem",
+          "chống nắng",
+          "da",
+          "dầu"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "mỹ phẩm dưỡng da",
+      "expected_category": "Làm đẹp & Sức khỏe",
+      "expected_confidence": "high",
+      "latency_ms": 793.2376000007935,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "mỹ phẩm",
+          "dưỡng da"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "category_candidates": [
+          "Làm đẹp & Sức khỏe"
+        ],
+        "category_confidence": "high",
+        "category_alias": "kem chống nắng/mỹ phẩm",
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "mỹ phẩm",
+          "dưỡng da"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "bao cao su siêu mỏng nhạy cảm",
+      "expected_category": "Làm đẹp & Sức khỏe",
+      "expected_confidence": "high",
+      "latency_ms": 829.3365000008635,
+      "raw_llm_json": {
+        "intent": "search_product",
+        "category": "Sách",
+        "colors": null,
+        "attributes": null,
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "bao cao su",
+          "siêu mỏng",
+          "nhạy cảm"
+        ]
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Làm đẹp & Sức khỏe",
+        "category_candidates": [
+          "Làm đẹp & Sức khỏe"
+        ],
+        "category_confidence": "high",
+        "category_alias": "bao cao su",
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "bao cao su",
+          "siêu mỏng",
+          "nhạy cảm"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "query": "máy pha cà phê espresso gia đình",
+      "expected_category": "Điện gia dụng",
+      "expected_confidence": "high",
+      "latency_ms": 1165.2517000002263,
+      "raw_llm_json": {
+        "query": "máy pha cà phê espresso gia đình",
+        "allowed_categories": [
+          "Điện tử & Phụ kiện"
+        ],
+        "schema": {
+          "intent": "search_product",
+          "category": "Điện tử & Phụ kiện",
+          "colors": null,
+          "attributes": null,
+          "price_min": null,
+          "price_max": null,
+          "gender": null,
+          "keywords": [
+            "máy pha cà phê espresso",
+            "gia đình"
+          ]
+        }
+      },
+      "validated_parser_output": {
+        "intent": "search_product",
+        "category": "Điện gia dụng",
+        "category_candidates": [
+          "Điện gia dụng"
+        ],
+        "category_confidence": "high",
+        "category_alias": "máy pha cà phê/espresso",
+        "colors": [],
+        "attributes": [],
+        "price_min": null,
+        "price_max": null,
+        "gender": null,
+        "keywords": [
+          "may",
+          "pha",
+          "ca",
+          "phe",
+          "espresso",
+          "gia",
+          "dinh"
+        ],
+        "parser_mode": "ollama",
+        "parser_detail": "Ollama sẵn sàng với qwen2.5:3b-instruct"
+      }
+    }
+  ]
+}

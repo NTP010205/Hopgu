@@ -1,0 +1,1590 @@
+{
+  "generated_at": "2026-10-11T18:45:56.987148+00:00",
+  "protocol": {
+    "heldout_source": "Tiki public API",
+    "usage": "Phase 9 held-out evaluation only; not used for training or tuning.",
+    "catalog_overlap_count": 0,
+    "note": "Ảnh held-out không thuộc catalog và không được dùng để train/tune."
+  },
+  "in_catalog_self_image": {
+    "label": "IN-CATALOG SELF IMAGE",
+    "query_count": 24,
+    "metrics": {
+      "precision_at_5": 0.9500000000000001,
+      "hit_at_5": 0.9583333333333334,
+      "ndcg_at_5": 0.9512674957234664,
+      "latency_ms_mean": 58.04312083319019,
+      "category_precision_at_20": 0.9041666666666667
+    }
+  },
+  "out_of_catalog_image": {
+    "label": "OUT-OF-CATALOG IMAGE",
+    "query_count": 20,
+    "category_precision_at_20": {
+      "mean": 0.9,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "top5_category_consistency": {
+      "mean": 0.9,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "latency_ms": {
+      "mean": 254.75824499999362,
+      "min": 33.81010000157403,
+      "max": 4322.643499999685
+    },
+    "by_group": {
+      "bag": {
+        "images": 4,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0
+      },
+      "cosmetics": {
+        "images": 4,
+        "category_precision_at_20": 0.5,
+        "top5_category_consistency": 0.5
+      },
+      "headphones": {
+        "images": 4,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0
+      },
+      "home": {
+        "images": 4,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0
+      },
+      "shoes": {
+        "images": 4,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0
+      }
+    },
+    "cases": [
+      {
+        "group": "bag",
+        "heldout_product_id": "277377873",
+        "heldout_product_name": "Túi xách nữ thời trang công sở cao cấp phong cách cá tính mới",
+        "expected_category": "Thời trang nữ",
+        "image_path": "data/eval/out_of_catalog_images/bag_277377873.jpg",
+        "image_sha256": "67a09d69c35fcd9a0078a76b7b91f59b091bd373e7b7a298d5825b5522c8e6a4",
+        "predicted_category": "Thời trang nữ",
+        "category_inference": {
+          "primary_category": "Thời trang nữ",
+          "candidate_categories": [
+            "Thời trang nữ"
+          ],
+          "scores": {
+            "Thời trang nữ": 0.26533183455467224,
+            "Thời trang nam": 0.23387183248996735,
+            "Nhà cửa & Đời sống": 0.23323139548301697,
+            "Làm đẹp & Sức khỏe": 0.22609494626522064,
+            "Bách hóa": 0.214974045753479,
+            "Điện tử & Phụ kiện": 0.19109055399894714,
+            "Điện gia dụng": 0.18382592499256134,
+            "Sách": 0.16389432549476624
+          },
+          "confidence": "high",
+          "margin": 0.031460002064704895,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 121,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 4322.643499999685,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "207925713",
+            "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8876944184303284,
+            "final_score": 0.8876944184303284
+          },
+          {
+            "rank": 2,
+            "product_id": "103660156",
+            "product_name": "Túi xách nữ thời trang cao cấp phong cách châu âu",
+            "category": "Thời trang nữ",
+            "image_score": 0.8747832775115967,
+            "final_score": 0.8747832775115967
+          },
+          {
+            "rank": 3,
+            "product_id": "186530758",
+            "product_name": "Túi xách nữ da tự nhiên thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8663400411605835,
+            "final_score": 0.8663400411605835
+          },
+          {
+            "rank": 4,
+            "product_id": "263081142",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách cá tính mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8538640737533569,
+            "final_score": 0.8538640737533569
+          },
+          {
+            "rank": 5,
+            "product_id": "190355521",
+            "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8508011102676392,
+            "final_score": 0.8508011102676392
+          }
+        ]
+      },
+      {
+        "group": "bag",
+        "heldout_product_id": "273631504",
+        "heldout_product_name": "Túi xách nữ cao cấp phong cách châu âu hiện đại mới Hàng Chính Hãng",
+        "expected_category": "Thời trang nữ",
+        "image_path": "data/eval/out_of_catalog_images/bag_273631504.jpg",
+        "image_sha256": "699d015ce15b032cd6e1b72cab19a6ec3fe56f4e0c09690666e88b954c7a20ff",
+        "predicted_category": "Thời trang nữ",
+        "category_inference": {
+          "primary_category": "Thời trang nữ",
+          "candidate_categories": [
+            "Thời trang nữ"
+          ],
+          "scores": {
+            "Thời trang nữ": 0.27615806460380554,
+            "Nhà cửa & Đời sống": 0.23302076756954193,
+            "Làm đẹp & Sức khỏe": 0.2273421585559845,
+            "Thời trang nam": 0.22461606562137604,
+            "Điện gia dụng": 0.20165182650089264,
+            "Bách hóa": 0.19950103759765625,
+            "Điện tử & Phụ kiện": 0.1990424245595932,
+            "Sách": 0.18507574498653412
+          },
+          "confidence": "high",
+          "margin": 0.04313729703426361,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 121,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 39.23700000086683,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "103660156",
+            "product_name": "Túi xách nữ thời trang cao cấp phong cách châu âu",
+            "category": "Thời trang nữ",
+            "image_score": 0.9012099504470825,
+            "final_score": 0.9012099504470825
+          },
+          {
+            "rank": 2,
+            "product_id": "190355521",
+            "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8945679664611816,
+            "final_score": 0.8945679664611816
+          },
+          {
+            "rank": 3,
+            "product_id": "207925713",
+            "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8703981637954712,
+            "final_score": 0.8703981637954712
+          },
+          {
+            "rank": 4,
+            "product_id": "162024663",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8657884001731873,
+            "final_score": 0.8657884001731873
+          },
+          {
+            "rank": 5,
+            "product_id": "263081142",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách cá tính mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.8646819591522217,
+            "final_score": 0.8646819591522217
+          }
+        ]
+      },
+      {
+        "group": "bag",
+        "heldout_product_id": "277378149",
+        "heldout_product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+        "expected_category": "Thời trang nữ",
+        "image_path": "data/eval/out_of_catalog_images/bag_277378149.jpg",
+        "image_sha256": "2e2239fbe565d17e22d25626a7c18149368f4f4adef3587c7388437996442e3e",
+        "predicted_category": "Thời trang nữ",
+        "category_inference": {
+          "primary_category": "Thời trang nữ",
+          "candidate_categories": [
+            "Thời trang nữ"
+          ],
+          "scores": {
+            "Thời trang nữ": 0.27004116773605347,
+            "Thời trang nam": 0.2378852665424347,
+            "Nhà cửa & Đời sống": 0.23729227483272552,
+            "Làm đẹp & Sức khỏe": 0.22227610647678375,
+            "Bách hóa": 0.20724356174468994,
+            "Điện tử & Phụ kiện": 0.19718632102012634,
+            "Điện gia dụng": 0.18908441066741943,
+            "Sách": 0.17918775975704193
+          },
+          "confidence": "high",
+          "margin": 0.032155901193618774,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 121,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 42.392600000312086,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "192559833",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.9497084021568298,
+            "final_score": 0.9497084021568298
+          },
+          {
+            "rank": 2,
+            "product_id": "198883501",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.9344375133514404,
+            "final_score": 0.9344375133514404
+          },
+          {
+            "rank": 3,
+            "product_id": "177238136",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.9199730753898621,
+            "final_score": 0.9199730753898621
+          },
+          {
+            "rank": 4,
+            "product_id": "177060582",
+            "product_name": "Túi xách nữ thời trang cao cấp",
+            "category": "Thời trang nữ",
+            "image_score": 0.9131883382797241,
+            "final_score": 0.9131883382797241
+          },
+          {
+            "rank": 5,
+            "product_id": "201846041",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.9087339639663696,
+            "final_score": 0.9087339639663696
+          }
+        ]
+      },
+      {
+        "group": "bag",
+        "heldout_product_id": "279188284",
+        "heldout_product_name": "Túi xách nữ YUUMY YTX93",
+        "expected_category": "Thời trang nữ",
+        "image_path": "data/eval/out_of_catalog_images/bag_279188284.jpg",
+        "image_sha256": "8709133eda363d1988c55fcef245b84e92ec018d232ce60eea54b777f50d29b5",
+        "predicted_category": "Thời trang nữ",
+        "category_inference": {
+          "primary_category": "Thời trang nữ",
+          "candidate_categories": [
+            "Thời trang nữ"
+          ],
+          "scores": {
+            "Thời trang nữ": 0.2577943503856659,
+            "Nhà cửa & Đời sống": 0.22507238388061523,
+            "Thời trang nam": 0.21258307993412018,
+            "Làm đẹp & Sức khỏe": 0.20445136725902557,
+            "Bách hóa": 0.20129264891147614,
+            "Điện gia dụng": 0.19621235132217407,
+            "Điện tử & Phụ kiện": 0.1959158182144165,
+            "Sách": 0.1881265789270401
+          },
+          "confidence": "high",
+          "margin": 0.03272196650505066,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 121,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 43.426000000181375,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "159946692",
+            "product_name": "Túi Yuumy ( Thời trang nữ tote - Túi xách da YTX18 )",
+            "category": "Thời trang nữ",
+            "image_score": 0.8170167207717896,
+            "final_score": 0.8170167207717896
+          },
+          {
+            "rank": 2,
+            "product_id": "103660156",
+            "product_name": "Túi xách nữ thời trang cao cấp phong cách châu âu",
+            "category": "Thời trang nữ",
+            "image_score": 0.8028590679168701,
+            "final_score": 0.8028590679168701
+          },
+          {
+            "rank": 3,
+            "product_id": "190355521",
+            "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.7958705425262451,
+            "final_score": 0.7958705425262451
+          },
+          {
+            "rank": 4,
+            "product_id": "192559833",
+            "product_name": "Túi xách nữ thời trang công sở cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.7829764485359192,
+            "final_score": 0.7829764485359192
+          },
+          {
+            "rank": 5,
+            "product_id": "207925713",
+            "product_name": "Túi xách nữ da thật thời trang cao cấp phong cách mới",
+            "category": "Thời trang nữ",
+            "image_score": 0.7823672294616699,
+            "final_score": 0.7823672294616699
+          }
+        ]
+      },
+      {
+        "group": "shoes",
+        "heldout_product_id": "275905493",
+        "heldout_product_name": "Giày Sneaker Vải Canvas Nam Nữ E12 Kakao Dincox",
+        "expected_category": "Thời trang nam",
+        "image_path": "data/eval/out_of_catalog_images/shoes_275905493.jpg",
+        "image_sha256": "0b81bae8e082a8d4d9fcb48e2846bbed611890743009d473e4d35bc2b96910b2",
+        "predicted_category": "Thời trang nam",
+        "category_inference": {
+          "primary_category": "Thời trang nam",
+          "candidate_categories": [
+            "Thời trang nam"
+          ],
+          "scores": {
+            "Thời trang nam": 0.2915914058685303,
+            "Thời trang nữ": 0.24726498126983643,
+            "Nhà cửa & Đời sống": 0.2222524881362915,
+            "Bách hóa": 0.2073017954826355,
+            "Điện gia dụng": 0.2007376104593277,
+            "Làm đẹp & Sức khỏe": 0.19615291059017181,
+            "Điện tử & Phụ kiện": 0.19062669575214386,
+            "Sách": 0.18995876610279083
+          },
+          "confidence": "high",
+          "margin": 0.04432642459869385,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 122,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 41.81539999990491,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "276258213",
+            "product_name": "Giày Sneaker Nam Nữ Vải Canvas DINCOX E12 Black/Beige Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.9574708938598633,
+            "final_score": 0.9574708938598633
+          },
+          {
+            "rank": 2,
+            "product_id": "275933718",
+            "product_name": "Giày Sneaker Vải Canvas Nam Nữ E18 White Dincox Shoes Sang Trọng",
+            "category": "Thời trang nam",
+            "image_score": 0.9311321973800659,
+            "final_score": 0.9311321973800659
+          },
+          {
+            "rank": 3,
+            "product_id": "275905374",
+            "product_name": "Giày Sneaker Nam Vải Canvas DINCOX E12 Black Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.9268485903739929,
+            "final_score": 0.9268485903739929
+          },
+          {
+            "rank": 4,
+            "product_id": "127379613",
+            "product_name": "Giày Sneaker Da Unisex DINCOX D20 White Năng Động Cá Tính",
+            "category": "Thời trang nam",
+            "image_score": 0.9217008352279663,
+            "final_score": 0.9217008352279663
+          },
+          {
+            "rank": 5,
+            "product_id": "127379868",
+            "product_name": "Giày Sneaker Vải Unisex DINCOX D21 Black Cách Ấn Tượng",
+            "category": "Thời trang nam",
+            "image_score": 0.9191810488700867,
+            "final_score": 0.9191810488700867
+          }
+        ]
+      },
+      {
+        "group": "shoes",
+        "heldout_product_id": "2142561",
+        "heldout_product_name": "Giày Sneaker Nam Zapas Classcial GZ018 - Đen (Size",
+        "expected_category": "Thời trang nam",
+        "image_path": "data/eval/out_of_catalog_images/shoes_2142561.jpg",
+        "image_sha256": "9dd2d8993270d78e2171182715f97ae1eaa3a645949ce9549d7651d7e1406855",
+        "predicted_category": "Thời trang nam",
+        "category_inference": {
+          "primary_category": "Thời trang nam",
+          "candidate_categories": [
+            "Thời trang nam"
+          ],
+          "scores": {
+            "Thời trang nam": 0.29765915870666504,
+            "Thời trang nữ": 0.25715893507003784,
+            "Nhà cửa & Đời sống": 0.2196957916021347,
+            "Điện tử & Phụ kiện": 0.21191470324993134,
+            "Làm đẹp & Sức khỏe": 0.20187272131443024,
+            "Bách hóa": 0.19981221854686737,
+            "Điện gia dụng": 0.19701994955539703,
+            "Sách": 0.17784278094768524
+          },
+          "confidence": "high",
+          "margin": 0.0405002236366272,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 122,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 45.3562000002421,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "275905374",
+            "product_name": "Giày Sneaker Nam Vải Canvas DINCOX E12 Black Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.8281246423721313,
+            "final_score": 0.8281246423721313
+          },
+          {
+            "rank": 2,
+            "product_id": "127380104",
+            "product_name": "Giày Sneaker Da Unisex DINCOX D20 Black Năng Động Cá Tính",
+            "category": "Thời trang nam",
+            "image_score": 0.8267109990119934,
+            "final_score": 0.8267109990119934
+          },
+          {
+            "rank": 3,
+            "product_id": "276258213",
+            "product_name": "Giày Sneaker Nam Nữ Vải Canvas DINCOX E12 Black/Beige Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.8200432658195496,
+            "final_score": 0.8200432658195496
+          },
+          {
+            "rank": 4,
+            "product_id": "276814141",
+            "product_name": "New Arrivals | Giày Da Sneaker Nam Nữ DC39 COCO MILK DINCOX Shoes Đế Bằng - Microfiber Leather",
+            "category": "Thời trang nam",
+            "image_score": 0.8146923184394836,
+            "final_score": 0.8146923184394836
+          },
+          {
+            "rank": 5,
+            "product_id": "275933718",
+            "product_name": "Giày Sneaker Vải Canvas Nam Nữ E18 White Dincox Shoes Sang Trọng",
+            "category": "Thời trang nam",
+            "image_score": 0.8043820858001709,
+            "final_score": 0.8043820858001709
+          }
+        ]
+      },
+      {
+        "group": "shoes",
+        "heldout_product_id": "2142549",
+        "heldout_product_name": "Giày Sneaker Nam Zapas Classcial GZ018 - Trắng (Size",
+        "expected_category": "Thời trang nam",
+        "image_path": "data/eval/out_of_catalog_images/shoes_2142549.jpg",
+        "image_sha256": "67cff292c692f36c952cb7bbdf931245597cda556ad2a131c6756627257c26e2",
+        "predicted_category": "Thời trang nam",
+        "category_inference": {
+          "primary_category": "Thời trang nam",
+          "candidate_categories": [
+            "Thời trang nam"
+          ],
+          "scores": {
+            "Thời trang nam": 0.29763543605804443,
+            "Thời trang nữ": 0.25227952003479004,
+            "Nhà cửa & Đời sống": 0.21207772195339203,
+            "Điện tử & Phụ kiện": 0.20178011059761047,
+            "Làm đẹp & Sức khỏe": 0.20131780207157135,
+            "Bách hóa": 0.20048221945762634,
+            "Điện gia dụng": 0.19554387032985687,
+            "Sách": 0.17600111663341522
+          },
+          "confidence": "high",
+          "margin": 0.045355916023254395,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 122,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 39.19059999861929,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "275933718",
+            "product_name": "Giày Sneaker Vải Canvas Nam Nữ E18 White Dincox Shoes Sang Trọng",
+            "category": "Thời trang nam",
+            "image_score": 0.8610184192657471,
+            "final_score": 0.8610184192657471
+          },
+          {
+            "rank": 2,
+            "product_id": "127379613",
+            "product_name": "Giày Sneaker Da Unisex DINCOX D20 White Năng Động Cá Tính",
+            "category": "Thời trang nam",
+            "image_score": 0.8537753820419312,
+            "final_score": 0.8537753820419312
+          },
+          {
+            "rank": 3,
+            "product_id": "276814141",
+            "product_name": "New Arrivals | Giày Da Sneaker Nam Nữ DC39 COCO MILK DINCOX Shoes Đế Bằng - Microfiber Leather",
+            "category": "Thời trang nam",
+            "image_score": 0.8476258516311646,
+            "final_score": 0.8476258516311646
+          },
+          {
+            "rank": 4,
+            "product_id": "275905374",
+            "product_name": "Giày Sneaker Nam Vải Canvas DINCOX E12 Black Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.836238443851471,
+            "final_score": 0.836238443851471
+          },
+          {
+            "rank": 5,
+            "product_id": "127380104",
+            "product_name": "Giày Sneaker Da Unisex DINCOX D20 Black Năng Động Cá Tính",
+            "category": "Thời trang nam",
+            "image_score": 0.8297343254089355,
+            "final_score": 0.8297343254089355
+          }
+        ]
+      },
+      {
+        "group": "shoes",
+        "heldout_product_id": "275934368",
+        "heldout_product_name": "Giày Sneaker Vải Canvas Nam Nữ E18 Chocolate Dincox",
+        "expected_category": "Thời trang nam",
+        "image_path": "data/eval/out_of_catalog_images/shoes_275934368.jpg",
+        "image_sha256": "d1166982f20e3106b4dcc493dda90d0d28c7ae1bed31b3aecb76d09f93038a7e",
+        "predicted_category": "Thời trang nam",
+        "category_inference": {
+          "primary_category": "Thời trang nam",
+          "candidate_categories": [
+            "Thời trang nam"
+          ],
+          "scores": {
+            "Thời trang nam": 0.29851481318473816,
+            "Thời trang nữ": 0.2574458122253418,
+            "Nhà cửa & Đời sống": 0.23451431095600128,
+            "Bách hóa": 0.2198735773563385,
+            "Điện gia dụng": 0.2111520916223526,
+            "Làm đẹp & Sức khỏe": 0.20827065408229828,
+            "Điện tử & Phụ kiện": 0.2063702940940857,
+            "Sách": 0.1908843219280243
+          },
+          "confidence": "high",
+          "margin": 0.04106900095939636,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 122,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 38.88389999883657,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "276258213",
+            "product_name": "Giày Sneaker Nam Nữ Vải Canvas DINCOX E12 Black/Beige Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.9520244002342224,
+            "final_score": 0.9520244002342224
+          },
+          {
+            "rank": 2,
+            "product_id": "275905374",
+            "product_name": "Giày Sneaker Nam Vải Canvas DINCOX E12 Black Đơn Giản Thanh Lịch",
+            "category": "Thời trang nam",
+            "image_score": 0.9371961951255798,
+            "final_score": 0.9371961951255798
+          },
+          {
+            "rank": 3,
+            "product_id": "275933718",
+            "product_name": "Giày Sneaker Vải Canvas Nam Nữ E18 White Dincox Shoes Sang Trọng",
+            "category": "Thời trang nam",
+            "image_score": 0.9289017915725708,
+            "final_score": 0.9289017915725708
+          },
+          {
+            "rank": 4,
+            "product_id": "127379868",
+            "product_name": "Giày Sneaker Vải Unisex DINCOX D21 Black Cách Ấn Tượng",
+            "category": "Thời trang nam",
+            "image_score": 0.9181230068206787,
+            "final_score": 0.9181230068206787
+          },
+          {
+            "rank": 5,
+            "product_id": "127380104",
+            "product_name": "Giày Sneaker Da Unisex DINCOX D20 Black Năng Động Cá Tính",
+            "category": "Thời trang nam",
+            "image_score": 0.914792537689209,
+            "final_score": 0.914792537689209
+          }
+        ]
+      },
+      {
+        "group": "headphones",
+        "heldout_product_id": "279414150",
+        "heldout_product_name": "Tai Nghe Bluetooth TWS USAMS Echo E05 Bluetooth v6.0 - Hàng Chính Hãng",
+        "expected_category": "Điện tử & Phụ kiện",
+        "image_path": "data/eval/out_of_catalog_images/headphones_279414150.jpg",
+        "image_sha256": "c787b5fb2895ef2981e8b01e951c3a1e42567133c915d317e96f7c4b95fe8eed",
+        "predicted_category": "Điện tử & Phụ kiện",
+        "category_inference": {
+          "primary_category": "Điện tử & Phụ kiện",
+          "candidate_categories": [
+            "Điện tử & Phụ kiện"
+          ],
+          "scores": {
+            "Điện tử & Phụ kiện": 0.27934491634368896,
+            "Điện gia dụng": 0.24679431319236755,
+            "Nhà cửa & Đời sống": 0.23920641839504242,
+            "Làm đẹp & Sức khỏe": 0.2237379550933838,
+            "Thời trang nam": 0.20470353960990906,
+            "Sách": 0.203677698969841,
+            "Bách hóa": 0.20346826314926147,
+            "Thời trang nữ": 0.197854146361351
+          },
+          "confidence": "high",
+          "margin": 0.03255060315132141,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 132,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 39.07890000118641,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "108633882",
+            "product_name": "Củ sạc nhanh Baseus 30W, Củ sạc Baseus Si 30W, Củ sạc Baseus Super Si Quick Charger 30W dùng cho iPhone/ Samsung/ OPPO... (30W, Type C, PD/ QC3.0 Quick charger)",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.7353003621101379,
+            "final_score": 0.7353003621101379
+          },
+          {
+            "rank": 2,
+            "product_id": "181185263",
+            "product_name": "Tai Nghe Baseus Encok 3.5mm lateral in-ear Wired Earphone H17 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.719592273235321,
+            "final_score": 0.719592273235321
+          },
+          {
+            "rank": 3,
+            "product_id": "272030678",
+            "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.6942184567451477,
+            "final_score": 0.6942184567451477
+          },
+          {
+            "rank": 4,
+            "product_id": "271966725",
+            "product_name": "Loa Bluetooth Sony SRS-XB100 - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.6559163331985474,
+            "final_score": 0.6559163331985474
+          },
+          {
+            "rank": 5,
+            "product_id": "272420799",
+            "product_name": "Tai Nghe Apple EarPods Cổng USB-C",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.6474206447601318,
+            "final_score": 0.6474206447601318
+          }
+        ]
+      },
+      {
+        "group": "headphones",
+        "heldout_product_id": "273930440",
+        "heldout_product_name": "Tai nghe Bluetooth nhét tai không dây TWS Rockspace Retro Mix Tape nghe nhạc lên đến 20h Hàng chính hãng có bảo hành",
+        "expected_category": "Điện tử & Phụ kiện",
+        "image_path": "data/eval/out_of_catalog_images/headphones_273930440.jpg",
+        "image_sha256": "bc80a81f991f40f1970ae27fda03d0b7454671a11e0bae4d1261599f3e27de53",
+        "predicted_category": "Điện tử & Phụ kiện",
+        "category_inference": {
+          "primary_category": "Điện tử & Phụ kiện",
+          "candidate_categories": [
+            "Điện tử & Phụ kiện"
+          ],
+          "scores": {
+            "Điện tử & Phụ kiện": 0.25532588362693787,
+            "Điện gia dụng": 0.23398500680923462,
+            "Thời trang nữ": 0.22241277992725372,
+            "Nhà cửa & Đời sống": 0.21351970732212067,
+            "Thời trang nam": 0.21277765929698944,
+            "Bách hóa": 0.21023865044116974,
+            "Làm đẹp & Sức khỏe": 0.20209479331970215,
+            "Sách": 0.17252741754055023
+          },
+          "confidence": "high",
+          "margin": 0.021340876817703247,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 132,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 39.68910000003234,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "248761700",
+            "product_name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.6766935586929321,
+            "final_score": 0.6766935586929321
+          },
+          {
+            "rank": 2,
+            "product_id": "73204703",
+            "product_name": "Máy trợ giảng không dây SHIDU kết nối bằng tần số cao cấp, mic trợ giảng cho giáo viên và hướng dẫn viên du lịch, loa trợ giảng cài áo tiện lợi, Hàng nhập khẩu",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.579558253288269,
+            "final_score": 0.579558253288269
+          },
+          {
+            "rank": 3,
+            "product_id": "379462",
+            "product_name": "Loa Vi Tính Microlab B51 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.5748825669288635,
+            "final_score": 0.5748825669288635
+          },
+          {
+            "rank": 4,
+            "product_id": "54645",
+            "product_name": "Tai nghe chụp tai Logitech H150 - 2 jack 3.5mm, Mic khử giảm tiếng ồn, âm thanh nổi - Màu",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.5712507963180542,
+            "final_score": 0.5712507963180542
+          },
+          {
+            "rank": 5,
+            "product_id": "271966725",
+            "product_name": "Loa Bluetooth Sony SRS-XB100 - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.5636919736862183,
+            "final_score": 0.5636919736862183
+          }
+        ]
+      },
+      {
+        "group": "headphones",
+        "heldout_product_id": "273544597",
+        "heldout_product_name": "Tai nghe Bluetooth không dây nhét tai TWS thiết kế xoay Rockspace Rotating Hàng chính hãng bảo hành 12 tháng",
+        "expected_category": "Điện tử & Phụ kiện",
+        "image_path": "data/eval/out_of_catalog_images/headphones_273544597.jpg",
+        "image_sha256": "2f006a5a9428df55e9da982ee741703ee94b723af3aa1687f987f243a6917617",
+        "predicted_category": "Điện tử & Phụ kiện",
+        "category_inference": {
+          "primary_category": "Điện tử & Phụ kiện",
+          "candidate_categories": [
+            "Điện tử & Phụ kiện"
+          ],
+          "scores": {
+            "Điện tử & Phụ kiện": 0.2836131155490875,
+            "Điện gia dụng": 0.2640164792537689,
+            "Nhà cửa & Đời sống": 0.2587239742279053,
+            "Thời trang nam": 0.22040972113609314,
+            "Bách hóa": 0.2128290832042694,
+            "Làm đẹp & Sức khỏe": 0.21183541417121887,
+            "Thời trang nữ": 0.21097518503665924,
+            "Sách": 0.18726378679275513
+          },
+          "confidence": "high",
+          "margin": 0.019596636295318604,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 132,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 42.01839999950607,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "248761700",
+            "product_name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.7925531268119812,
+            "final_score": 0.7925531268119812
+          },
+          {
+            "rank": 2,
+            "product_id": "273217833",
+            "product_name": "Tai nghe nhét tai jack cắm Type-C có mic hoco. M101 Pro tương thích rộng với các máy Android chân Type C và cho Iphone 15 Ipad Chân Type C - Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.7015236020088196,
+            "final_score": 0.7015236020088196
+          },
+          {
+            "rank": 3,
+            "product_id": "272030678",
+            "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.695448637008667,
+            "final_score": 0.695448637008667
+          },
+          {
+            "rank": 4,
+            "product_id": "181185263",
+            "product_name": "Tai Nghe Baseus Encok 3.5mm lateral in-ear Wired Earphone H17 - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.6821561455726624,
+            "final_score": 0.6821561455726624
+          },
+          {
+            "rank": 5,
+            "product_id": "272420799",
+            "product_name": "Tai Nghe Apple EarPods Cổng USB-C",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.6650323271751404,
+            "final_score": 0.6650323271751404
+          }
+        ]
+      },
+      {
+        "group": "headphones",
+        "heldout_product_id": "12147426",
+        "heldout_product_name": "Tai nghe bluetooth Hoco E36 - Hàng chính hãng",
+        "expected_category": "Điện tử & Phụ kiện",
+        "image_path": "data/eval/out_of_catalog_images/headphones_12147426.jpg",
+        "image_sha256": "ad804c752ed84ec6566cf1f889d2793495918d875d4bacddb7adbdff98b2e99e",
+        "predicted_category": "Điện tử & Phụ kiện",
+        "category_inference": {
+          "primary_category": "Điện tử & Phụ kiện",
+          "candidate_categories": [
+            "Điện tử & Phụ kiện"
+          ],
+          "scores": {
+            "Điện tử & Phụ kiện": 0.2631515860557556,
+            "Nhà cửa & Đời sống": 0.2327369600534439,
+            "Điện gia dụng": 0.21514490246772766,
+            "Thời trang nam": 0.20729023218154907,
+            "Bách hóa": 0.20071128010749817,
+            "Thời trang nữ": 0.19921976327896118,
+            "Làm đẹp & Sức khỏe": 0.19681903719902039,
+            "Sách": 0.19070154428482056
+          },
+          "confidence": "high",
+          "margin": 0.030414626002311707,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 132,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 41.698899998664274,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "179575196",
+            "product_name": "Balo laptop nam chống thấm nước cao cấp phong cách châu âu",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.8431609869003296,
+            "final_score": 0.8431609869003296
+          },
+          {
+            "rank": 2,
+            "product_id": "77052330",
+            "product_name": "Balo laptop công nghệ, khóa số chống trộm chống rạch chống nước cao cấp phong cách mới",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.8346986770629883,
+            "final_score": 0.8346986770629883
+          },
+          {
+            "rank": 3,
+            "product_id": "156634748",
+            "product_name": "Cáp Sạc truyền dữ liệu 2.4 chống dối, dây dù dành cho Iphone,Ipad Hoco X14 Giao màu ngẫu nhiên- Hàng chính hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.7958469390869141,
+            "final_score": 0.7958469390869141
+          },
+          {
+            "rank": 4,
+            "product_id": "21871310",
+            "product_name": "Cáp Sạc Nhanh Micro USB 2.4A UGREEN 60137 Dài 1.5M - Hàng Chính Hãng",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.7832419276237488,
+            "final_score": 0.7832419276237488
+          },
+          {
+            "rank": 5,
+            "product_id": "198531302",
+            "product_name": "Balo laptop nam thông minh đa năng thời trang cao cấp phong cách mới 15.6\"",
+            "category": "Điện tử & Phụ kiện",
+            "image_score": 0.782798707485199,
+            "final_score": 0.782798707485199
+          }
+        ]
+      },
+      {
+        "group": "cosmetics",
+        "heldout_product_id": "279520170",
+        "heldout_product_name": "Kem chống nắng chống thấm nước, lâu trôi omi sunbears spf 50+ pa++++ (màu vàng) (30 g/tuýp)",
+        "expected_category": "Làm đẹp & Sức khỏe",
+        "image_path": "data/eval/out_of_catalog_images/cosmetics_279520170.jpg",
+        "image_sha256": "051f299c9250bde9beffcfd006482564861092619cd350fd2d4c83f699212d92",
+        "predicted_category": "Bách hóa",
+        "category_inference": {
+          "primary_category": "Bách hóa",
+          "candidate_categories": [
+            "Bách hóa"
+          ],
+          "scores": {
+            "Bách hóa": 0.25490453839302063,
+            "Nhà cửa & Đời sống": 0.23668800294399261,
+            "Điện gia dụng": 0.23294368386268616,
+            "Làm đẹp & Sức khỏe": 0.22909599542617798,
+            "Sách": 0.19979776442050934,
+            "Thời trang nam": 0.1932072937488556,
+            "Thời trang nữ": 0.1904323548078537,
+            "Điện tử & Phụ kiện": 0.18884660303592682
+          },
+          "confidence": "high",
+          "margin": 0.018216535449028015,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 77,
+        "category_precision_at_20": 0.0,
+        "top5_category_consistency": 0.0,
+        "latency_ms": 39.740800000799936,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "271121599",
+            "product_name": "Thùng 48 hộp sữa lúa mạch MILO 110ml (48x110ml)",
+            "category": "Bách hóa",
+            "image_score": 0.7855451703071594,
+            "final_score": 0.7855451703071594
+          },
+          {
+            "rank": 2,
+            "product_id": "2454173",
+            "product_name": "Sữa đặc có đường Dutch Lady cao cấp 380g",
+            "category": "Bách hóa",
+            "image_score": 0.7720427513122559,
+            "final_score": 0.7720427513122559
+          },
+          {
+            "rank": 3,
+            "product_id": "114467215",
+            "product_name": "Thùng 48 chai sữa chua uống hương nho Fristi 80ml",
+            "category": "Bách hóa",
+            "image_score": 0.740602970123291,
+            "final_score": 0.740602970123291
+          },
+          {
+            "rank": 4,
+            "product_id": "14936798",
+            "product_name": "Thùng 48 bịch sữa tươi tiệt trùng TH True Milk ít đường 220ml",
+            "category": "Bách hóa",
+            "image_score": 0.7361661791801453,
+            "final_score": 0.7361661791801453
+          },
+          {
+            "rank": 5,
+            "product_id": "192886296",
+            "product_name": "Thùng 30 gói mì Hảo Hảo Tôm Chua Cay 75g",
+            "category": "Bách hóa",
+            "image_score": 0.7340419888496399,
+            "final_score": 0.7340419888496399
+          }
+        ]
+      },
+      {
+        "group": "cosmetics",
+        "heldout_product_id": "279520180",
+        "heldout_product_name": "Kem chống nắng chống thấm nước, lâu trôi mát lạnh omi sunbears spf 50+ pa++++ (màu xanh) (30 g/tuýp)",
+        "expected_category": "Làm đẹp & Sức khỏe",
+        "image_path": "data/eval/out_of_catalog_images/cosmetics_279520180.jpg",
+        "image_sha256": "dc6c1bac71f3951f13089fead6887c0f2d25900b8d1ec20039cae576f96e7ca9",
+        "predicted_category": "Bách hóa",
+        "category_inference": {
+          "primary_category": "Bách hóa",
+          "candidate_categories": [
+            "Bách hóa",
+            "Điện gia dụng"
+          ],
+          "scores": {
+            "Bách hóa": 0.2518026828765869,
+            "Điện gia dụng": 0.24642930924892426,
+            "Nhà cửa & Đời sống": 0.24541503190994263,
+            "Làm đẹp & Sức khỏe": 0.2351548671722412,
+            "Điện tử & Phụ kiện": 0.21231314539909363,
+            "Sách": 0.20838312804698944,
+            "Thời trang nam": 0.19748051464557648,
+            "Thời trang nữ": 0.19218973815441132
+          },
+          "confidence": "medium",
+          "margin": 0.005373373627662659,
+          "strategy": "top_2_categories",
+          "uncertain": true,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 189,
+        "category_precision_at_20": 0.0,
+        "top5_category_consistency": 0.0,
+        "latency_ms": 41.93169999962265,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "271121599",
+            "product_name": "Thùng 48 hộp sữa lúa mạch MILO 110ml (48x110ml)",
+            "category": "Bách hóa",
+            "image_score": 0.8003535270690918,
+            "final_score": 0.8003535270690918
+          },
+          {
+            "rank": 2,
+            "product_id": "2454173",
+            "product_name": "Sữa đặc có đường Dutch Lady cao cấp 380g",
+            "category": "Bách hóa",
+            "image_score": 0.7609371542930603,
+            "final_score": 0.7609371542930603
+          },
+          {
+            "rank": 3,
+            "product_id": "14936798",
+            "product_name": "Thùng 48 bịch sữa tươi tiệt trùng TH True Milk ít đường 220ml",
+            "category": "Bách hóa",
+            "image_score": 0.7473616003990173,
+            "final_score": 0.7473616003990173
+          },
+          {
+            "rank": 4,
+            "product_id": "114467215",
+            "product_name": "Thùng 48 chai sữa chua uống hương nho Fristi 80ml",
+            "category": "Bách hóa",
+            "image_score": 0.729536235332489,
+            "final_score": 0.729536235332489
+          },
+          {
+            "rank": 5,
+            "product_id": "214088657",
+            "product_name": "Sữa Dưỡng Thể NIVEA Extra Bright Dưỡng Sáng Da | Mịn Da (350 ml)",
+            "category": "Bách hóa",
+            "image_score": 0.7236641645431519,
+            "final_score": 0.7236641645431519
+          }
+        ]
+      },
+      {
+        "group": "cosmetics",
+        "heldout_product_id": "278091902",
+        "heldout_product_name": "Kem chống nắng Nivea Derma Invisible Daily Fluid 40ML",
+        "expected_category": "Làm đẹp & Sức khỏe",
+        "image_path": "data/eval/out_of_catalog_images/cosmetics_278091902.jpg",
+        "image_sha256": "840af598e45b26bb9823c63bf13829a00a0922a1ce50daff6cc815c3484bf752",
+        "predicted_category": "Làm đẹp & Sức khỏe",
+        "category_inference": {
+          "primary_category": "Làm đẹp & Sức khỏe",
+          "candidate_categories": [
+            "Làm đẹp & Sức khỏe"
+          ],
+          "scores": {
+            "Làm đẹp & Sức khỏe": 0.24573002755641937,
+            "Nhà cửa & Đời sống": 0.21858961880207062,
+            "Bách hóa": 0.2156732678413391,
+            "Điện gia dụng": 0.19244635105133057,
+            "Thời trang nữ": 0.19153478741645813,
+            "Sách": 0.18427641689777374,
+            "Thời trang nam": 0.18298611044883728,
+            "Điện tử & Phụ kiện": 0.16950035095214844
+          },
+          "confidence": "high",
+          "margin": 0.027140408754348755,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 112,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 42.94899999877089,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "136666870",
+            "product_name": "Dầu Gội PANTENE Chai 900ml - Chăm sóc hư tổn",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.8096635341644287,
+            "final_score": 0.8096635341644287
+          },
+          {
+            "rank": 2,
+            "product_id": "275970806",
+            "product_name": "Dầu gội bưởi Cocoon 310ml",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.8088371157646179,
+            "final_score": 0.8088371157646179
+          },
+          {
+            "rank": 3,
+            "product_id": "739342",
+            "product_name": "Dầu Gội Pantene Mềm Mượt Óng Ả (1200ml)",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.7954676151275635,
+            "final_score": 0.7954676151275635
+          },
+          {
+            "rank": 4,
+            "product_id": "472737",
+            "product_name": "Xịt Khử Mùi Enchanteur Romantic (150ml)",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.7907999157905579,
+            "final_score": 0.7907999157905579
+          },
+          {
+            "rank": 5,
+            "product_id": "77305646",
+            "product_name": "Kem chống nắng dạng sữa dịu nhẹ cho da nhạy cảm và trẻ em Anessa Perfect UV Sunscreen Mild Milk For Sensitive Skin SPF 50+ PA++++ 60ml",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.7796374559402466,
+            "final_score": 0.7796374559402466
+          }
+        ]
+      },
+      {
+        "group": "cosmetics",
+        "heldout_product_id": "262732116",
+        "heldout_product_name": "Kem chống nắng siêu bảo vệ, dưỡng da cao cấp Hàn Quốc THE RUCY SUPER UV SUNCREAM SPF 50+/PA+++ 50ML",
+        "expected_category": "Làm đẹp & Sức khỏe",
+        "image_path": "data/eval/out_of_catalog_images/cosmetics_262732116.jpg",
+        "image_sha256": "e7cd17e8c4ebce789e245fe4152244110979418116f776c45da5393d383ef28e",
+        "predicted_category": "Làm đẹp & Sức khỏe",
+        "category_inference": {
+          "primary_category": "Làm đẹp & Sức khỏe",
+          "candidate_categories": [
+            "Làm đẹp & Sức khỏe"
+          ],
+          "scores": {
+            "Làm đẹp & Sức khỏe": 0.28322169184684753,
+            "Bách hóa": 0.22600887715816498,
+            "Nhà cửa & Đời sống": 0.21964384615421295,
+            "Sách": 0.19423910975456238,
+            "Thời trang nữ": 0.1931942254304886,
+            "Thời trang nam": 0.19270797073841095,
+            "Điện gia dụng": 0.1822444498538971,
+            "Điện tử & Phụ kiện": 0.15477299690246582
+          },
+          "confidence": "high",
+          "margin": 0.057212814688682556,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 112,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 41.766099999222206,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "50037073",
+            "product_name": "Cicaplast Baume B5 La Roche-Posay Kem Dưỡng Làm Dịu Mát Mượt & Phục Hồi Da Phù Hợp Cho Trẻ Em - Trẻ Sơ Sinh (100ml) - M6918702",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.656134843826294,
+            "final_score": 0.656134843826294
+          },
+          {
+            "rank": 2,
+            "product_id": "55613571",
+            "product_name": "Kem Chống Nắng Tế Bào Gốc Kiềm Dầu Chống Nhăn Dưỡng Ẩm Trắng Da Cellkey-Scien Multi Perfect Sun Cream SPF50+PA++++ (50ml)",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.628109335899353,
+            "final_score": 0.628109335899353
+          },
+          {
+            "rank": 3,
+            "product_id": "73429271",
+            "product_name": "Kem chống lão hóa Vichy Liftactiv Collagen Specialist 15ml",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.6227356791496277,
+            "final_score": 0.6227356791496277
+          },
+          {
+            "rank": 4,
+            "product_id": "5902685",
+            "product_name": "Sữa rửa mặt vitamin làm sáng da, mờ sẹo thâm dạng kem Acnes Vitamin Cleanser 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.6220007538795471,
+            "final_score": 0.6220007538795471
+          },
+          {
+            "rank": 5,
+            "product_id": "176672117",
+            "product_name": "Sữa rửa mặt ngăn ngừa mụn dạng gel Acnes Gentle Wash 100g",
+            "category": "Làm đẹp & Sức khỏe",
+            "image_score": 0.61282879114151,
+            "final_score": 0.61282879114151
+          }
+        ]
+      },
+      {
+        "group": "home",
+        "heldout_product_id": "271064516",
+        "heldout_product_name": "Bình giữ nhiệt Lafonte 180695 500ml",
+        "expected_category": "Nhà cửa & Đời sống",
+        "image_path": "data/eval/out_of_catalog_images/home_271064516.jpg",
+        "image_sha256": "2f450e83a6bc96b9a384b4e8080d80abacffb02c6b906fe7b931c098e256ba73",
+        "predicted_category": "Nhà cửa & Đời sống",
+        "category_inference": {
+          "primary_category": "Nhà cửa & Đời sống",
+          "candidate_categories": [
+            "Nhà cửa & Đời sống"
+          ],
+          "scores": {
+            "Nhà cửa & Đời sống": 0.26935243606567383,
+            "Làm đẹp & Sức khỏe": 0.2513882517814636,
+            "Điện tử & Phụ kiện": 0.2441108375787735,
+            "Điện gia dụng": 0.23046711087226868,
+            "Bách hóa": 0.22335322201251984,
+            "Thời trang nữ": 0.21280330419540405,
+            "Thời trang nam": 0.21189601719379425,
+            "Sách": 0.1973886936903
+          },
+          "confidence": "high",
+          "margin": 0.017964184284210205,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 72,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 37.86270000091463,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "278769372",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8383 dung tích 510ml - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8837549090385437,
+            "final_score": 0.8837549090385437
+          },
+          {
+            "rank": 2,
+            "product_id": "279001572",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8347 dung tích 480ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.873261034488678,
+            "final_score": 0.873261034488678
+          },
+          {
+            "rank": 3,
+            "product_id": "278965770",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8394 dung tích 940ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8718157410621643,
+            "final_score": 0.8718157410621643
+          },
+          {
+            "rank": 4,
+            "product_id": "273911405",
+            "product_name": "Bình giữ nhiệt inox 316 Elmich EL8331 dung tích 1L",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8692100644111633,
+            "final_score": 0.8692100644111633
+          },
+          {
+            "rank": 5,
+            "product_id": "99621372",
+            "product_name": "Bình giữ nhiệt Lock&amp;Lock Belt Bottle LHC4267IVY490ml - Màu",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8663366436958313,
+            "final_score": 0.8663366436958313
+          }
+        ]
+      },
+      {
+        "group": "home",
+        "heldout_product_id": "271079123",
+        "heldout_product_name": "Bình giữ nhiệt La Fonte 400ml - 006637 - GRE",
+        "expected_category": "Nhà cửa & Đời sống",
+        "image_path": "data/eval/out_of_catalog_images/home_271079123.jpg",
+        "image_sha256": "08e45e8aecbe65d84aecbbd6722e3a78063d3fd1982d5767e4909eac6acb318d",
+        "predicted_category": "Nhà cửa & Đời sống",
+        "category_inference": {
+          "primary_category": "Nhà cửa & Đời sống",
+          "candidate_categories": [
+            "Nhà cửa & Đời sống"
+          ],
+          "scores": {
+            "Nhà cửa & Đời sống": 0.28995007276535034,
+            "Làm đẹp & Sức khỏe": 0.24497376382350922,
+            "Điện gia dụng": 0.24050357937812805,
+            "Bách hóa": 0.24030473828315735,
+            "Điện tử & Phụ kiện": 0.22795233130455017,
+            "Thời trang nữ": 0.22194504737854004,
+            "Thời trang nam": 0.214938685297966,
+            "Sách": 0.21131499111652374
+          },
+          "confidence": "high",
+          "margin": 0.044976308941841125,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 72,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 39.315600000918494,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "278769372",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8383 dung tích 510ml - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8969992995262146,
+            "final_score": 0.8969992995262146
+          },
+          {
+            "rank": 2,
+            "product_id": "277742262",
+            "product_name": "Hộp cơm giữ nhiệt inox 304 Elmich EL8302 dung tích 1.7L - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8876208066940308,
+            "final_score": 0.8876208066940308
+          },
+          {
+            "rank": 3,
+            "product_id": "99621372",
+            "product_name": "Bình giữ nhiệt Lock&amp;Lock Belt Bottle LHC4267IVY490ml - Màu",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8787250518798828,
+            "final_score": 0.8787250518798828
+          },
+          {
+            "rank": 4,
+            "product_id": "279001572",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8347 dung tích 480ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8690229058265686,
+            "final_score": 0.8690229058265686
+          },
+          {
+            "rank": 5,
+            "product_id": "278965770",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8394 dung tích 940ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8560977578163147,
+            "final_score": 0.8560977578163147
+          }
+        ]
+      },
+      {
+        "group": "home",
+        "heldout_product_id": "271064584",
+        "heldout_product_name": "Bình Giữ Nhiệt inox CarLMann 0.5L màu đỏ -BES551-R",
+        "expected_category": "Nhà cửa & Đời sống",
+        "image_path": "data/eval/out_of_catalog_images/home_271064584.jpg",
+        "image_sha256": "aace62516c33474c1ac7a09e2bed15d70682d6c5d500aeb39d1b961fdf4a114c",
+        "predicted_category": "Nhà cửa & Đời sống",
+        "category_inference": {
+          "primary_category": "Nhà cửa & Đời sống",
+          "candidate_categories": [
+            "Nhà cửa & Đời sống",
+            "Làm đẹp & Sức khỏe"
+          ],
+          "scores": {
+            "Nhà cửa & Đời sống": 0.27234387397766113,
+            "Làm đẹp & Sức khỏe": 0.26707932353019714,
+            "Điện gia dụng": 0.23038117587566376,
+            "Điện tử & Phụ kiện": 0.22956113517284393,
+            "Thời trang nữ": 0.22238242626190186,
+            "Bách hóa": 0.21977004408836365,
+            "Thời trang nam": 0.21359913051128387,
+            "Sách": 0.19731703400611877
+          },
+          "confidence": "medium",
+          "margin": 0.005264550447463989,
+          "strategy": "top_2_categories",
+          "uncertain": true,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 184,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 33.81010000157403,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "278769372",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8383 dung tích 510ml - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8738349080085754,
+            "final_score": 0.8738349080085754
+          },
+          {
+            "rank": 2,
+            "product_id": "99621372",
+            "product_name": "Bình giữ nhiệt Lock&amp;Lock Belt Bottle LHC4267IVY490ml - Màu",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8477607369422913,
+            "final_score": 0.8477607369422913
+          },
+          {
+            "rank": 3,
+            "product_id": "279001572",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8347 dung tích 480ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8437471389770508,
+            "final_score": 0.8437471389770508
+          },
+          {
+            "rank": 4,
+            "product_id": "273911405",
+            "product_name": "Bình giữ nhiệt inox 316 Elmich EL8331 dung tích 1L",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8401150107383728,
+            "final_score": 0.8401150107383728
+          },
+          {
+            "rank": 5,
+            "product_id": "278965770",
+            "product_name": "Bình giữ nhiệt inox 304 Elmich EL8394 dung tích 940ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8383658528327942,
+            "final_score": 0.8383658528327942
+          }
+        ]
+      },
+      {
+        "group": "home",
+        "heldout_product_id": "69066293",
+        "heldout_product_name": "Bình Giữ Nhiệt La fonte 500ml - 007443",
+        "expected_category": "Nhà cửa & Đời sống",
+        "image_path": "data/eval/out_of_catalog_images/home_69066293.jpg",
+        "image_sha256": "dd092527e85a4a7f8b13bd6d4fd48d32a961b84980eead548fce556be093fb5b",
+        "predicted_category": "Nhà cửa & Đời sống",
+        "category_inference": {
+          "primary_category": "Nhà cửa & Đời sống",
+          "candidate_categories": [
+            "Nhà cửa & Đời sống"
+          ],
+          "scores": {
+            "Nhà cửa & Đời sống": 0.29033932089805603,
+            "Điện gia dụng": 0.2664429843425751,
+            "Làm đẹp & Sức khỏe": 0.2594131827354431,
+            "Bách hóa": 0.25446179509162903,
+            "Điện tử & Phụ kiện": 0.25210708379745483,
+            "Thời trang nữ": 0.23617365956306458,
+            "Thời trang nam": 0.2175256460905075,
+            "Sách": 0.211343452334404
+          },
+          "confidence": "high",
+          "margin": 0.023896336555480957,
+          "strategy": "top_1_category",
+          "uncertain": false,
+          "source": "clip_zero_shot"
+        },
+        "candidate_count": 72,
+        "category_precision_at_20": 1.0,
+        "top5_category_consistency": 1.0,
+        "latency_ms": 42.3584000000119,
+        "top5": [
+          {
+            "rank": 1,
+            "product_id": "226036798",
+            "product_name": "Bình Giữ Nhiệt LocknLock 550ml LHC3249",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8379583358764648,
+            "final_score": 0.8379583358764648
+          },
+          {
+            "rank": 2,
+            "product_id": "271217228",
+            "product_name": "Ly nhựa 2 lớp LocknLock Rainbow HAP507WHTH - kèm ống hút - Dung tích 750ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8368295431137085,
+            "final_score": 0.8368295431137085
+          },
+          {
+            "rank": 3,
+            "product_id": "276120162",
+            "product_name": "Bình giữ nhiệt METRO CAFE TUMBLER LocknLock LHC4359 - Dung tích 650ml",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8352311253547668,
+            "final_score": 0.8352311253547668
+          },
+          {
+            "rank": 4,
+            "product_id": "83412126",
+            "product_name": "Bình Giữ Nhiệt Lock&Lock Energetic One-Touch Tumbler LHC3249 - 550ML",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8188902139663696,
+            "final_score": 0.8188902139663696
+          },
+          {
+            "rank": 5,
+            "product_id": "277742262",
+            "product_name": "Hộp cơm giữ nhiệt inox 304 Elmich EL8302 dung tích 1.7L - Hàng chính hãng",
+            "category": "Nhà cửa & Đời sống",
+            "image_score": 0.8188639283180237,
+            "final_score": 0.8188639283180237
+          }
+        ]
+      }
+    ]
+  }
+}

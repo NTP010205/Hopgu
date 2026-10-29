@@ -1,0 +1,62 @@
+{
+  "generated_by": "scripts/verify_phase7_fallback.py",
+  "generated_at": "2026-10-11T07:36:47.901404+00:00",
+  "ollama_status": {
+    "ready": false,
+    "mode": "fallback",
+    "detail": "Không kết nối được Ollama: ConnectTimeout"
+  },
+  "query": "tai nghe bluetooth chống ồn dưới 1 triệu",
+  "parsed_query": {
+    "intent": "search_product",
+    "category": "Điện tử & Phụ kiện",
+    "colors": [],
+    "attributes": [
+      "bluetooth",
+      "chống ồn"
+    ],
+    "price_min": null,
+    "price_max": 1000000,
+    "gender": null,
+    "keywords": [
+      "tai",
+      "nghe",
+      "bluetooth",
+      "chong",
+      "on",
+      "trieu"
+    ],
+    "parser_mode": "fallback",
+    "parser_detail": "Không kết nối được Ollama: ConnectTimeout"
+  },
+  "text_search": {
+    "result_count": 3,
+    "all_prices_at_most_1m": true,
+    "results": [
+      {
+        "product_id": "272030678",
+        "product_name": "Tai Nghe Bluetooth Cao Cấp EQ2 5.3 Pin 7h Âm Thanh Sống Động Bass căng - Hàng Chính Hãng",
+        "price_vnd": 359000,
+        "parser_mode": "fallback"
+      },
+      {
+        "product_id": "248761700",
+        "product_name": "Tai nghe bluetooth Rock Retro nghe nhạc liên tục 12h - Hàng chính hãng bảo hành 1 năm",
+        "price_vnd": 745000,
+        "parser_mode": "fallback"
+      },
+      {
+        "product_id": "273217798",
+        "product_name": "Tai Nghe có dây nhét tai M101 Pro 3.5mm âm thanh hay, chống ồn, hỗ trợ mic nghe gọi đầy đủ dây dài 1.2m - Hàng Chính Hãng",
+        "price_vnd": 99000,
+        "parser_mode": "fallback"
+      }
+    ]
+  },
+  "system_status_app_test": {
+    "exceptions": 0,
+    "warnings": [
+      "Ứng dụng đang dùng parser rule-based và sẽ gắn badge FALLBACK; không báo LLM sẵn sàng."
+    ]
+  }
+}
